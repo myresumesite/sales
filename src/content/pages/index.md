@@ -7,6 +7,7 @@ showFeature: false
 showInfo: "1"
 showPosts: "1"
 showResume: "1"
+showSocial: true
 resume:
   highlightsText: <p><strong>Social Media Marketing - specialized experience leading PPC and SEO marketing strategies.</strong></p><p>An MBA with 5 years of experience developing and managing marketing campaigns and specialized working knowledge of Google Analytics and AdWords, seeks the role of Social Media Marketing Manager with XYZ Inc. to implement successful digital marketing campaigns and provide exceptional thought leadership.</p><p>Three years of specialized experience leading PPC and SEO marketing strategies
     Managed social media accounts for four businesses with yearly sales over $500,000
@@ -53,13 +54,12 @@ youtubecontrols: "1"
 cta:
   ctaText: "Contact Me"
   ctaLink: ""
+coverletter:
+  coverText: "Cover Letter"
+  coverLink: ""
 portfolio:
   openText: ""
   closeText: "With great power, comes great responsibility"
-  showSocial: true
-officialname:
-  nameText: My Name Here
-  nameLink: /#posts
 address:
   addressText: Any Town, USA
 address2:

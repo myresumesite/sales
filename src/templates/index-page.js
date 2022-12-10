@@ -60,6 +60,7 @@ export const pageQuery = graphql`
         showPosts
         showInfo
         showResume
+        showSocial
         youtuber
         youtubestart
         youtubeend
@@ -88,9 +89,9 @@ export const pageQuery = graphql`
           ctaText
           ctaLink
         }
-        officialname {
-          nameText
-          nameLink
+        coverletter {
+          coverText
+          coverLink
         }
         address {
           addressText
@@ -111,8 +112,6 @@ export const pageQuery = graphql`
         portfolio{
           openText
           closeText
-          showSocial
-
         }
         svgImage{
           relativePath
@@ -175,7 +174,7 @@ const HomePage = ({ data }) => {
 
     // const { iconimage } = useSiteMetadata()
 
-
+    const { companyname } = useSiteMetadata()
     const { siteUrl } = useSiteMetadata()
 
     const YouTubeStart = frontmatter.youtubestart
@@ -188,14 +187,17 @@ const HomePage = ({ data }) => {
     const ShowInfo = frontmatter.showInfo
     const ShowPosts = frontmatter.showPosts
     const ShowResume = frontmatter.showResume
+    const showSocial = frontmatter.showSocial
     const showfooter = useSiteMetadata()
 
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
+    const coverLink = frontmatter.coverletter.coverLink
+    
 
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
-    const showSocial = frontmatter.portfolio.showSocial
+    
 
     // const { siteColor } = useSiteMetadata()
 
@@ -473,7 +475,7 @@ const YouTube = frontmatter.youtuber
 ) : (
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
+<span style={{color:'', fontSize:'160%'}}>{companyname}</span>
 {frontmatter.address.addressText}
 <br />
 {frontmatter.address2.addressText2}
@@ -483,9 +485,11 @@ const YouTube = frontmatter.youtuber
 
 {CtaLink ? (
            
-           <Link
-   to={frontmatter.cta.ctaLink}
+           <a
+   href={frontmatter.cta.ctaLink}
    className="button print"
+   target="_blank"
+   rel="noreferrer"
     style={{
     cursor:'pointer',
     textDecoration:'underline',
@@ -496,7 +500,7 @@ const YouTube = frontmatter.youtuber
     alignSelf:'center',
     color:''
     }}>{frontmatter.cta.ctaText}
-</Link>
+</a>
        
           ) : (
             <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>{frontmatter.cta.ctaText}</Link>
@@ -510,8 +514,31 @@ const YouTube = frontmatter.youtuber
           )}
 
 <br />
-<Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>View cover letter</Link>
+
+
+{/* {coverText ? (
+""
+) : (
+  ""
+)} */}
+
+
+{coverLink ? (
+
+          <a href={frontmatter.coverletter.coverLink} rel="noreferrer" target="_blank" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</a>
+       
+          ) : (
+            
+            <Link state={{modal: true}} to="/cover/" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'0 2rem'}}>{frontmatter.coverletter.coverText}</Link>
+
+)}
+
+
+
+
 <br />
+
+
 
 
 
@@ -746,7 +773,7 @@ const YouTube = frontmatter.youtuber
   
 
 
- <div className="" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
+ <div className="toolbar" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px dotted #666', justifyContent:'', background:'rgba(0, 0, 0, 0.2)', borderRadius:'', padding:'1rem 0', }}>
 
 
 <div style={{display:'flex', justifyContent:'center', border:'0px solid red', width:'', margin:'0 auto'}}><span style={{fontWeight:'bold', fontSize:'1.3rem'}}>Print:</span> &nbsp;<kbd>⌘</kbd> + <kbd>p</kbd> OR <kbd>Ctrl</kbd> + <kbd>p</kbd></div>
