@@ -35,17 +35,17 @@ const themeStyles = {
       mt: "-2px",
       p: "0 0 0 0",
       "&:hover": {
-        color: "var(--primary-color)",
+        color: "",
       },
     },
   },
   modeIcons: {
     display: "flex",
     alignItems: "center",
-    color: "#ccc",
+    color: "",
     mt: "10px",
     "&:hover": {
-      color: "color:var(--primary-color)",
+      color: "color:",
     },
   },
   modeText: {

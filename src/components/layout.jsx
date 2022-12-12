@@ -6,7 +6,7 @@ import React, { } from "react"
 // import { FaRegPlusSquare } from 'react-icons/fa';
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
-import Theme from "../components/theme"
+// import Theme from "../components/theme"
 import { Seo } from "./seo"
 import "../styles/reset.css"
 // import "../styles/variables.css"
@@ -91,7 +91,7 @@ body::after{
 
 { !font1 ? (
   
-  document.body.style = 'background: red;'
+''
 
   ) : (
 
@@ -117,12 +117,12 @@ body::after{
       <div style={{overflow:'', display:'flex', justifyContent:'center'}}>
         {modal ? (
           <>
-          <div style={{position:'fixed', top:'8vh', right:'14vw', zIndex:'2', color:'inherit !important', fontSize:'30px'}}>
+          <div id="closeicon" style={{position:'fixed', top:'6vh', right:'10vw', zIndex:'2', color:'inherit !important', fontSize:'40px'}}>
           <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important'}}>
             <AiOutlineClose />
           </Link>
           </div>
-          <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link>
+          {/* <Link to="../" className="print" style={{position:'fixed', bottom:'40px', border:'0px solid red', background:'rgba(0,0,0,0.70) ', width:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', padding:'.5rem 2rem', display:'flex', placeContent:'center', justifyContent:'center',borderRadius:'12px 12px 0 0'}}>Return Home</Link> */}
           </>
         ) : (
 ""
@@ -231,7 +231,7 @@ body::after{
   {/* <button type="button" className="" onClick={toggleVisible} style={{wordWrap:'normal', color:'#fff'}}>
   <IoHandLeft style={{float:'left', marginRight:'8px', fontSize:'20px'}} />Left-handed?
 </button> */}
-<Theme  style={{}} />
+{/* <Theme  style={{}} /> */}
     </div>
 
   </div>

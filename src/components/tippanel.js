@@ -1,15 +1,18 @@
 
 import * as React from "react"
 import styled from "styled-components"
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import { CgInfo, CgRatio  } from "react-icons/cg"
 // import { FaLock } from 'react-icons/fa';
 // import { FaTimesCircle } from 'react-icons/fa';
 // import Newsletter from '../components/Newsletter'
 // import ScrollAnimation from 'react-animate-on-scroll'
 
-import { RiSecurePaymentLine } from "react-icons/ri"
-import { HiOutlineScale } from "react-icons/hi"
+
+import { GiArchiveResearch } from "react-icons/gi"
+import { AiOutlineStop } from "react-icons/ai"
+
+import { BsFillQuestionSquareFill, BsUmbrellaFill } from "react-icons/bs"
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
 import 'react-tabs/style/react-tabs.css'
 const CustomBox = styled.div`
@@ -29,13 +32,13 @@ const NFTDetails = () => (
 
 
 <Tabs className="infomenu" ß style={{minHeight:'20vh', width:'100%', maxWidth:'',   overflow:'hidden', marginTop:'40px',}}>
-        <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>How VidSocks Work</h2>
+        <h2 style={{fontSize:'140%', textAlign:'center', margin:'1rem 0'}}>Interviewing Tips</h2>
     <TabList style={{width:'100%', border:'0px solid yellow',}}>
-    <Tab><div className="iconmenu"><CgRatio /><span>Specs</span></div></Tab>
-    <Tab><div className="iconmenu"><RiSecurePaymentLine/><span>Secure</span></div></Tab>
-    <Tab><div className="iconmenu"><HiOutlineScale/><span>Standards</span></div></Tab>
+    <Tab><div className="iconmenu"><GiArchiveResearch /><span>Research</span></div></Tab>
+    <Tab><div className="iconmenu"><BsUmbrellaFill/><span>Prepare</span></div></Tab>
+    <Tab><div className="iconmenu"><BsFillQuestionSquareFill/><span>Questions</span></div></Tab>
       {/* <Tab><div className="iconmenu"><FiCamera /><span>Tech</span></div></Tab> */}
-      <Tab><div className="iconmenu"><CgInfo /><span>FAQ</span></div></Tab>
+      <Tab><div className="iconmenu"><AiOutlineStop /><span>NO Panic</span></div></Tab>
       
       
     </TabList>
@@ -89,9 +92,8 @@ Custom Domain names available
 <br />
 <li style={{}}>Need more? The VidSock Platform also has complete E-Commerce integration with Shopify. Not only will you be able to sell your products right from your blog pages, but we utelize Shopify's Developer API which means it only costs $9 a month to run a full featured store. This saves you almost $20 off their normal base $28 monthly fee.</li>
 
-<li style={{}}>Seo? Social? It's in the bag. Our entire content management system(CMS) behind out plaltform is designed to make producing top-notch SEO-minded content that ranks incredibly well in Google page rankings. Also, every page and every post has custom graphics for default social image previews and custom page titles and descriptions on social media sites. Our sites kick butt. Don't believe us? Check out how we do with <a href="https://pagespeed.google.com" target="_blank" noreferrer nofollow>Google Page Speed</a>.</li> 
+<li style={{}}>Seo? Social? It's in the bag. Our entire content management system(CMS) behind out plaltform is designed to make producing top-notch SEO-minded content that ranks incredibly well in Google page rankings. Also, every page and every post has custom graphics for default social image previews and custom page titles and descriptions on social media sites. Our sites kick butt. Don't believe us? Check out how we do with <a href="https://pagespeed.google.com" target="_blank" rel="noreferrer">Google Page Speed</a>.</li> 
 </ol>
-
 
 
 <blockquote className="frontquote" style={{width:'70%', margin:'2rem auto'}}>
