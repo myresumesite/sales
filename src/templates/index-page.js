@@ -25,6 +25,7 @@ import { Social } from "../components/social"
 import BlogListHome from "../components/blog-list-home"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
+// import Highlights from "../templates/highlights-page"
 
 
 const CustomBox = styled.div`
@@ -70,6 +71,10 @@ export const pageQuery = graphql`
         youtubemute
         youtubecontrols
         youtubeautostart
+        profTitle
+        profText
+        addressText
+        addressText2
         svgzindex
         tagline
         featuredImage {
@@ -95,22 +100,6 @@ export const pageQuery = graphql`
         coverletter {
           coverText
           coverLink
-        }
-        address {
-          addressText
-        }
-        address2 {
-          addressText2
-        }
-        resume {
-          highlightsTitle
-          highlightsText
-          profTitle
-          profText
-          eduTitle
-          eduText
-          exTitle
-          exText
         }
         portfolio{
           openText
@@ -139,10 +128,6 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
-            nftdrop
-            nftdrop
-  
-            
             featuredImage {
               publicURL
               childImageSharp {
@@ -192,16 +177,18 @@ const HomePage = ({ data }) => {
     const ShowResume = frontmatter.showResume
     const showSocial = frontmatter.showSocial
     const showfooter = useSiteMetadata()
-
     // const showCTA = frontmatter.cta.ctaText
     const CtaLink = frontmatter.cta.ctaLink
     const coverLink = frontmatter.coverletter.coverLink
     
+    const ProfText = frontmatter.profText
+ 
 
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
     
 
+    
     // const { siteColor } = useSiteMetadata()
 
     // const SiteColor = sitecolor
@@ -408,7 +395,7 @@ const YouTube = frontmatter.youtuber
             <div
             style={{}}
               className="description"
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{ __html: ProfText }}
             />
             </div>
   
@@ -416,7 +403,7 @@ const YouTube = frontmatter.youtuber
           
             <div className="flexcheek mob print" style={{padding:'3rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
-              <h1 className="title1">{frontmatter.title}</h1>
+              <h1 className="title1">{frontmatter.profTitle}</h1>
             <h2 className="tagline1">
               {frontmatter.tagline}
             </h2>
@@ -424,8 +411,10 @@ const YouTube = frontmatter.youtuber
             <div
             style={{}}
               className="description"
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{ __html: ProfText }}
             />
+
+            
            
             </div>
 
@@ -452,13 +441,14 @@ const YouTube = frontmatter.youtuber
 
 
 
+
 {UnderlayImage ? (
 
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', color:'#fff', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', background:'rgba(0,0,0,0.50)', borderRadius:'10px', textShadow:'0 2px 7px #000', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{frontmatter.officialname.nameText}</span>
-{frontmatter.address.addressText}
+<span style={{color:'', fontSize:'160%'}}>{companyname}</span>
+{frontmatter.addressText}
 <br />
-{frontmatter.address2.addressText2}
+{frontmatter.addressText2}
 <br /><br />
 <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', maxWidth:'600px', paddingLeft:'3rem', paddingRight:'3rem' }}>Contact Me</Link>
 
@@ -480,11 +470,11 @@ const YouTube = frontmatter.youtuber
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
 <span style={{color:'', fontSize:'160%'}}>{companyname}</span>
-{frontmatter.address.addressText}
+{frontmatter.addressText}
 <br />
-{frontmatter.address2.addressText2}
+{frontmatter.addressText2}
 <br /><br />
-{/* <Link state={{modal: true}} to="/contact/" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'600px'}}>Contact Me</Link> */}
+
 
 
 {CtaLink ? (
@@ -585,7 +575,7 @@ const YouTube = frontmatter.youtuber
 {ShowPosts ? (
 
 <div id="posts" name="posts">
-{/* <p style={{fontSize:'150%', textAlign:'center', margin:'0 0 0 0'}}>See it in action:</p> */}
+
 
 <div className="sliderholder" style={{display:'flex', justifyContent:'center', width:'100%', height:'60vh', overflow:'hidden', position:'relative',}}>
 
@@ -612,6 +602,7 @@ const YouTube = frontmatter.youtuber
 
 
         <BlogListHome data={posts} />
+        
 
 {closeQuote ? (
 
@@ -655,8 +646,12 @@ const YouTube = frontmatter.youtuber
 {/* end show Resume */}
 {ShowResume ? (
 
+ 
 
-<section id="resume" name="resume" style={{ display:'', height:'', overflow:'',position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+
+<section id="resume" name="resume" style={{ display:'', height:'', overflow:'', margin:'1rem', position:'relative', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}}>
+
+
 
 <article>
 <div id="resumename" style={{display:'none', position:'absolute', top:'-4rem', fontSize:'160%', padding:'0 0 2rem 4rem', textAlign:'left', width:'100%',}}>{companyname}<br />
@@ -665,98 +660,21 @@ const YouTube = frontmatter.youtuber
 {frontmatter.address2.addressText2} */}
 </div>
 
-  <div id="" className="flexbutt" style={{display:'flex', gap:'40px', justifyContent:'flex-start', alignItems:'baseline', padding:'0 4%'}}>
+<div id="resume" className="">
 
-
-
-        
-<div id="" className="flexcheek leftside" style={{ position:'', top:'', order:'', }} >
- 
-<h3 className="title1" style={{textAlign:'left', margin:'0 0 0 0', fontWeight:'bold', clear:'right', paddingTop:'0',}}>{frontmatter.resume.highlightsTitle}</h3>
-<div
+<span
           style={{}}
             className=""
-            dangerouslySetInnerHTML={{ __html: frontmatter.resume.highlightsText }}
+            dangerouslySetInnerHTML={{ __html: html }}
           />
-
-
-
-
-
-<h3 className="title1" style={{textAlign:'left', margin:'0 0 0 0', fontWeight:'bold', clear:'right', paddingTop:'0',}}>{frontmatter.resume.profTitle}</h3>
-<div
-          style={{}}
-            className=""
-            dangerouslySetInnerHTML={{ __html: frontmatter.resume.profText }}
-          />
-
-
-
-
-
-<h3 className="title1" style={{textAlign:'left', margin:'0 0 0 0', fontWeight:'bold', clear:'right', paddingTop:'0',}}>{frontmatter.resume.eduTitle}</h3>
-<div
-            className=""
-            dangerouslySetInnerHTML={{ __html: frontmatter.resume.eduText }}
-          />
- 
-
- </div> 
-
-
-
-
-
-
-      <div id="" className="flexcheek rightside" style={{order:''}}>
- 
- 
-
-      
-
-
- 
-      <h3 className="title1" style={{textAlign:'left', margin:'0 0 0 0', fontWeight:'bold', clear:'right', paddingTop:'0',}}>{frontmatter.resume.exTitle}</h3>
-
-      <div
-          style={{}}
-            className=""
-            dangerouslySetInnerHTML={{ __html: frontmatter.resume.exText }}
-          />
-
-      
-      
-
-      
-
-
-
-
-
-
-
-      </div> 
-      
 </div>
+
+  
 
 </article>
 
 
 
-
-{/* <div style={{fontSize:'90%', textAlign:'center', display:'grid', flexDirection:'row', verticalAlign:'middle', justifyContent:'center', lineHeight:'200%', margin:'0 auto', padding:' .5rem 1rem', backdropFilter:'blur(14px)',}}>
-    
-    <div style={{textAlign:'', display:'flex', alignContent:'', marginBottom:'1rem', width:''}}>
-   <IoShareOutline style={{fontSize:'',}} />
-  
-  </div>
-  
-   <div style={{textAlign:'', display:'flex', alignContent:'', width:''}}>
-   <FaRegPlusSquare style={{fontSize:'',}} /> 
-  'Add to Home Screen'
-   </div>
-   
-   </div> */}
 
 
 
