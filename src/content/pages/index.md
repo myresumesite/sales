@@ -8,8 +8,9 @@ showInfo: "1"
 showPosts: ""
 showResume: "1"
 showSocial: true
-profTitle: Proficiency
-profText: Energetic Adobe Certified Expert (ACE) web designer with 6+ years of experience.<br /><br /> 
+showSkills: true
+profTitle: Your Intro / Job Title
+profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
 underlayImage: 
 youtuber: https://youtu.be/WgXN0kO1JEA
 youtubeautostart: "1"
