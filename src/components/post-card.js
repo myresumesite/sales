@@ -2,21 +2,25 @@
 import { jsx } from "theme-ui"
 import { Link } from "gatsby"
 import { GatsbyImage, StaticImage } from "gatsby-plugin-image"
-// import TimeAgo from 'react-timeago'
+import TimeAgo from 'react-timeago'
 
 import Countdown from 'react-countdown'
 
 const Completionist = () => ""
 
-const PostCard = ({ data }) => (
 
-  
+
+const PostCard = ({ data }) => {
+
+  // const ShowDates = data.frontmatter.showdate
+
+  return (
 
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article
-    className="post-card"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)' }}
+    className="post-card1"
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
   >
 
 
@@ -25,12 +29,14 @@ const PostCard = ({ data }) => (
 
 
     {data.frontmatter.featuredImage ? (
+
+<div>
       <Link to={data.frontmatter.slug}>
         <GatsbyImage
           image={data.frontmatter.featuredImage.childImageSharp.gatsbyImageData}
           alt={data.frontmatter.title + " - Featured image"}
           className="featured-image"
-          style={{position:'relative', zIndex:'1'}}
+          style={{position:'relative', zIndex:'1', }}
         />
         <div
               style={{
@@ -64,16 +70,47 @@ const PostCard = ({ data }) => (
         </g>
     </g>
 </svg>
+
         </div>
       </Link>
+
+
+
+</div>
       
     ) : (
-      <Link  to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
+      <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-og-image.jpg" alt="VidSock Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
 
 
-<div className="post-content" >
+<div className="post-content" style={{textAlign:'center'}} >
 
+
+<div className="post-card" style={{border:'0px solid yellow', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', width:'50vw', margin:'0 auto', textAlign:'center', borderRadius:'0 0 10px 10px', background:'rgba(0, 0, 0, .5)'}}>
+<h2 className="title" style={{width:'100%'}}>
+  <Link 
+    to={data.frontmatter.slug}
+  >
+    {data.frontmatter.title}
+    
+  </Link>
+</h2>
+
+
+
+<p style={{minWidth:'', position:'relative', display:'flex', justifyContent:'center', alignSelf:"center", textAlign:'center', border:'0px solid red', color:'#fff', margin:'0', padding:'0', textShadow:'2px 0 2px #333'}}>
+
+{ data.frontmatter.showdate ? (
+              <TimeAgo date={data.frontmatter.date} style={{color:'#fff !important', minWidth:'16vw',}} />
+      ) : (
+        ""
+      )}
+
+</p>
+
+
+
+</div>
 
 
 { data.frontmatter.nftdrop ? (
@@ -101,24 +138,15 @@ date={Date.now() + 20000} className="countdown"> */}
 
 
 
-<h2 className="title">
-  <Link 
-    to={data.frontmatter.slug}
-  >
-    {data.frontmatter.title}
-    
-  </Link>
-</h2>
 
-{/* <p style={{minWidth:'20vw', position:'relative', textAlign:'center', border:'0px solid red'}}>
-  <TimeAgo date={data.frontmatter.date}/>
-</p> */}
+
 </div>
 
 
   </article>
   </section>
+  )
   
-)
+}
 
 export default PostCard

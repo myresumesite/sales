@@ -1,6 +1,6 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-
+import { graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
 import GoBack from "../components/goBack"
@@ -20,13 +20,18 @@ export const pageQuery = graphql`
 const AboutPage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html, excerpt } = markdownRemark
-
+  const { showNav } = useSiteMetadata()
   return (
     <Layout className="page">
       <Seo title={frontmatter.title} description={excerpt} />
 
-
-      <div className="container" style={{padding:'2rem 8%', maxWidth:''}}>
+      {showNav ? (
+        
+        <div className="spacer1" style={{height:'100px', border:'0px solid yellow'}}></div>
+            ) : (
+              ""
+            )}
+      <div className="container" style={{padding:'2rem 8%', maxWidth:'1024px'}}>
 
 
       <div className="mobile"><GoBack /></div>
@@ -45,8 +50,6 @@ const AboutPage = ({ data }) => {
 
 
       <GoBack />
-      <Link to="../" className="print" style={{color:'', fontSize:'', margin:'0 auto', textAlign:'center', textDecoration:'underline', maxWidth:'600px', padding:'1rem 2rem', display:'grid', justifyContent:'center'}}>Return Home</Link>
-
       <br />
       <br />
       <Footer />

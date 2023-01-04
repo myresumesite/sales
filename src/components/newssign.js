@@ -13,10 +13,10 @@ const CustomBox = styled.div`
 
 input::placeholder {
   color: #fff !important;
-  filter: drop-shadow(0px 0px 6px var(--primary-color));
+  // filter: drop-shadow(0px 0px 6px var(--primary-color));
 }
 
-
+input{border:1px solid #fff;}
 
 
 
@@ -41,7 +41,7 @@ const NewsletterPage = () => (
 <CustomBox style={{}}> 
 
 
-<form  style={{width:'90%', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center', background: 'rgba(0,0,0,0.50)',
+<form  style={{width:'90%', margin:'0 auto', display:'flex', flexDirection:'column', justifyContent:'center', background: 'rgba(0,0,0,0.90)',
   backdropFilter: 'blur(4px)', border:'1px solid #000', borderRadius:'12px', textAlign:'center', alignSelf:'center', overflow:'hidden', color:'#fff'}}
           className="contact-form"
           action="/signedup/"
@@ -54,7 +54,7 @@ const NewsletterPage = () => (
 
 
             
-              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Enter your email to follow</strong></div><br />
+              <div className="txtshadow" style={{fontSize:'120%', textAlign:'center', marginTop:'10px'}}><strong>Enter your email to connect</strong></div><br />
               
               {/* <span className="txtshadow" style={{fontSize:'85%'}}>Current NFT owners will be the only accounts created during initial launch phase<br /><br />Second Phase will open to invite only<br />Reserve Your Spot Below:</span><br /><br /> */}
 
@@ -80,7 +80,7 @@ const NewsletterPage = () => (
               type="submit"
               style={{marginTop:'-8px', fontSize:'clamp(1rem, 1.3vw, 1.5rem)', whiteSpace:'nowrap'}}
             >
-              Follow{" "}
+              connect{" "}
               <span className="icon -right">
                 <RiSendPlane2Line />
               </span>
@@ -90,8 +90,8 @@ const NewsletterPage = () => (
             </div>
 
 
-            <div style={{fontSize: '70%', padding: '0px 3%', margin:'30px 0 10px 0', textAlign: 'center', color:'#ccc'}}>
-            <Link to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy (NO SPAM!)</Link>
+            <div style={{fontSize: '70%', padding: '0px 3%', margin:'5px 0 10px 0', textAlign: 'center', color:'#fff'}}>
+            <Link state={{modal: true}} to="/privacy/" className="" style={{textAlign: 'center', padding: '15px',  textDecoration: 'underline', border:'0px solid yellow'}}>privacy policy - no spam!</Link>
            
             </div>
 </form>

@@ -9,14 +9,16 @@ const CustomBox = styled.div`
 `
 
 const style = {
-  background: 'transparent',
-  borderRadius: 3,
-  border: 0,
-  color: 'white',
-  padding: '0 30px',
-  display:'block',
-  margin:'0 auto',
-  align:'center'
+  root: {
+    background: 'transparent',
+    borderRadius: '12px',
+    border: '0',
+    color: '#fff',
+    display:'flex',
+    justifyContent:'center',
+    flexDirection:'column'
+  },
+
 
 };
 
@@ -26,9 +28,11 @@ const Foo = () => {
 
   return (
 <CustomBox style={{}}>
-<h4 style={{textAlign:'center', fontSize:'130%', marginTop:'2rem'}}>Sharing IS Caring!</h4>
+{/* <h4 style={{textAlign:'center', fontSize:'130%', marginTop:'2rem'}}>Sharing IS Caring!</h4> */}
     <ShareSocial
+    id="share"
     style={style}
+    // style={{background:'transparent !important'}}
     url ={url}
     // title="Sharing IS Caring!"
     socialTypes={['facebook','twitter','reddit','linkedin']}>

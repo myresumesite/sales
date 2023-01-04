@@ -4,6 +4,7 @@ import { graphql, Link } from "gatsby"
 import { RiSendPlane2Line } from "react-icons/ri"
 import { Seo } from "../components/seo"
 import { Layout } from "../components/layout"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 // import GoBack from "../components/goBack"
 import { Helmet } from "react-helmet"
 export const pageQuery = graphql`
@@ -25,6 +26,7 @@ export const pageQuery = graphql`
 `
 
 const Contact = ({ data }) => {
+  const { showNav } = useSiteMetadata()
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
@@ -42,10 +44,14 @@ const Contact = ({ data }) => {
 
 
 
+{showNav ? (
+    <div className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
+        ) : (
+          ""
+        )}
 
-
-      <div className="wrapper" style={{padding:'0 1rem'}}>
-        <br /><br />
+      <div className="wrapper" style={{padding:'20px 1rem 0 1rem'}}>
+        
         <h1 style={{fontSize:'130%'}}>{frontmatter.title}</h1>
         <div
           className="description"
@@ -77,7 +83,7 @@ const Contact = ({ data }) => {
         </p>
         <p style={{margin:'0 1rem'}}>
           <label>
-          <input type="hidden" name="subject" placeholder="Subject" value="Coast Web Form Post" />
+          <input type="hidden" name="subject" placeholder="Subject" value="MyResume form response" />
           </label>
         </p>
         </div>

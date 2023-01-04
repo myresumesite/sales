@@ -73,7 +73,7 @@ export function Footer() {
 
 
 
-    <footer className="footerstyle" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'1', display:'flex', flexDirection:'column'}}>
+    <footer className="footerstyle no-app" style={{padding:'1rem 0', marginTop:'', position:'relative', zIndex:'', display:'flex', flexDirection:'column'}}>
 
     
     
@@ -106,13 +106,13 @@ export function Footer() {
       <nav className="footerlinks" aria-label="footer">
         <br />
       <Consent />
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link state={{modal: true}} to="/disclaimer/">Disclaimer</Link>  |  <Link state={{modal: true}} to="/privacy/">Privacy Policy</Link>  |  <Link state={{modal: true}} to="/terms/">Terms of Use</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link to="/disclaimer">Disclaimer</Link>  |  <Link to="/privacy">Privacy Policy</Link>  |  <Link to="/terms">Terms of Use</Link></div>
   
 
-<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright &copy; {(new Date().getFullYear())} {companyname}
+<div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright&copy; {(new Date().getFullYear())} {companyname}
 <br /><br />
-<a href="https://myresume.site" target="_blank" rel="noreferrer">Web App by MyResume</a> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report Card</a>
-
+{/* <a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a> &nbsp; | &nbsp;  */}
+<Link to="/login">Admin</Link> &nbsp; | &nbsp; <a href={speedIt} target="_blank" rel="noreferrer">Site Report</a>
 </div>
 
 

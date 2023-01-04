@@ -45,8 +45,8 @@ module.exports = {
   {
     resolve: "gatsby-plugin-anchor-links",
     options: {
-      offset: -100,
-      duration: 2000,
+      offset: -70,
+      duration: 500,
     }
   },
 
@@ -111,7 +111,7 @@ module.exports = {
               maxWidth: 1024,
               showCaptions: true,
               linkImagesToOriginal: false,
-              tracedSVG: true,
+              // tracedSVG: true,
               loading: "lazy",
             },
           },
@@ -145,7 +145,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
-        modulePath: ``, // default: undefined
+        modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
         publicPath: `admin`,
         htmlTitle: `MyResume CMS`,
@@ -182,7 +182,25 @@ module.exports = {
     //   },
     // },
 
+    // {
+		// 	resolve: 'gatsby-plugin-pdf',
+		// 	options: {
+    //     outputPath: 'static/assets/',
+		// 		// allPages: true,
+    //     paths: ['/', '/cover', '/skills'],
+		// 		// styleTagOptions: {
+		// 		// 	content: 'header{display:none;} footer{display:none;} .cookie-bar{display:none;}'
+		// 		// }
+		// 	},
+		// },
 
+    // {
+		// 	resolve: 'gatsby-plugin-pdf',
+		// 	options: {
+		// 		paths: ['/'],
+		// 		outputPath: 'static/assets/',
+		// 	},
+		// },
 
     `gatsby-plugin-sitemap`,
     // {
@@ -206,9 +224,9 @@ module.exports = {
       options: {
         name: `myresume`,
         short_name: `My Resume`,
-        start_url: `/?user_mode=app`,
+        start_url: `/?user_mode=app#resume`,
         description: `My Resume`,
-        background_color: `#222`,
+        background_color: `#ddd`,
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
@@ -218,12 +236,12 @@ module.exports = {
 },
       icons: [
         {
-          src: `static/assets/icon-192x192.png`,
+          src: `static/assets/icon.png`,
           sizes: `192x192`,
           type: `image/png`,
         },
         {
-          src: `static/assets/icon-512x512.png`,
+          src: `static/assets/icon.png`,
           sizes: `512x512`,
           type: `image/png`,
         },

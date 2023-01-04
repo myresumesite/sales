@@ -1,42 +1,60 @@
 ---
 slug: /
-tagline: short sentence description
-featuredImage: /assets/default-og-image.jpg
+tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
+featuredImage: /assets/challenger.webp
+youtuber: "https://youtu.be/ESGJ42zshL8"
+youtuber2: 
+audiostart: "1"
+audioend: "5000"
+audiotitle: "The Cure - The Forest"
 secondaryImage: /assets/default-user.webp
-showFeature: false
-showInfo: "1"
-showPosts: ""
-showResume: "1"
-showSocial: true
-showSkills: true
-profTitle: Your Intro / Job Title
+underlayImage: /assets/IMG_1019.webp
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
-underlayImage: 
-youtuber: https://youtu.be/WgXN0kO1JEA
-youtubeautostart: "1"
-youtubemute: "1"
-youtubestart: "1"
-youtubeend: ""
-youtubecontrols: "1"
-cta:
-  ctaText: "Contact Me"
-  ctaLink: ""
-coverletter:
-  coverText: "Cover Letter"
-  coverLink: ""
+addressText: Any Town, USA
 portfolio:
   openText: ""
-  closeText: "With great power, comes great responsibility"
-addressText: Any Town, USA
-addressText2: (888) 555-1212
+  closeText: With great power, comes great responsibility
+youtubeautostart: "1"
+addressText2: ""
+skillsTitle: "Mad Skills Yo!"
+skillsText: <dl>
+  <dt>
+  <h2>Overall Skills</h2><div>100%</div>
+  </dt>
+  <dd class="percentage percentage-90"><span class="text">Organization</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Problem Solving</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">Outgoing</span> <span class="percent">85%</span></dd>
+ 
+  </dl>
+
+  <dl>
+  <dt>
+  <h2>Detailed Skills</h2><div>100%</div>
+  </dt>
+  <dd class="percentage percentage-90"><span class="text">Word Perfect</span> <span class="percent">90%</span></dd>
+  <dd class="percentage percentage-85"><span class="text">MS Paint</span> <span class="percent">85%</span></dd>
+  <dd class="percentage percentage-75"><span class="text">Photoshop</span> <span class="percent">75%</span></dd>
+  <dd class="percentage percentage-99"><span class="text">Hacking</span> <span class="percent">99%</span></dd>
+
+  </dl>
+  <dl>
+cta:
+  ctaText: Contact Me
+  ctaLink: ""
 svgImage: /assets/transparent.png
 title: My Name Resume
-shareable: ""
+youtubeend: "90"
+sharethis: 
+youtubecontrols: "0"
 template: index-page
+youtubemute: "1"
 description: MyResume - Next-Gen Resume Platform
 svgzindex: ""
-
-
+profTitle: Your Intro / Job Title
+coverletter:
+  coverText: About or Cover Page
+  coverLink: ""
+youtubestart: "42"
 ---
 <!-- Do not delete -->
 <div>

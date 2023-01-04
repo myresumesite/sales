@@ -1,4 +1,5 @@
 backend:
+  # name: test-repo
   name: git-gateway
   branch: main
   commit_messages:
@@ -10,7 +11,7 @@ backend:
 
 # Uncomment local_backend when you need to develop in your local
 local_backend: true # run npx netlify-cms-proxy-server for local testing
-logo_url: https://myresume-ex1.netlify.app/assets/logo.svg
+logo_url: https://toddlambert.myresume.site/assets/logo-long.webp
 media_folder: "static/assets"
 public_folder: "/assets"
 
@@ -53,8 +54,11 @@ collections:
       - { label: "YouTube Show Controls", name: "youtubecontrols", widget: "boolean", default: "false", required: false }
       - { label: "YouTube Start", name: "youtubestart", widget: "string", hint: "This is measured in seconds - 32 would start the video at the 32-second mark", required: false }
       - { label: "YouTube End", name: "youtubeend", widget: "string", hint: "This is measured in seconds - 102 would end the video at the 1-min  and 42-second mark", required: false }
-      - { label: "Make Post Shareable?", name: "shareable", widget: "boolean", default: "true", required: false }
-
+      - { label: "Make Post Shareable?", name: "sharethis:", widget: "boolean", default: "true", required: false }
+      # - { label: "Allow Comments?", name: "comments:", widget: "boolean", default: "true", required: false }
+      # - { label: "Sign Up Box", name: "signup", widget: "boolean",
+      #      default: "false", required: false }
+  
 
       
       - {
@@ -89,6 +93,7 @@ collections:
           name: "body",
           widget: "markdown",
           hint: "Main content goes here.",
+          required: false
         }
   - label: "Pages"
     name: "pages"
@@ -114,11 +119,6 @@ collections:
           - { label: "Slug", name: "slug", widget: "hidden", default: "/" }
           - { label: "Page and SEO Title", name: "title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Show Feature", name: "showFeature", widget: "boolean" }
-          - { label: "Show Info", name: "showInfo", widget: "boolean" }
-          - { label: "Show Posts", name: "showPosts", widget: "boolean" }
-          - { label: "Show Social Links", name: "showSocial", widget: "boolean", default: "true", required: false }
-          - { label: "Show Skills", name: "showSkills", widget: "boolean", default: "true", required: false }
           - { label: "Featured Image", name: "featuredImage", widget: "image" }
           - { label: "YouTube Url", name: "youtuber", hint: "Add YouTube video to hero section", widget: "string", required: false }
           - { label: "Profile/Avatar", name: "secondaryImage", widget: "image", hint: "This is your profile picture or avatar", required: false }
@@ -128,10 +128,21 @@ collections:
           - { label: "Profile Title", name: "profTitle", widget: "string",
            required: false }
 
-          - { label: "Profile text (intro)", name: "profText", widget: "string", required: false }
+          - { label: "Profile text (intro)", name: "profText", widget: "markdown", required: false }
+
+          - { label: "Audio - YouTube Url", name: "youtuber2", hint: "Paste YouTube Url of song you wish to play on the site", widget: "string", required: false }
+          - { label: "Audio - Title", name: "audiotitle", hint: "Artist Name - Track Title", widget: "string", required: false }
 
           - { label: "Your Address", name: "addressText", widget: "string", required: false }
           - { label: "Your Address 2", name: "addressText2", widget: "string", required: false }
+
+          - { label: "Portfolio Quote - Opening", name: "openQuote", widget: "string",
+           required: false }
+
+          - { label: "Portfolio Quote - Closing", name: "closeQuote", widget: "string",
+           required: false }
+
+          
 
 
           - { label: "Resume", name: "body", widget: "markdown" }
@@ -171,6 +182,19 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
+          - { label: "Slug", name: "slug", widget: "hidden", default: "/skills" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Skills"
+        name: "skill"
+        file: "src/content/pages/skills.md"
+        fields:
+          - {
+              label: "Template",
+              name: "template",
+              widget: "hidden",
+              default: "skills-page",
+            }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/notes" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
@@ -182,7 +206,7 @@ collections:
               label: "Template",
               name: "template",
               widget: "hidden",
-              default: "about-page",
+              default: "notes-page",
             }
           - { label: "Slug", name: "slug", widget: "hidden", default: "/cover" }
           - { label: "Title", name: "title", widget: "string" }
@@ -275,46 +299,118 @@ collections:
                 label: SEO Description
                 default: ""
                 required: false
+
               - widget: image
                 name: image
-                label: Default OG Image
+                label: Default Image
+                hint: "This image is used for social/search previews of the site and its posts"
                 required: true
                 default: "/assets/default-og-image.jpg"
+
               - widget: image
                 name: iconimage
-                label: Site Logo (should be SVG if at all possible)
+                required: false
+                label: Your Logo
+
               - widget: image
                 name: favicon16x16
                 label: Site Favicon 16x16 (name image like 'favicon-16x16.png')
                 hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
                 default: "/assets/favicon-16x16.png"
-              - widget: image
-                name: favicon32x32
-                label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/favicon-32x32.png"
-              - widget: image
-                name: icon192
-                label: Site Icon 192x192 (name image like 'icon-192x192.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/icon-192x192.png"
-              - widget: image
-                name: icon512
-                label: Site Icon 512x512 (name image like 'icon-512x512.png')
-                hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
-                default: "/assets/icon-512x512.png"
+
+              # - widget: image
+              #   name: favicon32x32
+              #   label: Site Favicon 32x32 (name image like 'favicon-16x16.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/favicon-32x32.png"
+              # - widget: image
+              #   name: icon192
+              #   label: Site Icon 192x192 (name image like 'icon-192x192.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/icon-192x192.png"
+              # - widget: image
+              #   name: icon512
+              #   label: Site Icon 512x512 (name image like 'icon-512x512.png')
+              #   hint: "You can use the same 512x512 image for all at the expense of users with slower connections"
+              #   default: "/assets/icon-512x512.png"
+
               - widget: string
                 name: twitterUsername
                 label: Twitter user (no '@' justthename)
                 required: false
               - widget: string
                 name: companyname
-                label: Company Name or Site Name
+                label: Your Name
                 required: true
               - widget: boolean
                 name: showfooter
                 label: Show the Footer
                 required: false
+              - widget: boolean
+                name: showFeature
+                label: Show Feature
+                required: false
+              - widget: boolean
+                name: showInfo
+                label: Show Profile
+                required: false
+              - widget: boolean
+                name: showPosts
+                label: Show Portfolio/Posts
+                required: false
+              - widget: boolean
+                name: showSocial
+                label: Show Social Links
+                required: false
+              - widget: boolean
+                name: showSkills
+                label: Show Skills
+                required: false
+              - widget: boolean
+                name: showResume
+                label: Show Resume
+                required: false
+              - widget: boolean
+                name: showCover
+                label: Show Cover Letter
+                required: false
+
+              - widget: boolean
+                name: showNav
+                label: Show Nav Bar at top
+                default: true
+                required: false
+              - widget: boolean
+                name: showNav2
+                label: Show floating Nav Bar on side
+                default: true
+                required: false
+
+              - widget: string
+                name: menu1
+                label: Menu - Profile Title
+                default: "Profile"
+                required: false
+              - widget: string
+                name: menu2
+                label: Menu - Posts/Portfolio Title
+                default: "Posts"
+                required: false
+              - widget: string
+                name: menu3
+                label: Menu - Resume Title
+                default: "Resume"
+                required: false
+              - widget: string
+                name: menu4
+                label: Menu - Skills Title
+                default: "Skills"
+                required: false
+
+
+               
+
+  
           - label: "Commenting – Go to: https://commentbox.io - sign up for free account "
             name: comments
             widget: string

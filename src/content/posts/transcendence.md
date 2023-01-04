@@ -21,6 +21,8 @@ isnftforsale: ""
 svgzindex: "0"
 comments: ""
 shareable: ""
+sharethis: true
+showdate: false
 underlayImage: /assets/swd-foreground.png
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/campfire.svg

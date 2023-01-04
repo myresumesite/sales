@@ -60,7 +60,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 
   // Create blog-list pages
-  const postsPerPage = 9
+  const postsPerPage = 5
   const numPages = Math.ceil(blogPostsCount / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {
@@ -89,15 +89,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
-exports.onCreateWebpackConfig = ({ stage, actions, getConfig }) => {
-  if (stage === 'build-javascript') {
-    const config = getConfig()
-    const miniCssExtractPlugin = config.plugins.find(
-      plugin => plugin.constructor.name === 'MiniCssExtractPlugin'
-    )
-    if (miniCssExtractPlugin) {
-      miniCssExtractPlugin.options.ignoreOrder = true
-    }
-    actions.replaceWebpackConfig(config)
-  }
-}

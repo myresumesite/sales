@@ -8,19 +8,38 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: "Roboto", 
 
 
 
+dl *{border:0px solid purple}
 
 dl {
  display: flex;
  background-color: transparent;
  flex-direction: column;
- max-width: 700px;
+//  min-width:48%;
+//  max-width: 700px;
+//  width:400px;
  position: relative;
  padding: 0;
- 
+ border:0px solid black;
 }
 
 @media (max-width: 48rem) {
- dl {width: 55%;}
+ dl {width: 48vw;}
+
+ #skills .flexbutt{
+  // margin-left:-44vw !important;
+  font-size:90% !important;
+  gap:50px;
+}
+ img.homepage-bg1{
+  max-height:10vh !important;
+  border:1px solid red !important; 
+ } 
+dt {
+  margin-left: 140px !important;
+}
+
+
+
 }
 
 .percentage{display:flex; justify-content: space-between; margin-bottom: 20px;}
@@ -28,18 +47,22 @@ dl {
 dt {
  align-self: flex-start;
  width: 100%;
- display: block;
  text-align: right;
  font-size: 1.2em;
  font-weight: 700;
  margin-bottom: 20px;
  margin-left: 140px;
- padding:20px;
- background-color: rgba(12, 12, 12, 0.5);
+ padding:10px;
+ background-color: rgba(12, 12, 12, 0.3);
  border-radius: 12px;
+display:flex;
+justify-content: space-between;
+flex-direction:row;
+gap:30px;
+} 
 
 
-}
+
 
 .text {
  font-weight: 600;
@@ -47,13 +70,13 @@ dt {
  align-items: center;
  height: 40px;
  width: 130px;
- // background-color: white;
  position: absolute;
  left: 0;
  justify-content: flex-end;
+ border:0px solid;
 }
 
-.percent{left:165px; padding-top:13px; position:absolute; font-weight: bold; font-size: 120%; text-shadow: 2px 2px 2px #000; z-index: 1;}
+.percent{left:165px; padding-top:13px; position:absolute; font-weight: bold; font-size: 120%; border: 0px solid red;}
 
 .percentage {
  font-size: .8em;
@@ -73,25 +96,28 @@ dt {
  &:after {
    content: "";
    display: block;
-   background-color: rgba(221, 215, 215, 0.3);
-   width: 50px;
+   background-color: rgba(78, 74, 74, 0.3);
+   width: 1px;
    margin-bottom: 10px;
    border-radius: 5px;
-   height: 90%;
+   height: 70%;
    position: relative;
    top: 50%;
    transform: translateY(-50%);
    // transition: transform 550ms ease-in-out;
    cursor: pointer;
-   animation: slide 3s forwards;
-   animation-direction: reverse;
-   animation-iteration-count: 1;
+  //  animation: slide 2s reverse;
+  //  animation-direction: reverse;
+   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.1), 0 0 0 1px inset;
  }
  &:hover,
  &:focus {
    &:after {
       background-color: rgba(12, 12, 12, 0.5); 
-      transition: transform 550ms ease-in-out;
+      // transition: transform 550ms ease-in-out;
+      animation: slide 1s reverse;
+      animation-direction: reverse;
+      // animation-delay: 1s;
    }
  }
 }
@@ -105,3 +131,85 @@ dt {
  }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+#secondMenu {
+	position: fixed;
+	z-index:2;
+  border:0px solid purple !important;
+  border-radius: 12px;
+	padding:0 0 0 0;
+	// transform: translateX(-250px);
+	// transition: transform 250ms ease-in-out;
+  // background:transparent;
+  // overflow:hidden;
+  // border:2px solid purple;
+  background-color: rgba(0, 0, 0, 1);
+  width:100%;
+  max-width: 60vw;
+  margin:0 auto;
+  display:flex;
+  place-self:center; place-content:center; align-content:center; align-items:center; justify-content:center; 
+
+  // opacity:.6;
+
+  top:100px;
+  left:25%;
+  right:25%;
+  // .sidebarMenuInner{	border-radius: 0 12px 12px 0 !important;}
+}
+
+
+
+
+
+  
+
+
+@keyframes fade {
+  0%{
+    opacity: 0;
+ }
+ 99% {
+    opacity: 0.9;
+ }
+ 100% {
+    opacity:1;
+ }
+}
+
+@keyframes fadeout {
+  0%{
+    opacity: 1;
+ }
+ 100% {
+    opacity:0;
+ }
+}
+
+
+@keyframes move {
+  0% {
+    opacity: 1;
+    z-index: -3;    
+    /* transform: scale(1.0);
+    transform-origin: 50% 0%; */
+  }
+  
+
+  100% {
+/* transform-origin: top -80%;
+    transform: scale(0); */
+    opacity: 0;
+    z-index: -3;
+  }
+}
