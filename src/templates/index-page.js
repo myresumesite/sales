@@ -742,14 +742,26 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>
+
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
+
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+
+
+ {/* <div style={{display:'grid', placeContent:'center'}}>
+ <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
+ </div> */}
 
 {openQuote ? (
             
-            <div style={{display:'grid', placeContent:'center'}}><blockquote style={{fontFamily:'', minWidth:'300px', textAlign:'left', borderRadius: '12px', fontSize:'clamp(1rem, 1.8vw, 2.8rem)', }}><div style={{padding:'2rem 10% 0px', }}>{openQuote}</div>
-        {/* <div className="logofirst" style={{textAlign:'right', margin:'2rem 30% 0px 0px'}}>- Todd Lambert</div> */}
-        </blockquote></div>
+            
+              <div
+            style={{display:'grid', placeContent:'center'}}
+              className="description"
+              dangerouslySetInnerHTML={{ __html: openQuote }}
+            />
+    
+      
 
           ) : (
             ""
