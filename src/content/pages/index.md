@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline:  An artist, photographer, designer and developer; Todd imagines things & makes them come to life.
+tagline:  A tagline or short sentence description 
 featuredImage: /assets/challenger.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: 
@@ -10,6 +10,7 @@ audiotitle: "The Cure - The Forest"
 secondaryImage: /assets/default-user.webp
 underlayImage: /assets/IMG_1019.webp
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
+ <br /><br /> Another descriptive paragraph highlighting what your page is about.
 addressText: Any Town, USA
 portfolio:
   openText: ""
