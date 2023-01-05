@@ -25,7 +25,7 @@
     "menu4": "Skills",
     "showPosts": true,
     "title": "Your Name",
-    "showfooter": false,
+    "showfooter": true,
     "showFeature": true,
     "showCover": false,
     "image": "/assets/transparent.png",

@@ -443,7 +443,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           ) : (
 
    
-            <StaticImage src="../../static/assets/default-og-image.jpg" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
+            <StaticImage src="../../static/assets/default-background.webp" alt="Twilightscapes Default Image" style={{height:'auto', maxHeight:'100vh', position:'absolute', zIndex:'0', top:'0',border:'0px solid !important', objectFit:'contain',}} />
   
           )}
 

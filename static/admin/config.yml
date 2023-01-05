@@ -305,7 +305,7 @@ collections:
                 label: Default Image
                 hint: "This image is used for social/search previews of the site and its posts"
                 required: true
-                default: "/assets/default-og-image.jpg"
+                default: "/assets/default-background.webp"
 
               - widget: image
                 name: iconimage
