@@ -11,7 +11,7 @@ secondaryImage: /assets/default-user.webp
 underlayImage: /assets/IMG_1019.webp
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
-addressText: Any Town, USA
+addressText: Anywhere, World
 portfolio:
   openText: ""
   closeText: With great power, comes great responsibility
