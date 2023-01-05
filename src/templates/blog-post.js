@@ -217,7 +217,7 @@ const ShowDates = frontmatter.showdate
     
               {/* <div style={{position:'relative', maxWidth:'', margin:'0 0', zIndex:'0', display:'flex', justifyContent:'center', background:'transparent !important', minHeight:'', border:'2px solid red !important'}}> */}
 
-              {/* <object className="" id="vidsock-logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
+              {/* <object className="" id="logo" data={iconimage} type="image/svg+xml" style={{ overflow:'hidden', border:'0px solid red', zIndex:'0', width:'30vw', maxWidth:'', height:'auto', background:'transparent'  }} alt="animated content" title="animated content" >You need a new browser</object> */}
 
 
       {/* <img className="homepage-bg1" src={iconimage} width="" height="" alt="MyResume" style={{ width:'', height:'', maxHeight:'45vh',  background:'transparent !important',}} /> */}

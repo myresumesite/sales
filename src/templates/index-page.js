@@ -12,14 +12,14 @@ import { Footer } from "../components/footer"
 // import { FaRegPlusSquare } from 'react-icons/fa'
 // import SignUp from "../components/install-discount"
 // import Theme from "../components/theme"
-
+// import Tips from "../components/tippanel"
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
 import { ImPlay } from "react-icons/im"
-
+// import GoBack from "../components/goBack"
 import styled from "styled-components"
 import { Social } from "../components/social"
 // import Skills from "../templates/skills-page"
@@ -741,7 +741,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'100vh', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'600px', margin:'5vh 0', border:'0px solid red'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'5vh 0', border:'0px solid red'}}>
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
 
@@ -752,22 +752,37 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
  <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
  </div> */}
 
-{openQuote ? (
-            
-            
+
+
+
+        {openQuote ? (
               <div
             style={{display:'grid', placeContent:'center'}}
-              className="description"
+              className="featured"
               dangerouslySetInnerHTML={{ __html: openQuote }}
             />
-    
-      
-
           ) : (
             ""
           )}
 
-<div className="introspacer" style={{border:'0px solid', width:''}}></div>
+<div className="introspacer" style={{border:'0px solid', width:''}} />
+
+{/* <div style={{display:'grid', placeContent:'center'}} className="featured">
+<iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
+</div>
+
+            <div style={{display:'grid', placeContent:'center'}}
+              className="featured"
+            >
+              <iframe title="iFrame" className="" width="350" height="350" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+            </div>
+
+
+            <div style={{display:'grid', placeContent:'center'}}
+              className="featured"
+            >
+              <iframe title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+            </div> */}
 
 
 
@@ -863,8 +878,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show Skills */}
 
 
-
-
+{/* <section className="outer section section--gradient" >
+  <div className="container" style={{padding: '1rem', maxWidth:'1024px', justifyContent:'center'}}>
+    <Tips />
+  </div>
+</section> */}
 
  </div>{/* end scooch */}
 

@@ -13,7 +13,7 @@ profText: Descriptive paragraph describing your talents and hightlighting your s
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
 addressText: Any Town, USA
 portfolio:
-  openText:  <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
+  openText: ""
   closeText: With great power, comes great responsibility
 youtubeautostart: "1"
 addressText2: ""
