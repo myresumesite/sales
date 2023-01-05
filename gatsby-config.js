@@ -230,7 +230,7 @@ module.exports = {
         lang: `en`,
         theme_color: `#222`,
         display: `standalone`,
- icon: `static/assets/logo.svg`, // This path is relative to the root of the site.
+ icon: `static/assets/icon.png`, // This path is relative to the root of the site.
  icon_options: {
   purpose: `any maskable`,
 },

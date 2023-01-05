@@ -18,7 +18,7 @@ MyResume is built to OPERATE FOR FREE using FREE Cloud Based Services
 - User-installable PWA (Progressive Web Apps)
 - Responsive Web Design
 - Dark / Light Mode
-- Customize Resume, Profile, Cover Letter, Skils, Interview Notes and Contact page.
+- Customize Resume, Profile, Cover Letter, Skills, Interview Notes and Contact page.
 - Add / Modify / Delete posts - no limitations.
 - Edit website settings, Add Google Analytics, seo settings, logos, etc all from  within the CMS.
 - SEO Optimized (Scores 100 on PageSpeed)
