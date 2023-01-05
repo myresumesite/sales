@@ -268,7 +268,7 @@ body::after{
   ""
 )}
 
-<header id="top" className="print" name="pagetop" style={{}} >
+<header className="print" style={{}} >
 
 
 
