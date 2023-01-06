@@ -17,7 +17,7 @@ portfolio:
   closeText: With great power, comes great responsibility
 youtubeautostart: "1"
 addressText2: "You own it forever - it runs for free, forever"
-skillsTitle: "Mad Skills Yo!"
+skillsTitle: ""
 skillsText: <dl>
   <dt>
   <h2>Overall Skills</h2><div>100%</div>
@@ -43,13 +43,13 @@ cta:
   ctaText: Order Now
   ctaLink: ""
 svgImage: /assets/transparent.png
-title: My Name Resume
+title: MyResume®
 youtubeend: "90"
 sharethis: 
 youtubecontrols: "0"
 template: index-page
 youtubemute: "1"
-description: MyResume - Next-Gen Resume Platform
+description: MyResume® - Next-Gen Resume Platform
 svgzindex: ""
 profTitle: Your Resume Online, Forever...<br /><span style="font-size:90%">Never worry about your resume again.</span>
 coverletter:
