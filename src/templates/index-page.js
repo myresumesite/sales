@@ -811,15 +811,15 @@ Web Apps = NO Apple or Google
 
 <div className="introspacer" style={{border:'0px solid', width:''}} />
 
-<div style={{display:'grid', placeContent:'center'}} className="">
+{/* <div style={{display:'grid', placeContent:'center'}} className="">
 <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
-</div>
+</div> */}
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'0', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'10px 10px 0 0'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
 
@@ -828,7 +828,7 @@ Web Apps = NO Apple or Google
               className="featured">
               <iframe  title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
-              <div style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'0', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'10px 10px 0 0'}}>Simple profile or business calling card</div>
+              <div style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
 
