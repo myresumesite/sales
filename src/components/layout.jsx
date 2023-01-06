@@ -197,7 +197,7 @@ body::after{
 
 
 
-          {showInfo ? (
+          {/* {showInfo ? (
             <li className="no-app" style={{position:'relative',}}>
               <AnchorLink aria-label="Menu 1" className="navbar-item" to="/#info" style={{paddingRight:'',}}>
               {menu1}
@@ -205,7 +205,7 @@ body::after{
               </li>
 ) : (
   ""
-)}
+)} */}
       
 
 
@@ -252,6 +252,16 @@ body::after{
               ) : (
   ""
 )}
+
+
+<li className="" order="5" style={{display:'',}}>
+ <Link to="/#support"  className="navbar-item" style={{}}>Features</Link>
+ </li>
+
+
+ <li className="" order="5" style={{display:'',}}>
+ <Link state={{modal: true}} to="/contact"  className="navbar-item" style={{}}>Get Started</Link>
+ </li>
 
 
 <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>

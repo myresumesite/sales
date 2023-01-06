@@ -684,7 +684,16 @@ Web Apps = NO Apple or Google
 
 
   
-  <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
+  <div className="nameblock"  style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+  color:'#fff',
+  border:'0px solid red', 
+  maxWidth:'80%', paddingTop:'', 
+  fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
+  background:'rgba(0,0,0,0.50)',
+  backdropFilter:'blur(8px)',
+  borderRadius:'10px',
+  textShadow:'0 2px 7px #000',
+  }} >
 <span style={{color:'', fontSize:'160%'}}>
   {/* {companyname} */}
   Let's Get Started
@@ -711,8 +720,8 @@ Web Apps = NO Apple or Google
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
-            <button className="neonText" style={{color:'#fff', fontSize:'160%', border:'1px solid', margin:'0 auto', borderRadius:'8px', maxWidth:'300px', padding:'0 2rem'}}>
-            <Link state={{modal: true}} to="/contact" className=" print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link></button>
+            
+            <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'350px', padding:'1rem 2rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -816,19 +825,29 @@ Web Apps = NO Apple or Google
 </div> */}
 
             <div style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize">
-              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              className="featured mobilesize1">
+              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize1" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
+
+            <div style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize">
+              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Same site - mobile version</div>
+            </div>
+
+
+
 
 
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured">
-              <iframe  title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
-              <div style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
 
@@ -941,7 +960,7 @@ Web Apps = NO Apple or Google
 {/* end show Skills */}
 
 
-<section className="outer section section--gradient" >
+<section id="support" className="outer section section--gradient" >
   <div className="container" style={{padding: '1rem', maxWidth:'1024px', justifyContent:'center'}}>
     <Tips />
   </div>

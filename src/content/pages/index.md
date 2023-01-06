@@ -40,7 +40,7 @@ skillsText: <dl>
   </dl>
   <dl>
 cta:
-  ctaText: Order Now
+  ctaText: Start Yours Now
   ctaLink: ""
 svgImage: /assets/transparent.png
 title: MyResume®
