@@ -12,7 +12,7 @@ import { Footer } from "../components/footer"
 // import { FaRegPlusSquare } from 'react-icons/fa'
 // import SignUp from "../components/install-discount"
 // import Theme from "../components/theme"
-// import Tips from "../components/tippanel"
+import Tips from "../components/tippanel"
 import { IoShareOutline } from 'react-icons/io5'
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
@@ -495,6 +495,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+
+
+
+
+
+
 {/* show Info */}
 
 {showInfo ? (
@@ -564,21 +570,41 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
-              <h1 className="title1">{frontmatter.profTitle}</h1>
+              <h1 className="title1" dangerouslySetInnerHTML={{ __html: frontmatter.profTitle }} />
             <h2 className="tagline1">
               {frontmatter.tagline}
             </h2>
   
-            <div
+            {/* <div
             style={{}}
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
-            />
-            </div>
+            /> */}
+     <div style={{textAlign:'center'}}>       
+    <h3>Progressive Website Apps with customizable resume and integrated contact forms that send to your email.</h3>
+<br />
+<ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 0 0 5vw', width:'auto', border:'0px solid red'}}>
+<li>Works on all devices - responsive design</li>
+
+<li>Conforms 100% to Google and Web Standards</li>
+
+<li>Runs anywhere and even works offline</li>
+</ul>
+</div>
+<br />
 
 
-            
-  
+{/* 
+<h2 className="title1 txtshadow-header"> Launch Yours Today</h2>
+ <br />
+ Ready To Go = Be Up In Minutes<br />
+Cloud Hosting = Free Forever<br />
+Web Apps = NO Apple or Google
+<br />
+<span  className="neonText2">User Install Apps = NO Fees</span> */}
+
+ </div>
+
             )}
         
 
@@ -632,6 +658,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   ""
 )}
 
+
 {showSocial ? (
            <Social />
           ) : (
@@ -658,7 +685,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
   
   <div className="nameblock" style={{margin:'0 auto 0 auto', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center', border:'0px solid red', maxWidth:'80%', paddingTop:'1rem', fontSize:'clamp(1rem, 1.4vw, 3.2rem)'}} >
-<span style={{color:'', fontSize:'160%'}}>{companyname}</span>
+<span style={{color:'', fontSize:'160%'}}>
+  {/* {companyname} */}
+  Let's Get Started
+</span>
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
@@ -666,7 +696,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {CtaLink ? (
            <a
    href={frontmatter.cta.ctaLink}
-   className="button print"
+   className=" print"
    target="_blank"
    rel="noreferrer"
     style={{
@@ -681,7 +711,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
-            <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <button className="neonText" style={{color:'#fff', fontSize:'160%', border:'1px solid', margin:'0 auto', borderRadius:'8px', maxWidth:'300px', padding:'0 2rem'}}>
+            <Link state={{modal: true}} to="/contact" className=" print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'300px', padding:'1rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link></button>
           )}
 
 
@@ -713,6 +744,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
             <Iframer3 />
             
           )}
+
+
+
+<br /><br />
+<span style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
+<br />
+
+
 <br />
 </div> // end nameblock
 
@@ -736,6 +775,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+
+
+
+
+
 {/* end show Posts */}
 {showPosts ? (
 <section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
@@ -743,7 +787,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'0 0', border:'0px solid red'}}>
 
- <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'',}}>
+ <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
@@ -767,22 +811,25 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div className="introspacer" style={{border:'0px solid', width:''}} />
 
-{/* <div style={{display:'grid', placeContent:'center'}} className="featured">
+<div style={{display:'grid', placeContent:'center'}} className="">
 <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
 </div>
 
             <div style={{display:'grid', placeContent:'center'}}
-              className="featured"
-            >
-              <iframe title="iFrame" className="" width="350" height="350" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              className="featured mobilesize">
+              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'0', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'10px 10px 0 0'}}>Simple profile or business calling card</div>
             </div>
 
 
+
             <div style={{display:'grid', placeContent:'center'}}
-              className="featured"
-            >
-              <iframe title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
-            </div> */}
+              className="featured">
+              <iframe  title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+
+              <div style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'0', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222', borderRadius:'10px 10px 0 0'}}>Simple profile or business calling card</div>
+            </div>
 
 
 
@@ -813,6 +860,22 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     ""
   )}
 {/* end show Posts */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {/*  show Resume */}
 {showResume ? (
@@ -878,11 +941,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show Skills */}
 
 
-{/* <section className="outer section section--gradient" >
+<section className="outer section section--gradient" >
   <div className="container" style={{padding: '1rem', maxWidth:'1024px', justifyContent:'center'}}>
     <Tips />
   </div>
-</section> */}
+</section>
 
  </div>{/* end scooch */}
 

@@ -1,22 +1,22 @@
 ---
 slug: /
-tagline:  A tagline or short sentence description 
-featuredImage: /assets/challenger.webp
+tagline:  Cost FREE Multimedia Resume/Portolio Websites
+featuredImage: 
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: 
 audiostart: "1"
 audioend: "5000"
 audiotitle: "The Cure - The Forest"
-secondaryImage: /assets/default-user.webp
+secondaryImage: /assets/logo.webp
 underlayImage: /assets/IMG_1019.webp
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
-addressText: Anywhere, World
+addressText: Only $99 single pay (NO Recurring Fees)
 portfolio:
   openText: ""
   closeText: With great power, comes great responsibility
 youtubeautostart: "1"
-addressText2: ""
+addressText2: "You own it forever - it runs for free, forever"
 skillsTitle: "Mad Skills Yo!"
 skillsText: <dl>
   <dt>
@@ -40,7 +40,7 @@ skillsText: <dl>
   </dl>
   <dl>
 cta:
-  ctaText: Contact Me
+  ctaText: Order Now
   ctaLink: ""
 svgImage: /assets/transparent.png
 title: My Name Resume
@@ -51,7 +51,7 @@ template: index-page
 youtubemute: "1"
 description: MyResume - Next-Gen Resume Platform
 svgzindex: ""
-profTitle: Your Intro / Job Title
+profTitle: Your Resume Online, Forever...<br /><span style="font-size:90%">Never worry about your resume again.</span>
 coverletter:
   coverText: About or Cover Page
   coverLink: ""
