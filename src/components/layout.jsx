@@ -255,12 +255,16 @@ body::after{
 
 
 <li className="" order="5" style={{display:'',}}>
- <Link to="/#support"  className="navbar-item" style={{}}>Features</Link>
+ <AnchorLink to="/#support"  className="navbar-item" style={{}}>Features</AnchorLink>
  </li>
 
 
  <li className="" order="5" style={{display:'',}}>
  <Link state={{modal: true}} to="/contact"  className="navbar-item" style={{}}>Get Started</Link>
+ </li>
+
+ <li className="" order="5" style={{display:'',}}>
+ <AnchorLink state={{modal: true}} to="/skills"  className="navbar-item" style={{}}>Support</AnchorLink>
  </li>
 
 
