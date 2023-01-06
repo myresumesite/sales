@@ -8,7 +8,7 @@ audiostart: "1"
 audioend: "5000"
 audiotitle: "The Cure - The Forest"
 secondaryImage: /assets/logo.webp
-underlayImage: /assets/IMG_1019.webp
+underlayImage: 
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
 addressText: Only $99 single pay (NO Recurring Fees)
