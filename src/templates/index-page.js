@@ -510,7 +510,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <section className="vertical" id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
-  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'0', zIndex:'-1',}}>
+  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'-10vh', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
