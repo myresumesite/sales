@@ -714,7 +714,7 @@ Web Apps = NO Apple or Google
   Let's Get Started
 </span>
 <br />
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>From Zero to Website (in less than 5 minutes)</span>
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>Zero to Live Website (in 5 minutes)</span>
 <span className="" style={{color:'#fff', fontSize:'inherit'}}>
 {frontmatter.addressText }</span>
 
