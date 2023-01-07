@@ -18,7 +18,7 @@ import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import ReactPlayer from 'react-player/lazy'
-import { ImPlay } from "react-icons/im"
+import { ImPlay, ImMobile2, ImDisplay } from "react-icons/im"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
 import { Social } from "../components/social"
@@ -220,12 +220,6 @@ const HomePage = ({ data }) => {
     // if (!docRef) { return }
 
     
-    // const handleShow={
-    //   width:'20%',
-    //   height:'200px',
-    //   }
-
-
 
 
 
@@ -238,6 +232,8 @@ const HomePage = ({ data }) => {
       document.getElementById("iframe1").style.width = 'inherit'
       document.getElementById("iframe2").style.width = 'inherit'
     }
+
+    // getElementsByClassName
     
     // const { siteColor } = useSiteMetadata()
 
@@ -932,6 +928,22 @@ Web Apps = NO Apple or Google
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'0 0', border:'0px solid red'}}>
 
+{/* <div style={{position:'absolute', top:'30vh', zIndex:'1', display:'grid', placeSelf:'center', border:'1px solid red', display:'flex', flexDirection:'column', justifyContent:'center', padding:'2rem'}}>
+  <button onClick={resizeMobile}>Mobile Size</button><button onClick={resizeDesk}>Desktop Size</button>
+</div> */}
+{/* 
+transform: 'rotate(90deg)'
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',
+ */}
+
+{/* <Link className="post-card11" state={{modal: true}} to="/getstarted" title="View Todd's Legacy Work" style={{position:'absolute', left:'0', top:'50vh', zIndex:'1', width:'50px', background:'rgba(0, 0, 0, .9)', height:'30vh', display:'flex', flexDirection:'column', justifyContent:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', margin:'8px 0'}}> */}
+  <div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'30vh', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
+{/* </Link> */}
+
+
+
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -956,6 +968,8 @@ Web Apps = NO Apple or Google
 
 <div className="introspacer" style={{border:'0px solid', width:''}} />
 
+
+
 {/* <div style={{display:'grid', placeContent:'center'}} className="">
 <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
 </div> */}
@@ -964,7 +978,7 @@ Web Apps = NO Apple or Google
               className="featured mobilesize1">
               <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card <button onClick={resizeMobile}>Mobile</button><button onClick={resizeDesk}>Desktop</button></div>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
 
             {/* <div id="deighleen" style={{display:'grid', placeContent:'center'}}
@@ -983,7 +997,7 @@ Web Apps = NO Apple or Google
               className="featured">
               <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card <button onClick={resizeMobile}>Mobile</button><button onClick={resizeDesk}>Desktop</button></div>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
 
 
