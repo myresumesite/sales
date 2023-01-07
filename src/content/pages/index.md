@@ -11,7 +11,7 @@ secondaryImage: /assets/logo.webp
 underlayImage: 
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
-addressText: One-time payment (NO Recurring)
+addressText: One-time cost (NO Recurring Fees!)
 portfolio:
   openText: ""
   closeText: With great power, comes great responsibility

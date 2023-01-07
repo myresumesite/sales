@@ -583,7 +583,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               dangerouslySetInnerHTML={{ __html: ProfText }}
             /> */}
      <div style={{textAlign:''}}>       
-    <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages. Integrated contact forms send directly to your email. <br /><br /> They have been designed to permanently use free, cloud based, server-less technologies. That means they operate for FREE.</h3>
+    <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</h3>
+    <br />
+    <h3 style={{padding:'0 1rem'}}>They have been uniquely designed to permanently use free, cloud based, server-less technologies.</h3>
+   
+    <h3 style={{padding:'0 1rem', textAlign:'center'}}>That means they operate for <u>FREE.</u></h3>
 <br />
 <ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
 <li>Works on all devices - responsive design</li>
