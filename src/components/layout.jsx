@@ -217,15 +217,7 @@ body::after{
  </li> */}
 
 
-      {showPosts ? (
-            <li className="" style={{position:'relative',}}>
-            <AnchorLink ariaLabel="Menu 2" className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
-            {menu2}
-            </AnchorLink>
-            </li>
-            ) : (
-  ""
-)}
+
 
        
 {showResume ? (
@@ -257,6 +249,17 @@ body::after{
 <li className="" order="5" style={{display:'',}}>
  <AnchorLink to="/#support"  className="navbar-item" style={{}}>Features</AnchorLink>
  </li>
+
+
+ {showPosts ? (
+            <li className="" style={{position:'relative',}}>
+            <AnchorLink ariaLabel="Menu 2" className="navbar-item" to="/#posts" style={{paddingRight:'',}}>
+            {menu2}
+            </AnchorLink>
+            </li>
+            ) : (
+  ""
+)}
 
 
  <li className="" order="5" style={{display:'',}}>
