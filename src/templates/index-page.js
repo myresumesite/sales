@@ -594,7 +594,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <li>100% accessibility and privacy standards</li>
 
-<li>Run anywhere and even works offline</li>
+<li>Run anywhere and even work offline</li>
 
 <li>Score 100 on Google Page Speed</li>
 </ul>
@@ -715,10 +715,10 @@ Web Apps = NO Apple or Google
 </span>
 <br />
 <span className="" style={{color:'#fff', fontSize:'inherit'}}>From Zero to Website (in less than 5 minutes)</span>
-{/* <span className="" style={{color:'#fff', fontSize:'inherit'}}>
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>
 {frontmatter.addressText }</span>
-<br />
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span> */}
+
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
 <br /><br />
 {CtaLink ? (
            <a
