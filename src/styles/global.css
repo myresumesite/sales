@@ -169,31 +169,25 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 .featured iframe {
 	border: 0px solid red !important;
 	aspect-ratio: 16 / 9 !important;
-	/* width: 100% ; */
-	/* margin: 0 0 2rem 0; */
 	height: 70vh !important;
 	position:relative;
 	overflow: hidden;
 }
 
-.featured::before{
+/* .featured::before{
 	content: ' Live View ';
 	position: absolute;
 	z-index: 1;
 	display: block;
 	width: auto;
-	/* margin: 0 -50px; */
 	width: 70%;
 	height:90%;
-	/* aspect-ratio: 16 / 9 !important; */
-	/* padding: 10% 20%; */
 	display: grid;
 	place-self: center;
 	justify-content: center;
 	align-content: center;
 	border: 3px solid rgb(0, 0, 0);
 	border-radius: 10px;
-	/* border-radius: 12px; */
 	background: rgba(0,0,0,.4);
 	backdrop-filter: blur(10px);
 	font-size: clamp(2.5rem, 5vw, 5rem);
@@ -205,9 +199,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 
 .featured:hover::before{
 animation: move 3.2s forwards; 
-/* border:0px solid blue !important;
-z-index: 0 !important; */
-}
+} */
 
 .featured.mobilesize iframe, .featured.mobilesize::before, .featured.mobilesize .sitelabel {width:400px !important;}
 
