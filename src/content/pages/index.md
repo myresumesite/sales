@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline:  Cost FREE Multimedia Resume/Portolio Websites
+tagline:  Cost FREE Resume/Portolio Website Apps
 featuredImage: 
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: 
@@ -11,12 +11,12 @@ secondaryImage: /assets/logo.webp
 underlayImage: 
 profText: Descriptive paragraph describing your talents and hightlighting your skills and overall experience in the field.
  <br /><br /> Another descriptive paragraph highlighting what your page is about.
-addressText: Only $99 single pay (NO Recurring Fees)
+addressText: One-time payment (NO Recurring)
 portfolio:
   openText: ""
   closeText: With great power, comes great responsibility
 youtubeautostart: "1"
-addressText2: "You own it forever - it runs for free, forever"
+addressText2: "You own it - it runs for FREE, forever"
 skillsTitle: ""
 skillsText: <dl>
   <dt>

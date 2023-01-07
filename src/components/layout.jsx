@@ -260,7 +260,7 @@ body::after{
 
 
  <li className="" order="5" style={{display:'',}}>
- <Link state={{modal: true}} to="/#deighleen"  className="navbar-item" style={{}}>Get Started</Link>
+ <Link state={{modal: true}} to="/getstarted"  className="navbar-item" style={{}}>Get Started</Link>
  </li>
 
  {/* <li className="" order="5" style={{display:'',}}>

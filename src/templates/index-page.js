@@ -573,7 +573,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
               <h1 className="title1" dangerouslySetInnerHTML={{ __html: frontmatter.profTitle }} />
-            <h2 className="tagline1">
+            <h2 className="tagline1" style={{fontWeight:'bold'}}>
               {frontmatter.tagline}
             </h2>
   
@@ -582,19 +582,21 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
             /> */}
-     <div style={{textAlign:'center'}}>       
-    <h3>Progressive Website Apps with customizable resume and integrated contact forms that send to your email.</h3>
+     <div style={{textAlign:''}}>       
+    <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages. Integrated contact forms send directly to your email. <br /><br /> They have been designed to permanently use free, cloud based, server-less technologies. That means they operate for FREE.</h3>
 <br />
-<ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 0 0 5vw', width:'auto', border:'0px solid red'}}>
+<ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
 <li>Works on all devices - responsive design</li>
 
-<li>Conforms 100% to Google and Web Standards</li>
+<li>100% accessibility and privacy standards</li>
 
 <li>Runs anywhere and even works offline</li>
+
+<li>Scores 100 on Google Page Speed</li>
 </ul>
 
-<br /><br />
-<Link to="/about" className="button print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'none', maxWidth:'600px', padding:'1rem 2rem'}}>Somewhere Special</Link>
+{/* <br /><br />
+<Link to="/about" className="button print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'none', maxWidth:'600px', padding:'1rem 2rem'}}>Somewhere Special</Link> */}
 
 </div>
 <br />
@@ -705,6 +707,7 @@ Web Apps = NO Apple or Google
   {/* {companyname} */}
   Let's Get Started
 </span>
+<br />
 {frontmatter.addressText}
 <br />
 {frontmatter.addressText2}
@@ -728,7 +731,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/getstarted" className="button print" style={{color:'#fff', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -968,7 +971,7 @@ Web Apps = NO Apple or Google
 
 
 <section id="support" className="outer section section--gradient" >
-  <div className="container" style={{padding: '1rem', maxWidth:'1024px', justifyContent:'center'}}>
+  <div className="container" style={{padding: '0 8%', maxWidth:'', justifyContent:'center', margin:'10vh 0'}}>
     <Tips />
   </div>
 </section>
