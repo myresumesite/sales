@@ -51,7 +51,7 @@ template: index-page
 youtubemute: "1"
 description: MyResume® - Next-Gen Resume Platform
 svgzindex: ""
-profTitle: Your Resume Online, Forever...<br /><span style="font-size:90%">Never worry about your resume again.</span>
+profTitle: Your Resume, Online, Forever...<br /><span style="font-size:70%">Never worry about your resume again.</span>
 coverletter:
   coverText: About or Cover Page
   coverLink: ""

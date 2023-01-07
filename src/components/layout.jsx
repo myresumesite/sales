@@ -260,12 +260,12 @@ body::after{
 
 
  <li className="" order="5" style={{display:'',}}>
- <Link state={{modal: true}} to="/contact"  className="navbar-item" style={{}}>Get Started</Link>
+ <Link state={{modal: true}} to="/#deighleen"  className="navbar-item" style={{}}>Get Started</Link>
  </li>
 
- <li className="" order="5" style={{display:'',}}>
- <AnchorLink state={{modal: true}} to="/skills"  className="navbar-item" style={{}}>Support</AnchorLink>
- </li>
+ {/* <li className="" order="5" style={{display:'',}}>
+ <AnchorLink to="/thanks"  className="navbar-item" style={{}}>Features</AnchorLink>
+ </li> */}
 
 
 <li className="carto crypto" style={{border:'none', display:'flex', justifyContent:'space-around', verticalAlign:'center', padding:'5px 0 0 0' , background:'rgba(0,0,0,0)' }}>

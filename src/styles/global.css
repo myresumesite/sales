@@ -952,7 +952,8 @@ p {
 .button {
 	display: inline-flex;
 	align-items: center;
-	padding: 1vw 2vw;
+	/* padding: 1.4vw 2vw; */
+	padding: 1rem 2rem;
 	border-radius: 12px;
 	text-decoration: none;
 	appearance: none;
@@ -961,7 +962,7 @@ p {
 	line-height: 1;
 	color: #fff !important;
 	background: linear-gradient(180deg, rgb(58, 67, 71) 80%, rgb(146, 181, 192) 130%);
- ;
+	font-size: clamp(1.2rem, 1.6vw, 2.5rem);
 }
 
 .button:hover {
@@ -1421,7 +1422,7 @@ body.homepage .mobilespace {
   .container21{display: flex; flex-direction: column;}
   #feature{order:2 !important;}
   #info{order:1 !important; }
-  .nameblock{margin-top:50px !important;}
+  /* .nameblock{margin-top:50px !important;} */
   .container21 section{min-height: inherit !important;}
 }
 
@@ -3143,7 +3144,7 @@ article img {
  	/* scroll-snap-type:none !important; */
 }
 
-.allin60panel::before{
+/* .allin60panel::before{
 	content: '  ';
 	position: absolute;
 	z-index: 1;
@@ -3156,7 +3157,7 @@ article img {
 .allin60panel:hover::before{
 animation: move 2.2s forwards; 
 animation-delay: .5s;
-}
+} */
 	
 }
 /* iOS ONLY browsers */

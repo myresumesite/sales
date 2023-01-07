@@ -524,6 +524,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
           ) : (
             ""
           )}
+
+<StaticImage placeholder="blurred" loading="eager" className="mcboaty print" src="../../static/assets/underlay.webp" alt="Default Image" style={{width:'100vw', height:'auto', maxHeight:'100vh', position:'', zIndex:'0', bottom:'0', border:'0px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} />
        
 </div>
 
@@ -536,7 +538,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   ""
 )} */}
              
-             <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 4%',
+             <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
   padding:'2% 4% 0 4%',
   // textShadow:'0 2px 3px #000',
   //  background:'rgba(0,0,0,0.70)',
@@ -550,7 +552,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {UnderlayImage ? (
   // custom image in effect //
 
-  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'1rem 2rem 0 2rem', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
+  <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
   background:'rgba(0,0,0,0.50)', 
   backdropFilter:'blur(12px)',
   borderRadius:'10px'}}>
@@ -590,6 +592,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <li>Runs anywhere and even works offline</li>
 </ul>
+
+<br /><br />
+<Link to="/about" className="button print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'none', maxWidth:'600px', padding:'1rem 2rem'}}>Somewhere Special</Link>
+
 </div>
 <br />
 
@@ -627,6 +633,7 @@ Web Apps = NO Apple or Google
           ) : (
             ""
           )}
+
 
 
 
@@ -684,7 +691,7 @@ Web Apps = NO Apple or Google
 
 
   
-  <div className="nameblock"  style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+  <div className="nameblock"  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
   border:'0px solid red', 
   maxWidth:'80%', paddingTop:'', 
@@ -693,7 +700,7 @@ Web Apps = NO Apple or Google
   backdropFilter:'blur(8px)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
-  }} >
+  }} ><br />
 <span style={{color:'', fontSize:'160%'}}>
   {/* {companyname} */}
   Let's Get Started
@@ -721,7 +728,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', fontSize:'clamp(1.2rem, 1.5vw, 3.4rem)', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'350px', padding:'1rem 2rem', display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link state={{modal: true}} to="/contact" className="button print" style={{color:'#fff', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -831,7 +838,7 @@ Web Apps = NO Apple or Google
               <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
-            <div style={{display:'grid', placeContent:'center'}}
+            <div id="deighleen" style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
