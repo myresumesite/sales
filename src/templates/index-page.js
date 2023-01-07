@@ -585,7 +585,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
      <div style={{textAlign:''}}>       
     <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</h3>
     <br />
-    <h3 style={{padding:'0 1rem'}}>They have been uniquely designed to permanently use free, cloud based, server-less technologies.</h3>
+    <h3 style={{padding:'0 1rem'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</h3>
    
     <h3 style={{padding:'0 1rem', textAlign:'center'}}>That means they operate for <u>FREE.</u></h3>
 <br />
@@ -735,7 +735,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link to="/getstarted" className="button print" style={{color:'#fff', border:'0px solid', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/getstarted" className="button print" style={{color:'#fff', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
