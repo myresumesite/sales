@@ -652,7 +652,7 @@ Web Apps = NO Apple or Google
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
   background:'rgba(0,0,0,0.50)',
-  backdropFilter:'blur(8px)',
+  // backdropFilter:'blur(8px)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} >
@@ -699,11 +699,12 @@ Web Apps = NO Apple or Google
   
   <div className="nameblock"  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
-  border:'0px solid red', 
+  border:'1px solid #555', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  background:'rgba(0,0,0,0.50)',
-  backdropFilter:'blur(8px)',
+  // background:'rgba(0,0,0,0.50)',
+  // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
+  backdropFilter:'blur(0)',
   borderRadius:'10px',
   textShadow:'0 2px 7px #000',
   }} ><br />
@@ -842,14 +843,14 @@ Web Apps = NO Apple or Google
               className="featured mobilesize1">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize1" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
             <div id="deighleen" style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Same site - mobile version</div>
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Same site - mobile version</div>
             </div>
 
 
@@ -861,7 +862,7 @@ Web Apps = NO Apple or Google
               className="featured">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', background:'#222', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
 
@@ -975,7 +976,7 @@ Web Apps = NO Apple or Google
 
 
 <section id="support" className="outer section section--gradient" >
-  <div className="container" style={{padding: '0 8%', maxWidth:'', justifyContent:'center', margin:'10vh 0'}}>
+  <div className="container" style={{padding: '0 8%', maxWidth:'', justifyContent:'center', margin:'10vh 0', color:'#fff'}}>
     <Tips />
   </div>
 </section>

@@ -169,10 +169,11 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 .featured iframe {
 	border: 0px solid red !important;
 	aspect-ratio: 16 / 9 !important;
-	width: 100% ;
+	/* width: 100% ; */
 	/* margin: 0 0 2rem 0; */
 	height: 70vh !important;
 	position:relative;
+	overflow: hidden;
 }
 
 .featured::before{
@@ -180,16 +181,18 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	position: absolute;
 	z-index: 1;
 	display: block;
-	width: inherit;
-	/* width: 70%; */
-	height: 100%;
-	aspect-ratio: 16 / 9 !important;
+	width: auto;
+	/* margin: 0 -50px; */
+	width: 70%;
+	height:90%;
+	/* aspect-ratio: 16 / 9 !important; */
 	/* padding: 10% 20%; */
 	display: grid;
 	place-self: center;
 	justify-content: center;
 	align-content: center;
 	border: 3px solid rgb(0, 0, 0);
+	border-radius: 10px;
 	/* border-radius: 12px; */
 	background: rgba(0,0,0,.4);
 	backdrop-filter: blur(10px);
@@ -197,9 +200,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	color:#fff;
 	text-shadow: 0 0 7px #14e8f3,
 	0 0 31px #37f8f8;
-   
-	   filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
-	/* opacity:0; */
+   	filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
 }
 
 .featured:hover::before{
@@ -814,6 +815,7 @@ p {
 .nameblock {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+	background:linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%) !important;
 }
 
 #resume h2 {
@@ -3368,6 +3370,8 @@ animation: fadeout .5s forwards;
 	text-align: center !important;
 	margin: 0 auto;
 	position: relative;
+
+	/* background:linear-gradient(rgb(27, 45, 50) 10%, rgb(81, 119, 138) 80%) !important; */
 	}
   section:not(#resume) {color:red !important; border:0px solid red !important; display: none !important;}
 
