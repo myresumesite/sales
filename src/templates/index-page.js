@@ -582,12 +582,12 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               className="description"
               dangerouslySetInnerHTML={{ __html: ProfText }}
             /> */}
-     <div style={{textAlign:''}}>       
-    <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</h3>
-    <br />
-    <h3 style={{padding:'0 1rem'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</h3>
-   <br />
-    <h3 style={{padding:'0 1rem', textAlign:'center'}}>All MyResume Sites:</h3><br />
+     <div style={{fontFamily:'sans-serif'}}>       
+    <p style={{padding:'0 1rem', fontFamily:'sans-serif'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</p>
+   
+    <p style={{padding:'0 1rem', fontFamily:'sans-serif'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</p>
+
+    <h3 style={{padding:'0 1rem', textAlign:'center', fontFamily:'sans-serif'}}>All MyResume Sites:</h3><br />
 <ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
 <li>Operate for <u>FREE</u></li>
 <li>Work on all devices - responsive design</li>
@@ -706,16 +706,17 @@ Web Apps = NO Apple or Google
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   backdropFilter:'blur(0)',
   borderRadius:'10px',
-  textShadow:'0 2px 7px #000',
+  textShadow:'0 1px 1px #444',
   }} ><br />
-<span style={{color:'', fontSize:'160%'}}>
+<span className="specialfont" style={{color:'#fff', fontSize:'160%'}}>
   {/* {companyname} */}
   Let's Get Started
 </span>
 <br />
-{frontmatter.addressText}
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>
+{frontmatter.addressText }</span>
 <br />
-{frontmatter.addressText2}
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
 <br /><br />
 {CtaLink ? (
            <a
@@ -736,7 +737,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link to="/getstarted" className="button print" style={{color:'#fff', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/getstarted" className="button print specialfont" style={{color:'#fff', fontSize:'inherit', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -772,7 +773,7 @@ Web Apps = NO Apple or Google
 
 
 <br /><br />
-<span style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
+<span className="specialfont" style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
 <br />
 
 
