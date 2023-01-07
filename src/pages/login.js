@@ -258,7 +258,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
         />
 
 
-
+{/* <input name="" type="reset" value="Reset" /> */}
 
 </form>
     
@@ -275,7 +275,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
 <div className="" style={{display:'flex', justifyContent:'space-around', width:'100%', margin:'0 auto', flexDirection:'row', maxHeight:'100vh'}}>
     <form className="youtubeform frontdrop" onSubmit={this.handleSubmit} style={{ padding:'2rem', border:'0px solid red', borderRadius:'12px', height:'50px', width:'100%', maxWidth:'90vw', margin:'5px auto', zIndex:'1', position:'relative', bottom:'0',transition:' all 1.85s', animation:'fade 1.5s forwards', display:'flex', justifyContent:'space-between', alignItems:'center'  }}>
 
-    <p className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Paste YouTube Link:
+    <p onClick={this.handleHide} className="headline" style={{fontSize:'90%', color:'#fff', fontWeight:'bold', textAlign:'right', width:'250px', marginRight:'15px'}}>Pasted YouTube Link:
 </p>
 <input
       id=""
@@ -290,7 +290,7 @@ right:'0', border:'0px solid yellow', justifyContent:'center', width:'100%', tex
       
       className="youtubelinker"
     />
-
+{/* <input name="" type="reset" value="Reset" /> */}
 </form>
 
 </div>

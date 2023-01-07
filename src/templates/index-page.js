@@ -216,7 +216,28 @@ const HomePage = ({ data }) => {
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
     
+    // const docRef = typeof document !== `undefined` ? document : undefined;
+    // if (!docRef) { return }
 
+    
+    // const handleShow={
+    //   width:'20%',
+    //   height:'200px',
+    //   }
+
+
+
+
+
+
+     const resizeMobile = ()=>{
+      document.getElementById("iframe1").style.width = '400px'
+      document.getElementById("iframe2").style.width = '400px'
+    }
+    const resizeDesk = ()=>{
+      document.getElementById("iframe1").style.width = 'inherit'
+      document.getElementById("iframe2").style.width = 'inherit'
+    }
     
     // const { siteColor } = useSiteMetadata()
 
@@ -941,9 +962,9 @@ Web Apps = NO Apple or Google
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize1">
-              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize1" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card <button onClick={resizeMobile}>Mobile</button><button onClick={resizeDesk}>Desktop</button></div>
             </div>
 
             {/* <div id="deighleen" style={{display:'grid', placeContent:'center'}}
@@ -960,9 +981,9 @@ Web Apps = NO Apple or Google
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured">
-              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card <button onClick={resizeMobile}>Mobile</button><button onClick={resizeDesk}>Desktop</button></div>
             </div>
 
 
