@@ -510,7 +510,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <section className="vertical" id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
-  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', top:'', zIndex:'-1',}}>
+  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'0', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
@@ -587,16 +587,16 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     <br />
     <h3 style={{padding:'0 1rem'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</h3>
    <br />
-    <h3 style={{padding:'0 1rem', textAlign:'center'}}>All MyResume Sites:</h3>
+    <h3 style={{padding:'0 1rem', textAlign:'center'}}>All MyResume Sites:</h3><br />
 <ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
 <li>Operate for <u>FREE</u></li>
-<li>Works on all devices - responsive design</li>
+<li>Work on all devices - responsive design</li>
 
 <li>100% accessibility and privacy standards</li>
 
-<li>Runs anywhere and even works offline</li>
+<li>Run anywhere and even works offline</li>
 
-<li>Scores 100 on Google Page Speed</li>
+<li>Score 100 on Google Page Speed</li>
 </ul>
 
 {/* <br /><br />
