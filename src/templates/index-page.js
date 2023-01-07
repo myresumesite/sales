@@ -482,7 +482,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show feature */}
 
 
-
+<StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" width="100vw" height="100vh" style={{width:'100vw', height:'90vh', maxHeight:'', position:'fixed', zIndex:'-1', bottom:'0', border:'0px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} />
 
 
 
@@ -497,7 +497,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-<StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" style={{width:'100vw', height:'100vh', maxHeight:'100vh', position:'fixed', zIndex:'-1', bottom:'0', border:'0px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} />
+
 
 
 

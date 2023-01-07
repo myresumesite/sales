@@ -165,14 +165,14 @@ module.exports = {
 
 
 
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          settings.ga, // Google Analytics / GA
-        ],
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-gtag`,
+    //   options: {
+    //     trackingIds: [
+    //       settings.ga, // Google Analytics / GA
+    //     ],
+    //   },
+    // },
 
     
     // {
