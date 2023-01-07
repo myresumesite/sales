@@ -586,10 +586,10 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
     <h3 style={{padding:'0 1rem'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</h3>
     <br />
     <h3 style={{padding:'0 1rem'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</h3>
-   
-    <h3 style={{padding:'0 1rem', textAlign:'center'}}>That means they operate for <u>FREE.</u></h3>
-<br />
+   <br />
+    <h3 style={{padding:'0 1rem', textAlign:'center'}}>All MyResume Sites:</h3>
 <ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
+<li>Operate for <u>FREE</u></li>
 <li>Works on all devices - responsive design</li>
 
 <li>100% accessibility and privacy standards</li>

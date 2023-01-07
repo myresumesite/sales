@@ -1,6 +1,6 @@
 ---
 slug: /
-tagline:  Cost FREE Resume/Portolio Website Apps
+tagline:  Never worry about your resume again.
 featuredImage: 
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: 
@@ -51,7 +51,7 @@ template: index-page
 youtubemute: "1"
 description: MyResume® - Next-Gen Resume Platform
 svgzindex: ""
-profTitle: Your Resume, Online, Forever...<br /><span style="font-size:70%">Never worry about your resume again.</span>
+profTitle: Your Resume, Online, Forever...
 coverletter:
   coverText: About or Cover Page
   coverLink: ""

@@ -889,7 +889,7 @@ p {
 .tagline1 {
 
 	padding-bottom: 1.7rem;
-	padding-top: 1rem;
+	padding-top: 0;
 	text-align: center;
 
 	margin: 0 0 0 0;
@@ -963,7 +963,8 @@ p {
  	font-size: 16px;
 	line-height: 1;
 	color: #fff !important;
-	background: linear-gradient(180deg, rgb(58, 67, 71) 90%, rgb(146, 181, 192) 130%);
+	/* background: linear-gradient(180deg, rgb(58, 67, 71) 90%, rgb(146, 181, 192) 130%); */
+	background:radial-gradient(#31484f 14%,#213237 140%);
 	font-size: clamp(1.2rem, 1.6vw, 2.5rem);
 	border:1px solid rgb(146, 145, 145);
 	filter: drop-shadow(1px 1px 1px rgba(21, 25, 28, 0.7));
@@ -1036,7 +1037,7 @@ background: rgba(21, 25, 28, 0.7);
 
 	#installer {
 	display: none !important;
-	border: 10px solid yellow !important;
+	border: 10px solid #213237 !important;
 	}
 
 	#info, footer, .toolbar {
