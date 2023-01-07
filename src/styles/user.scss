@@ -6,13 +6,14 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: "Racing Sa
 }
 
 
-.specialfont{
+.font{
 	font-family:Racing Sans One;
 	// font-style: italic;
 	line-height:100% !important;
 	font-size: clamp(2.5rem, 5vw, 5rem);
 	// font-weight: bold;
 }
+.normal{font-family: sans-serif;}
 
 
 dl *{border:0px solid purple}

@@ -573,7 +573,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
             <div className="flexcheek mob print" style={{padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.5vw, 3.2rem)',}}>
   
               <h1 className="title1" dangerouslySetInnerHTML={{ __html: frontmatter.profTitle }} />
-            <h2 className="tagline1" style={{fontWeight:'bold'}}>
+            <h2 className="tagline1 normal" style={{fontWeight:'', marginTop:'-1.5vh'}}>
               {frontmatter.tagline}
             </h2>
   
@@ -708,7 +708,7 @@ Web Apps = NO Apple or Google
   borderRadius:'10px',
   textShadow:'0 1px 1px #444',
   }} ><br />
-<span className="specialfont" style={{color:'#fff', fontSize:'160%'}}>
+<span className="font" style={{color:'#fff', fontSize:'160%'}}>
   {/* {companyname} */}
   Let's Get Started
 </span>
@@ -737,7 +737,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link to="/getstarted" className="button print specialfont" style={{color:'#fff', fontSize:'inherit', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/getstarted" className="button print font" style={{color:'#fff', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
@@ -773,7 +773,7 @@ Web Apps = NO Apple or Google
 
 
 <br /><br />
-<span className="specialfont" style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
+<span className="font" style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
 <br />
 
 
