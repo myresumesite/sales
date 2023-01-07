@@ -482,7 +482,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* end show feature */}
 
 
-<StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" width="100vw" height="100vh" style={{width:'100vw', height:'90vh', maxHeight:'', position:'fixed', zIndex:'-1', bottom:'0', border:'0px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} />
+
 
 
 
@@ -510,14 +510,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 <section className="vertical" id="info" order="2" name="info" style={{ display:'',  minHeight:'100vh', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}>
 
-  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'absolute', bottom:'0', zIndex:'-1',}}>
+  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'0', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
             className="mcboaty print"
             placeholder="blurred" loading="eager"
-              style={{height:'auto', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important'}}
+              style={{height:'100vh', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}}
           />
        
           
@@ -525,7 +525,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
             ""
           )}
 
-
+{/* <StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" width="100vw" height="100vh" style={{width:'100vw', height:'90vh', maxHeight:'', position:'fixed', zIndex:'1', bottom:'0', border:'1px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} /> */}
        
 </div>
 
@@ -549,7 +549,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-{UnderlayImage ? (
+{!UnderlayImage ? (
   // custom image in effect //
 
   <div className="flexcheek mob print nameblock" style={{marginTop:'', padding:'0', maxHeight:'', fontSize:'clamp(1rem, 1.4vw, 3.2rem)', textShadow:'0 2px 3px #000', color:'#fff', 
@@ -644,7 +644,7 @@ Web Apps = NO Apple or Google
 
 
 
-{UnderlayImage ? (
+{!UnderlayImage ? (
 
   <div className="nameblock" style={{margin:'20px auto 0 auto', padding:'0 0 10px 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
@@ -699,11 +699,12 @@ Web Apps = NO Apple or Google
   
   <div className="nameblock"  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   color:'#fff',
-  border:'1px solid #555', 
+  border:'1px solid #222', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  // background:'rgba(0,0,0,0.50)',
+  // background:'rgba(0,0,0,0.60)',
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
+  background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   backdropFilter:'blur(0)',
   borderRadius:'10px',
   textShadow:'0 1px 1px #444',
@@ -847,12 +848,12 @@ Web Apps = NO Apple or Google
               <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Simple profile or business calling card</div>
             </div>
 
-            <div id="deighleen" style={{display:'grid', placeContent:'center'}}
+            {/* <div id="deighleen" style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize">
               <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Same site - mobile version</div>
-            </div>
+            </div> */}
 
 
 

@@ -815,7 +815,7 @@ p {
 .nameblock {
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
-	background:linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%) !important;
+	/* background:linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%) !important; */
 }
 
 #resume h2 {
