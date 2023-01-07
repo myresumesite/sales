@@ -43,7 +43,7 @@ cta:
   ctaText: Start My Resume
   ctaLink: ""
 svgImage: /assets/transparent.png
-title: MyResume®
+title: Customizable resume and portfolio website apps
 youtubeend: "90"
 sharethis: 
 youtubecontrols: "0"
