@@ -965,7 +965,7 @@ p {
 	color: #fff !important;
 	background: linear-gradient(180deg, rgb(58, 67, 71) 90%, rgb(146, 181, 192) 130%);
 	font-size: clamp(1.2rem, 1.6vw, 2.5rem);
-	border:1px solid rgb(200, 198, 198);
+	border:1px solid rgb(146, 145, 145);
 	filter: drop-shadow(1px 1px 1px rgba(21, 25, 28, 0.7));
 }
 
