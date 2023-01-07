@@ -227,10 +227,12 @@ const HomePage = ({ data }) => {
      const resizeMobile = ()=>{
       document.getElementById("iframe1").style.width = '400px'
       document.getElementById("iframe2").style.width = '400px'
+      document.getElementById("iframe3").style.width = '400px'
     }
     const resizeDesk = ()=>{
       document.getElementById("iframe1").style.width = 'inherit'
       document.getElementById("iframe2").style.width = 'inherit'
+      document.getElementById("iframe3").style.width = 'inherit'
     }
 
     // getElementsByClassName
@@ -981,15 +983,15 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
 
-            {/* <div id="deighleen" style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize">
-              <iframe style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="mobilesize" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+            
+
+
+            <div style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize1">
+              <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
               
-              <div className="sitelabel" style={{display:'grid', placeSelf:'center',position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'0 0 10px 10px'}}>Same site - mobile version</div>
-            </div> */}
-
-
-
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
+            </div>
 
 
 
