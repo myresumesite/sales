@@ -806,8 +806,8 @@ p {
 	}
 
 	.nameblock {
-	background: transparent !important;
-	color: inherit !important;
+	/* background: transparent !important; */
+	/* color: inherit !important; */
 	text-shadow: none !important;
 	}
 }

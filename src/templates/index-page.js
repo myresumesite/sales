@@ -714,10 +714,11 @@ Web Apps = NO Apple or Google
   Let's Get Started
 </span>
 <br />
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>From Zero to Website (in less than 5 minutes)</span>
+{/* <span className="" style={{color:'#fff', fontSize:'inherit'}}>
 {frontmatter.addressText }</span>
 <br />
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
+<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span> */}
 <br /><br />
 {CtaLink ? (
            <a
@@ -738,7 +739,7 @@ Web Apps = NO Apple or Google
 </a>
           ) : (
             
-            <Link to="/getstarted" className="button print font" style={{color:'#fff', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/getstarted" className="button print font" style={{color:'#fff', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 
