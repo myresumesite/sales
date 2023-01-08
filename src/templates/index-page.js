@@ -521,10 +521,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-{/* [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/StaticJsCMS/static-cms-hugo-netlify-template&amp;stack=cms) */}
-<a className="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/myresumesite/default&amp;stack=cms" rel="nofollow">
-Deploy to Netlify
-</a>
+
 
 
 
@@ -625,6 +622,13 @@ Deploy to Netlify
 
 <li>Score 100 on Google Page Speed</li>
 </ul>
+
+
+{/* [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/StaticJsCMS/static-cms-hugo-netlify-template&amp;stack=cms) */}
+{/* <a className="button" href="https://app.netlify.com/start/deploy?repository=https://github.com/myresumesite/default&amp;stack=cms" rel="nofollow">
+Deploy to Netlify
+</a> */}
+
 
 {/* <br /><br />
 <Link to="/about" className="button print" style={{color:'', fontSize:'', margin:'5px auto 0 auto', textAlign:'center', textDecoration:'none', maxWidth:'600px', padding:'1rem 2rem'}}>Somewhere Special</Link> */}
