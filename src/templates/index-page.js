@@ -234,10 +234,10 @@ const HomePage = ({ data }) => {
     document.getElementById("iframe4").style.width = '400px'
   }
   const resizeDesk = ()=>{
-    document.getElementById("iframe1").style.width = 'inherit'
-    document.getElementById("iframe2").style.width = 'inherit'
-    document.getElementById("iframe3").style.width = 'inherit'
-    document.getElementById("iframe4").style.width = 'inherit'
+    document.getElementById("iframe1").style.width = 'initial'
+    document.getElementById("iframe2").style.width = 'initial'
+    document.getElementById("iframe3").style.width = 'initial'
+    document.getElementById("iframe4").style.width = 'initial'
   }
 
     // getElementsByClassName
