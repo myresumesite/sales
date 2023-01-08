@@ -169,7 +169,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 .featured iframe {
 	border: 0px solid red !important;
 	aspect-ratio: 16 / 9 !important;
-	height: 70vh !important;
+	height: 80vh !important;
 	position:relative;
 	overflow: hidden;
 	/* transform: translateX(100vw); */
