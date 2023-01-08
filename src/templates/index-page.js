@@ -221,7 +221,10 @@ const HomePage = ({ data }) => {
 
     
 
-
+    function resizeAll() {
+      var x = document.getElementsByClassName("iframe");
+      alert(x[0].innerHTML);
+  }
 
 
      const resizeMobile = ()=>{

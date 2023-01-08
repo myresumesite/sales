@@ -172,34 +172,11 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	height: 70vh !important;
 	position:relative;
 	overflow: hidden;
+	/* transform: translateX(100vw); */
+	transition: transform 250ms ease-in-out;
 }
 
-/* .featured::before{
-	content: ' Live View ';
-	position: absolute;
-	z-index: 1;
-	display: block;
-	width: auto;
-	width: 70%;
-	height:90%;
-	display: grid;
-	place-self: center;
-	justify-content: center;
-	align-content: center;
-	border: 3px solid rgb(0, 0, 0);
-	border-radius: 10px;
-	background: rgba(0,0,0,.4);
-	backdrop-filter: blur(10px);
-	font-size: clamp(2.5rem, 5vw, 5rem);
-	color:#fff;
-	text-shadow: 0 0 7px #14e8f3,
-	0 0 31px #37f8f8;
-   	filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
-}
 
-.featured:hover::before{
-animation: move 3.2s forwards; 
-} */
 
 .featured.mobilesize iframe, .featured.mobilesize::before, .featured.mobilesize .sitelabel {width:400px !important;}
 
@@ -3139,7 +3116,37 @@ article img {
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
 	 .horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
  	/* scroll-snap-type:none !important; */
+	 }
+
+
+	/* .featured::before{
+	content: ' Live View ';
+	position: absolute;
+	z-index: 1;
+	display: block;
+	width: auto;
+	width: 70%;
+	height:90%;
+	display: grid;
+	place-self: center;
+	justify-content: center;
+	align-content: center;
+	border: 3px solid rgb(0, 0, 0);
+	border-radius: 10px;
+	background: rgba(0,0,0,.4);
+	backdrop-filter: blur(10px);
+	font-size: clamp(2.5rem, 5vw, 5rem);
+	color:#fff;
+	text-shadow: 0 0 7px #14e8f3,
+	0 0 31px #37f8f8;
+   	filter: drop-shadow(1px 0px 4px rgba(0,0,0,.9));
 }
+
+.featured:hover::before{
+animation: move 3.2s forwards; 
+} */
+
+
 
 /* .allin60panel::before{
 	content: '  ';

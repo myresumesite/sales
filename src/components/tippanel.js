@@ -127,7 +127,7 @@ const NFTDetails = () => (
 
 <li>Customize all content of your resume and/or portfolio. Add / Modify / Delete blog/portfolio posts.</li>
 
-<li>Edit website settings, Add Google Analytics change colors, settings, logos, etc all from within the CMS.</li>
+<li>Edit website settings, Add Google Analytics, change all settings, logos, etc... all from within the included site CMS.</li>
 
 
 {/* <li>Hide/Show Comments, Social Sharing, or User-interactivity (youtube video changer) on a post-by-post basis</li> */}
@@ -179,7 +179,7 @@ const NFTDetails = () => (
         <ul className="featurelist" style={{listStyleType:'none'}}>
         
 
-<li>100% SEO Optimized - Google LOVES My-Resume sites. </li>
+<li>100% SEO Optimized <br /> Google LOVES MyResume® Sites! </li>
 
 <li>Full Privacy Compliance Support (GDPR and CCPA). </li>
 
