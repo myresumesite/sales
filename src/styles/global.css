@@ -167,9 +167,10 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 .featured{border:0px solid yellow;}
 
 .featured iframe {
-	border: 0px solid red !important;
+	border: 1px inset 222 !important;
+	border-radius: 12px;
 	aspect-ratio: 16 / 9 !important;
-	height: 80vh !important;
+	height: 85vh !important;
 	position:relative;
 	overflow: hidden;
 	/* transform: translateX(100vw); */
@@ -178,7 +179,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 
 
 
-.featured.mobilesize iframe, .featured.mobilesize::before, .featured.mobilesize .sitelabel {width:400px !important;}
+/* .featured.mobilesize iframe, .featured.mobilesize::before, .featured.mobilesize .sitelabel {width:400px !important;} */
 
 
 .react-player {
@@ -2930,17 +2931,18 @@ article img {
 }
 
 @media (hover: hover) {
-	.sliderholder::before {
+	.horizontal-scroll .featured::before {
 	content: ' ';
 	position: absolute;
 	z-index: 1;
 	display: block;
 	width: 100%;
 	height: 100%;
- ;
+	border:1px solid transparent;
+	/* background:rgba(0, 0, 0, .7); */
 	}
 
-	.sliderholder:hover::before {
+	.horizontal-scroll .featured:hover::before {
 	animation: move 3s forwards;
 	}
 }
