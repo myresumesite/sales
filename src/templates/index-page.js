@@ -997,7 +997,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured mobilesize1">
-              <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe3" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh',maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
@@ -1006,7 +1006,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured">
-              <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe2" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh',maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
@@ -1014,7 +1014,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{display:'grid', placeContent:'center'}}
               className="featured">
-              <iframe id="iframe4" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh'}} title="iFrame" className="iframe" width="980" height="550" src="https://silly-pothos-289a5c.netlify.app/#skills" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe4" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh',maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://silly-pothos-289a5c.netlify.app/#skills" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Full featured, yet fast and flexible </div>
             </div>
