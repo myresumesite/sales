@@ -43,8 +43,8 @@ body {
 .infomenu{
 
   border-radius:12px;
-  filter: drop-shadow(0px 0px 10px rgba(155,155,155,.5)); 
-  background:rgba(0,0,0,0.08) !important;
+  filter: drop-shadow(0px 0px 20px rgba(155,155,155,.5)); 
+  // background:rgba(0,0,0,0.08) !important;
 }
 
 
@@ -160,9 +160,10 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 
 
 
-/* .featured {
-	height: 100vh;
-} */
+.featured {
+	// height: 100vh;
+  filter: drop-shadow(0px 0px 10px rgba(197, 191, 191, 0.5)); 
+} 
 
 @media (max-width: 48rem) {
 	.featured {
