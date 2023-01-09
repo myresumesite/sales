@@ -1,16 +1,17 @@
 import defaultColors from "../util/default-colors.json"
 import darkColors from "../util/dark-theme-colors.json"
+import bodyBg from "../util/dark-theme-colors.json"
 import { lightness } from "@theme-ui/color"
 const theme = {
   colors: {
     ...defaultColors,
-    text: "rgb(17, 31, 36)",
-    background: "#D7DDE0",
-    primary: "var(--primary)",
+    text: "#000",
+    background: lightness("siteColor", 0.9),
+    primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
-    cardBg: "linear-gradient(180deg, #333 1%, #111 80%)",
-    borderColor: "#444",
+    cardBg: "#fff",
+    borderColor: "#540229",
     labelText: "#777",
     inputBorder: "#aaa",
     inputBackground: "#fff",
@@ -22,11 +23,11 @@ const theme = {
     modes: {
       dark: {
         text: "#f5f5f5",
-        background: "rgb(45, 47, 48) ",
-        primary: "var(--primary)",
+        background: lightness("siteColor", 0.2),
+        primary: "#252525",
         accent: "#5C2941",
         muted: "rgba(255, 255, 255, 0.7)",
-        cardBg: "linear-gradient(180deg, #333 1%, #ff0000 80%)",
+        cardBg: "#252525",
         borderColor: "#888",
         labelText: "#777",
         inputBorder: "#777",

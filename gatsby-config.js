@@ -142,17 +142,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-sass`,
-    // {
-    //   resolve: `gatsby-plugin-netlify-cms`,
-    //   options: {
-    //     modulePath: `${__dirname}/src/cms/cms.js`,
-    //     enableIdentityWidget: true,
-    //     publicPath: `admin`,
-    //     htmlTitle: `MyResume CMS`,
-    //     // htmlFavicon: `/src/img/logo.svg`,
-    //     includeRobots: false,
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+        enableIdentityWidget: true,
+        publicPath: `admin`,
+        htmlTitle: `MyResume CMS`,
+        // htmlFavicon: `/src/img/logo.svg`,
+        includeRobots: false,
+      },
+    },
 
     {
       resolve: `gatsby-source-filesystem`,

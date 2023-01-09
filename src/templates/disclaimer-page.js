@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import {Seo} from "../components/seo"
-import {Layout} from "../components/layout"
+import {Layout} from "../components/Layout"
 import GoBack from "../components/goBack"
 import {Footer} from "../components/footer"
 export const pageQuery = graphql`

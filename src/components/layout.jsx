@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from "theme-ui"
 import * as React from "react"
 // import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
@@ -10,9 +12,9 @@ import * as React from "react"
 import { Seo } from "./seo"
 import "../styles/reset.css"
 // import "../styles/variables.css"
-import "../styles/global.css"
-import "../styles/user.scss"
-// import "../assets/scss/style.scss"
+// import "../styles/global.css"
+// import "../styles/user.scss"
+import "../assets/scss/style.scss"
 // import LogoText from "../../static/assets/logotext.svg"
 import { Link } from 'gatsby-plugin-modal-routing-3'
 import { ModalRoutingContext } from 'gatsby-plugin-modal-routing-3'
@@ -26,13 +28,13 @@ import { AiOutlineClose } from "react-icons/ai"
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
 
-import SignUp from "./install-discount"
+import SignUp from "../components/install-discount"
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
 // import Bug from "../../static/assets/logo.svg"
-import Theme from "./theme"
+import Theme from "../components/theme"
 
 // import '@fontsource/roboto'
 
@@ -90,7 +92,11 @@ export function Layout({ children }) {
   const { font1 } = useSiteMetadata()
   // const { siteColor } = useSiteMetadata()
   
+  const navStyle = {
 
+        bg: "siteColor",
+
+  }
   const fontUrl = "https://fonts.googleapis.com/css?family=" + font1 + "&display=swap"
 
   // const [isVisible, setIsVisible] = useState(false);
@@ -166,7 +172,7 @@ body::after{
 
 {showNav ? (
 
-<ul id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center', background:'radial-gradient(rgba(47, 71, 74, 0.856) 10%, rgba(35, 63, 67, 0.845) 80%)', color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', textShadow:'1px 1px 0 #222'}}>
+<ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'#ccc', boxShadow:'0 0 24px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', textShadow:'1px 1px 0 #222'}}>
       
       <li className="" style={{position:'relative', maxHeight:'60px', width:'auto', minWidth:'70px', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">

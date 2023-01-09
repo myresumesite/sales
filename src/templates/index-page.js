@@ -26,7 +26,7 @@ import {Social} from "../components/social"
 // import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import {Seo} from "../components/seo"
-import {Layout} from "../components/layout"
+import {Layout} from "../components/Layout"
 
 
 
@@ -39,6 +39,7 @@ const CustomBox = styled.div`
 
 `
 
+const navStyle = {bg: "bodyBg",}
 
 
 export const pageQuery = graphql`
@@ -728,28 +729,28 @@ Web Apps = NO Apple or Google
 
 
   
-  <div className="nameblock"  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
-  color:'#fff',
+  <div className="nameblock infomenu" sx={navStyle}  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+
   border:'1px solid #222', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
   // background:'rgba(0,0,0,0.60)',
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
-  background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
+  // background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   backdropFilter:'blur(0)',
   borderRadius:'10px',
-  textShadow:'0 1px 1px #444',
+  // textShadow:'0 1px 1px #444',
   }} ><br />
-<span className="font" style={{color:'#fff', fontSize:'160%'}}>
+<span className="font" style={{color:'', fontSize:'160%'}}>
   {/* {companyname} */}
   Let's Get Started
 </span>
 <br />
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>Zero to Live Website (in 5 minutes)</span>
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>
+<span className="" style={{color:'', fontSize:'inherit'}}>Zero to Live Website (in 5 minutes)</span>
+<span className="" style={{color:'', fontSize:'inherit'}}>
 {frontmatter.addressText }</span>
 
-<span className="" style={{color:'#fff', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
+<span className="" style={{color:'', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
 <br /><br />
 {CtaLink ? (
            <a
@@ -806,7 +807,7 @@ Web Apps = NO Apple or Google
 
 
 <br /><br />
-<span className="font" style={{color:'#fff', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
+<span className="font" style={{color:'', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
 <br />
 
 

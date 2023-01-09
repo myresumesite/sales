@@ -17,7 +17,7 @@ import {Footer} from "../components/footer"
 import ReactPlayer from 'react-player/lazy'
 // import YouTubed from "../pages/youtube"
 import {Seo} from "../components/seo"
-import {Layout} from "../components/layout"
+import {Layout} from "../components/Layout"
 import ShareSocial from '../components/share' 
 // import GoBack from "../components/goBack"
 // import { BiLeftArrow } from "react-icons/bi"
