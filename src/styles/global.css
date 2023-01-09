@@ -27,7 +27,7 @@ body {
 
 	flex-wrap: wrap;
 
-	border: 1px solid red;
+	border: 1px solid #fc09fc;
 }
 
 .grid * {

@@ -26,7 +26,7 @@ import {Social} from "../components/social"
 // import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
 import {Seo} from "../components/seo"
-import {Layout} from "../components/Layout"
+import {Layout} from "../components/layout"
 
 
 

@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import {Layout} from "../components/Layout"
+import { Layout } from "../components/layout"
 // import { ProductListing } from "../components/product-listing"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
