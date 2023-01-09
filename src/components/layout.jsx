@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui"
-import * as React from "react"
+// import * as React from "react"
 // import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
@@ -9,7 +9,7 @@ import * as React from "react"
 // import { IoShareOutline } from 'react-icons/io5';
 // import { AiOutlineCloseCircle } from 'react-icons/ai';
 // import Theme from "../components/theme"
-import { Seo } from "./seo"
+import {Seo} from "./seo"
 import "../styles/reset.css"
 // import "../styles/variables.css"
 // import "../styles/global.css"
@@ -106,7 +106,7 @@ export function Layout({ children }) {
 
   return (
 <CustomBox style={{}}>
-<>
+
 <Helmet>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" /> 
@@ -506,7 +506,7 @@ body::after{
       
 
         
-  </>
+ 
   </CustomBox>
   )
 }

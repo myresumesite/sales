@@ -63,4 +63,4 @@ const Player = () => (
   
 )
 
-export default GoBack
+export default Player
