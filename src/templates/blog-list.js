@@ -15,8 +15,8 @@ import { RiArrowRightLine, RiArrowLeftLine} from "react-icons/ri"
 // import { Footer } from "../components/footer"
 
 import PostCard from "../components/post-card"
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import {Seo} from "../components/seo"
+import {Layout} from "../components/layout"
 
 
 

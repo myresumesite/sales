@@ -6,7 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import { getSrc } from "gatsby-plugin-image"
 import { AiOutlineAudioMuted } from "react-icons/ai"
 // import { RiArrowRightSLine } from "react-icons/ri"
-import { Footer } from "../components/footer"
+import {Footer} from "../components/footer"
 // import { GoArrowDown } from "react-icons/go"
 // import ScrollAnimation from 'react-animate-on-scroll'
 // import { FaRegPlusSquare } from 'react-icons/fa'
@@ -21,12 +21,12 @@ import ReactPlayer from 'react-player/lazy'
 import { ImPlay, ImMobile2, ImDisplay } from "react-icons/im"
 // import GoBack from "../components/goBack"
 import styled from "styled-components"
-import { Social } from "../components/social"
+import {Social} from "../components/social"
 // import Skills from "../templates/skills-page"
 // import Newsignup from "../components/newssign"
 import BlogListHome from "../components/blog-list-home"
-import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import {Seo} from "../components/seo"
+import {Layout} from "../components/layout"
 
 
 
@@ -221,10 +221,10 @@ const HomePage = ({ data }) => {
 
     
 
-    function resizeAll() {
-      var x = document.getElementsByClassName("iframe");
-      alert(x[0].innerHTML);
-  }
+  //   function resizeAll() {
+  //     var x = document.getElementsByClassName("iframe");
+  //     alert(x[0].innerHTML);
+  // }
 
 
   const resizeMobile = ()=>{

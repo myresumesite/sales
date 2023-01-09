@@ -4,7 +4,7 @@ import { RiArrowLeftSLine, RiBugLine } from "react-icons/ri"
 import { StaticImage } from "gatsby-plugin-image"
 // import { AiFillRobot } from "react-icons/ai"
 import { Seo } from "../components/seo"
-import { Layout } from "../components/layout"
+import {Layout} from "../components/layout"
 
 const NotFound = () => (
   <Layout className="not-found-page">

@@ -1,4 +1,4 @@
-import React, { } from "react"
+import * as React from "react"
 // import { SkipNavLink } from "./skip-nav"
 // import { Header } from "./header"
 // import { Footer } from "./footer"
@@ -26,13 +26,13 @@ import { AiOutlineClose } from "react-icons/ai"
 // import Fullscreen from "../components/FullScreen"
 // import Menu from "../components/menu1"
 
-import SignUp from "../components/install-discount"
+import SignUp from "./install-discount"
 // import ScrollAnimation from 'react-animate-on-scroll'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 // import SiteLogo from "../../static/assets/logo.svg"
 // import Bug from "../../static/assets/logo.svg"
-import Theme from "../components/theme"
+import Theme from "./theme"
 
 // import '@fontsource/roboto'
 
