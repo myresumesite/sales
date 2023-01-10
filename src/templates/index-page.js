@@ -897,23 +897,21 @@ Web Apps = NO Apple or Google
 
             <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
 
-<div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'85vh', color:'#ccc'}}>
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
-          {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
-                ) : (
-                  companyname
-                )}
-                MyResume<br />
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'80vw', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+          
+          
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
+          MyResume<br />
             Buy it now<br />
-           
-            
+            $49
           </Link>
 
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
           MyResume+<br />
             Buy it now<br />
+            $99
           </Link>
 </div>
               
