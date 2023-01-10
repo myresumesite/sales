@@ -884,19 +884,21 @@ Deploy to Netlify
 
 <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
 
-<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'80vw', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
           
           
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
           MyResume<br />
-          <span style={{fontSize:'120%',}}>$49</span>
+            Buy it now<br />
+            $49
           </Link>
 
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
           MyResume+<br />
-          <span style={{fontSize:'120%',}}>$99</span>
+            Buy it now<br />
+            $99
           </Link>
 </div>
               
