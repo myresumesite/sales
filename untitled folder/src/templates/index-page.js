@@ -554,7 +554,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
-
+{/* <div className="introspacer" style={{border:'0px solid', width:''}} /> */}
 
 
 
@@ -648,14 +648,7 @@ Deploy to Netlify
 <br />
 
 
-{/* 
-<h2 className="title1 txtshadow-header"> Launch Yours Today</h2>
- <br />
- Ready To Go = Be Up In Minutes<br />
-Cloud Hosting = Free Forever<br />
-Web Apps = NO Apple or Google
-<br />
-<span  className="neonText2">User Install Apps = NO Fees</span> */}
+
 
  </div>
 
@@ -676,7 +669,7 @@ Web Apps = NO Apple or Google
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'30vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
+              style={{ maxWidth:'', height:'', maxHeight:'20vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'10px'}}
             />
           ) : (
             ""
@@ -848,7 +841,7 @@ Web Apps = NO Apple or Google
 
 
 
-<div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
+<div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'100vw', height:'80vh', color:'#ccc', padding:''}}>
 <ReactPlayer
       className='react-player66'
       url="https://youtu.be/2_Noj7lS-tM"
@@ -874,48 +867,8 @@ Web Apps = NO Apple or Google
       </button>}
         // light="../assets/transparent.png"
     />
-    <div className="sitelabel" style={{}}>Two Great Options: MyResume and MyResume+ </div>
+    <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-85px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
 </div>
-
-
-
-
-
-
-
-{/* <div id="" style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize1">
-              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh', maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
-              
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
-            </div> */}
-
-            
-
-
-
-
-            <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
-
-<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
-          
-          
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
-          MyResume<br />
-          <span style={{fontSize:'120%',}}>$49</span>
-          </Link>
-
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
-          MyResume+<br />
-          <span style={{fontSize:'120%',}}>$99</span>
-          </Link>
-</div>
-              
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
-            </div>
-
 
 </div></div>
 
@@ -927,6 +880,30 @@ Web Apps = NO Apple or Google
 {/* end show Info */}
 
 
+
+
+<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
+
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'80vw', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+          
+          
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
+          MyResume<br />
+            Buy it now<br />
+            $49
+          </Link>
+
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'0px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{width:'20vw', border:'none'}} />
+          MyResume+<br />
+            Buy it now<br />
+            $99
+          </Link>
+</div>
+              
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
+</div>
 
 
 
@@ -1067,14 +1044,14 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             ""
           )}
 
-<div className="introspacer" style={{border:'0px solid', width:''}} />
+<div className="introspacer" style={{border:'1px solid', height:'200px'}} />
 
 
 
 
 
             <div className="featured mobilesize1">
-              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
