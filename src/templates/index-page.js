@@ -514,7 +514,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showNav ? (
-  <div className="spacer" style={{height:'50px', border:'0px solid yellow'}}></div>
+  <div className="spacer" style={{height:'70px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -843,10 +843,58 @@ Web Apps = NO Apple or Google
 
 
 
+            
 
 
+
+
+            <div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
+<ReactPlayer
+      className='react-player66'
+      url="https://youtu.be/2_Noj7lS-tM"
+      width="100%"
+      height="100%"
+  style={{zIndex:'1'}}
+      config={{
+        youtube: {
+          playerVars: { showinfo:false, autoplay:true, controls:false, start:YouTubeStart, end:YouTubeEnd, mute:true, loop:true  }
+        },
+      }}
+      playing
+      playsinline
+      playIcon={
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
+
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'90vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
+
+<div style={{display:'flex', justifyContent:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
+<div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', opacity:'.7' }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} />Play</div>             
+            </div>
+      </div>
+      </button>}
+        // light="../assets/transparent.png"
+    />
+</div>
+
+
+
+
+
+
+
+{/* <div id="" style={{display:'grid', placeContent:'center'}}
+              className="featured mobilesize1">
+              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh', maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
-    <div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'85vh', color:'#ccc'}}>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
+            </div> */}
+
+            
+
+
+
+
+            <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
 
 <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'85vh', color:'#ccc'}}>
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
@@ -862,20 +910,13 @@ Web Apps = NO Apple or Google
           </Link>
 
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
-          <StaticImage src="../../static/assets/logo+.webp" alt="MyResume Logo Plus" style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
           MyResume+<br />
             Buy it now<br />
           </Link>
 </div>
               
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
-            </div>
-
-            <div style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize1">
-              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh', maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
-              
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>
 
 
