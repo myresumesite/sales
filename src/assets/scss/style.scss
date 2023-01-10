@@ -194,7 +194,8 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	border: 1px inset 222 !important;
 	border-radius: 12px;
 	aspect-ratio: 16 / 9 !important;
-	max-height: 85vh !important;
+	max-height: 80vh !important;
+	max-width:90vw;
 	position:relative;
 	overflow: hidden;
 	margin:0 auto;
@@ -206,7 +207,7 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 
 .sitelabel{
 	position:absolute;
-	bottom:-40px;
+	bottom:-45px;
 	left:20%;
 	right:20%;
 	display: flex;
