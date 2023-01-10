@@ -606,9 +606,9 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
               dangerouslySetInnerHTML={{ __html: ProfText }}
             /> */}
      <div style={{fontFamily:'sans-serif'}}>       
-    <p style={{padding:'0 1rem', fontFamily:'sans-serif'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</p>
+    <p style={{padding:'0 1rem', fontFamily:'sans-serif', textAlign:'left'}}>MyResume® Sites are progressive website apps(PWAs) with customizable resume and portfolio pages and can be installed to any device without the need for App Stores.</p>
    
-    <p style={{padding:'0 1rem', fontFamily:'sans-serif'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</p>
+    <p style={{padding:'0 1rem', fontFamily:'sans-serif', textAlign:'left'}}>Uniquely designed to use cloud based services, MyResume uses modern, server-less technology for the fastest, no-cost sites possible.</p>
 
     <h3 style={{padding:'0 1rem', textAlign:'center', fontFamily:'sans-serif'}}>All MyResume Sites:</h3><br />
 <ul style={{display:'grid', placeSelf:'center', textAlign:'left', margin:'0 auto', width:'70%', padding:'0', border:'0px solid red', fontWeight:''}}>
@@ -740,7 +740,7 @@ Deploy to Netlify
 {frontmatter.addressText }</span>
 
 <span className="" style={{color:'', fontSize:'inherit'}}>{frontmatter.addressText2}</span>
-<br /><br />
+<br />
 {CtaLink ? (
            <a
    href={frontmatter.cta.ctaLink}
@@ -795,7 +795,7 @@ Deploy to Netlify
 
 
 
-<br /><br />
+<br />
 <span className="font" style={{color:'', fontSize:'110%'}}>Fast | Flexible | Secure | Featured</span>
 <br />
 
@@ -1034,7 +1034,7 @@ Deploy to Netlify
 textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
 
 
-
+<div className="introspacer" style={{border:'0px solid', width:''}} />
 
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
