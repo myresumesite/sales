@@ -3092,12 +3092,12 @@ article img {
 }
 @media (max-width: 48rem) {
 	.panels > * {
-		margin: 0 0 100% 0;
+		margin: 0 0 50vw 0;
 	}
 
 	.horizontal-scroll{
-		width: calc(90% + 1px);
-		transform: rotate(-90deg) translateY(-90%);
+		width: calc(100% + 1px);
+		transform: rotate(-90deg) translateY(-100%);
 	}
 	.horizontal-holder{
 		/* height:300px !important; */
@@ -3215,9 +3215,8 @@ animation-delay: .5s;
 
   .introspacer {
     display: block !important;
-    border:0px solid !important;
+    border:1px solid !important;
     /* width: 100vw; */
-    height: 10px;
     /* width: 100%;
     height: 800px; */
   }
@@ -3228,9 +3227,9 @@ animation-delay: .5s;
 
 
 @media (max-width: 48rem) {
-	.horizontal-holder{height:60vh !important; border:0px solid yellow !important;}
+	.horizontal-holder{height:70vh !important; border:0px solid yellow !important;}
 
-	.horizontal-scroll {  overflow-y: visible;}
+	.horizontal-scroll {  overflow-y: visible !important;}
 
 //   #feature .stack-layout{max-height:50vh;}
 
@@ -3238,12 +3237,15 @@ animation-delay: .5s;
 
 	.horizontal-scroll {
 	margin: 0 auto 0 auto !important;
-	width: calc(80vh + 1px) !important;
-	height: 80vh !important;
-	transform: rotate(-90deg) translateY(-80vh) !important;
-	border:0px solid red !important;
+	width: calc(70vh + 1px) !important;
+	height: 90vh !important;
+	transform: rotate(-90deg) translateY(-70vh) !important;
+	// border-left:1px solid green !important;
+	// border-right:1px solid blue !important;
+	// border-bottom:1px solid yellow !important;
+	// border-top:1px solid red !important;
 	}
-
+	.horizontal-scroll iframe {width: 90vw !important;}
 
 
 	.mob {

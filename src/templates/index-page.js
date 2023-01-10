@@ -550,30 +550,18 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
+
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
 
-
-
-
-
 <div>
-{/* <section className="vertical" id="info" order="1" name="info" style={{ display:'',  minHeight:'', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
-  <article style={{ margin:'0 0 0 0'}}> */}
 
 
 
 
-
-
-{/* {UnderlayImage ? (
-""
-) : (
-  ""
-)} */}
              
-             <div id="top" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
+    <div id="top" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
   padding:'2% 4% 0 4%',
   // textShadow:'0 2px 3px #000',
   //  background:'rgba(0,0,0,0.70)',
@@ -647,15 +635,6 @@ Deploy to Netlify
 </div>
 <br />
 
-
-{/* 
-<h2 className="title1 txtshadow-header"> Launch Yours Today</h2>
- <br />
- Ready To Go = Be Up In Minutes<br />
-Cloud Hosting = Free Forever<br />
-Web Apps = NO Apple or Google
-<br />
-<span  className="neonText2">User Install Apps = NO Fees</span> */}
 
  </div>
 
@@ -1060,9 +1039,9 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
- <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
+ <div className="" style={{height:'50%', paddingTop:'50%', width:'100vw'}}></div>
 
-
+ <div className="introspacer" style={{border:'0px solid', width:''}} />
  {/* <div style={{display:'grid', placeContent:'center'}}>
  <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
  </div> */}
@@ -1080,7 +1059,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             ""
           )}
 
-<div className="introspacer" style={{border:'0px solid', width:''}} />
+
 
 
 
