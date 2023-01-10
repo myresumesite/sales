@@ -12,8 +12,12 @@
     "url": "https://github.com/twilightscapes/gatsby-starter-MyResume/issues"
   },
   "scripts": {
+    "build": "gatsby build",
     "develop": "gatsby develop",
-    "build": ""
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "@sindresorhus/slugify": "^1.1.0",
