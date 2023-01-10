@@ -202,6 +202,7 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
+    const { iconimage } = useSiteMetadata()
     // const { showDates } = useSiteMetadata()
     // const { showPopup } = useSiteMetadata()
 
@@ -845,13 +846,29 @@ Web Apps = NO Apple or Google
 
 
               
-    <div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
+    <div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'85vh', color:'#ccc'}}>
 
-          <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'px solid red',}}>View More </Link>
+<div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'85vh', color:'#ccc'}}>
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
+          {iconimage ? (
+      <img className="" src={iconimage} alt={companyname} style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
+                ) : (
+                  companyname
+                )}
+                MyResume<br />
+            Buy it now<br />
+           
+            
+          </Link>
 
-
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', gap:'30px', placeContent:'', border:'px solid red', margin:'0 10vw'}}>
+          <StaticImage src="../../static/assets/logo+.webp" alt="MyResume Logo Plus" style={{maxHeight:'100px', maxWidth:'120px', border:'none'}} />
+          MyResume+<br />
+            Buy it now<br />
+          </Link>
+</div>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
             </div>
 
             <div style={{display:'grid', placeContent:'center'}}
