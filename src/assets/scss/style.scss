@@ -165,10 +165,24 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
   filter: drop-shadow(0px 0px 10px rgba(197, 191, 191, 0.5)); 
 } 
 
+
+.featured {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	}
+	
+.featured :first-child { grid-area: 5 / 1 / 6 / 6; border:0px solid blue}
+.featured :last-child { grid-area: 1 / 1 / 5 / 6; border:0px solid red }
+	
+
+
 @media (max-width: 48rem) {
 	.featured {
 	max-width: 100vw !important;
-	height: 68vh !important;
+	// height: 68vh !important;
 	}
 
 	/* .horizontal-holder{height:100vh !important} */
@@ -180,11 +194,30 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 	border: 1px inset 222 !important;
 	border-radius: 12px;
 	aspect-ratio: 16 / 9 !important;
-	height: 85vh !important;
+	max-height: 85vh !important;
 	position:relative;
 	overflow: hidden;
+	margin:0 auto;
+	width:100%;
+	height:100vh;
 	/* transform: translateX(100vw); */
 	transition: transform 250ms ease-in-out;
+}
+
+.sitelabel{
+	position:absolute;
+	bottom:-40px;
+	left:20%;
+	right:20%;
+	display: flex;
+	justify-content: space-around;
+	width:58%;
+	margin:0 auto;
+	padding:.5rem 0;
+	background:rgba(0,0,0,.6);
+	color:#fff;
+	text-shadow: 0 1px 1px #222;
+	border-radius: 10px;
 }
 
 
@@ -3111,24 +3144,6 @@ article img {
 
 /* Safari Desktop NO SNAP */
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
-
-
-		.horizontal-scroll .featured::before {
-		content: ' ';
-		position: absolute;
-		z-index: 1;
-		display: block;
-		width: 100%;
-		height: 100%;
-		border:1px solid transparent;
-		/* background:rgba(0, 0, 0, .7); */
-		}
-	
-		.horizontal-scroll .featured:hover::before {
-		animation: move 3s forwards;
-		}
-
-
 	 .horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
  	/* scroll-snap-type:none !important; */
 	 }
@@ -3279,13 +3294,13 @@ animation-delay: .5s;
 
 
 .horizontal-scroll::before{
-  content:' \2329  swipe ';
+  content:' \2329 \2329  swipe ';
   position:absolute;
   z-index: 1;
   display: inline-block;
   margin:auto;
   padding:0 10px;
-  background:rgba(0, 0, 0, .7);
+  background:rgba(0, 0, 0, .4);
   opacity:.7;
   display:flex;
   flex-direction:column;
