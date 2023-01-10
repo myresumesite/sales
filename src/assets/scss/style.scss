@@ -2849,6 +2849,7 @@ article img {
 
 .post-card img {
 	border-radius: 12px !important;
+
 }
 
 .post-content {
@@ -3092,8 +3093,10 @@ article img {
 }
 @media (max-width: 48rem) {
 	.panels > * {
-		margin: 0 0 100vw 0;
+		margin: 0 0 50vw 0;
 	}
+
+	.post-card img {padding:0 20vw;}
 
 	.horizontal-scroll{
 		width: calc(100% + 1px);

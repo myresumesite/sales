@@ -445,7 +445,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* show feature */}
   {showFeature ? (   
 
-<section id="feature" order="2" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
 
 
   <article>
@@ -548,7 +548,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showInfo ? (
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
+<div id="top" order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
@@ -557,11 +557,11 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div>
 
-
+<div className="introspacer1" style={{display:'block', width:'50%', height:'50%', border:'0px solid',}} />
 
 
              
-    <div id="top" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
+    <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
   padding:'2% 4% 0 4%',
   // textShadow:'0 2px 3px #000',
   //  background:'rgba(0,0,0,0.70)',
@@ -874,28 +874,31 @@ Deploy to Netlify
 
 
 
-            <div className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
 
-<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+
+
+<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'', color:'#ccc'}}>
+
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           
           
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           MyResume<br />
           <span style={{fontSize:'120%',}}>$49</span>
           </Link>
 
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           MyResume+<br />
           <span style={{fontSize:'120%',}}>$99</span>
           </Link>
 </div>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
-            </div>
+              {/* <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div> */}
+      </div>
 
-
+            
 </div></div>
 
 
@@ -932,7 +935,7 @@ Deploy to Netlify
 
 {/*  show Resume */}
 {showResume ? (
-<section className="vertical" id="resume" order="" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 2rem 0', position:'relative', border:'0px solid blue'}}>
+<section className="vertical" id="resume" order="3" style={{ display:'', minHeight:'100vh', overflow:'', margin:'0 0 2rem 0', position:'relative', border:'0px solid blue'}}>
 
 
 <div className="toolbar noapp print" style={{display:'flex', flexDirection:'', gap:'', width:'', borderTop:'1px solid #777', borderBottom:'1px solid #777', justifyContent:'', background:'rgba(24, 29, 31, 0.2)', borderRadius:'12px', padding:'5px 0 5px 0', }}>
@@ -982,7 +985,7 @@ Deploy to Netlify
 {/*  show Skills */}
 {showSkills ? (
   // <ScrollAnimation animateIn="zoomInDown" animateOnce={false} animatePreScroll={false} delay={100}> 
-<section className="print vertical" id="skills" order="" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
+<section className="print vertical" id="skills" order="4" style={{ width:'100%', overflow:'hidden', position:'relative',  justifyContent:'center', alignContent:'center', margin:'5vh auto', textAlign:'center', borderRadius:'8px', minHeight:'100vh', maxWidth:'', padding:'1rem', display:'', placeContent:'', border:'0px solid green', }}>
 <br />
 <div className="flexbutt" style={{display:'flex', justifyContent:'center', width:'100vw', marginLeft:'', columnGap:'150px', border:'0px solid blue' }} dangerouslySetInnerHTML={{ __html: SkillsText }}>
 </div>
@@ -1027,21 +1030,23 @@ Deploy to Netlify
 <section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'0 0', border:'0px solid red'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', width:'', border:'0px solid red'}}>
 
-<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .4)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
 textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
 
 
-<div className="introspacer" style={{border:'0px solid', width:''}} />
+
 
 
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
+
+
  <div className="" style={{height:'50%', paddingTop:'50%', width:'100vw'}}></div>
 
- <div className="introspacer" style={{border:'0px solid', width:''}} />
+<div className="introspacer1" style={{display:'block', height:'1px', border:'0px solid', width:''}} />
  {/* <div style={{display:'grid', placeContent:'center'}}>
  <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
  </div> */}
@@ -1135,17 +1140,17 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'100vh', color:'#ccc'}}>
 
-<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           
           
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           MyResume<br />
           <span style={{fontSize:'120%',}}>$49</span>
           </Link>
 
-          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           MyResume+<br />
           <span style={{fontSize:'120%',}}>$99</span>
           </Link>

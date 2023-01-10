@@ -19,8 +19,8 @@ const PostCard = ({ data }) => {
 <section className="child" style={{position:'relative', height:'', overflow:'hidden'}}>
 
   <article
-    className="post-card1"
-    style={{display:'', alignItems:'center', justifyContent:'center', width:'100%', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
+    className="post-card"
+    style={{display:'', alignItems:'center', justifyContent:'center', width:'', height:'', position:'relative', fontSize:'clamp(1rem, 1.2vw, 3rem)', background:'transparent', border:'0px solid blue', }}
   >
 
 
