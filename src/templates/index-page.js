@@ -513,7 +513,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 {showNav ? (
-  <div className="spacer" style={{height:'50px', border:'0px solid yellow'}}></div>
+  <div className="spacer" style={{height:'80px', border:'0px solid yellow'}}></div>
       ) : (
         ""
       )}
@@ -521,7 +521,24 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 
 
+<div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'-10vh', zIndex:'-1',}}>
+{UnderlayImage ? (
+            <GatsbyImage
+            image={UnderlayImage}
+            alt={frontmatter.title + " - image"}
+            className="mcboaty print"
+            placeholder="blurred" loading="eager"
+              style={{height:'100vh', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}}
+          />
+       
+          
+          ) : (
+            ""
+          )}
 
+{/* <StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" width="100vw" height="100vh" style={{width:'100vw', height:'90vh', maxHeight:'', position:'fixed', zIndex:'1', bottom:'0', border:'1px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} /> */}
+       
+</div>
 
 
 
@@ -544,24 +561,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* <section className="vertical" id="info" order="1" name="info" style={{ display:'',  minHeight:'', position:'relative', zIndex:'0', overflow:'', margin:'0', padding:'0', border:'0px solid red'}}>
   <article style={{ margin:'0 0 0 0'}}> */}
 
-  <div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'-10vh', zIndex:'-1',}}>
-{UnderlayImage ? (
-            <GatsbyImage
-            image={UnderlayImage}
-            alt={frontmatter.title + " - image"}
-            className="mcboaty print"
-            placeholder="blurred" loading="eager"
-              style={{height:'100vh', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}}
-          />
-       
-          
-          ) : (
-            ""
-          )}
 
-{/* <StaticImage placeholder="blurred" loading="eager" className="print" src="../../static/assets/underlay.webp" alt="Default Image" width="100vw" height="100vh" style={{width:'100vw', height:'90vh', maxHeight:'', position:'fixed', zIndex:'1', bottom:'0', border:'1px solid !important', backgroundSize:'cover', objectFit:'cover', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}} /> */}
-       
-</div>
 
 
 
@@ -670,16 +670,7 @@ Web Apps = NO Apple or Google
 
 
 
-           {SecondaryImage ? (
-            <GatsbyImage
-              image={SecondaryImage}
-              alt={frontmatter.title + " - Featured image"}
-              className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'30vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
-            />
-          ) : (
-            ""
-          )}
+     
 
 
 
