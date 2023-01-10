@@ -253,7 +253,7 @@ body::after{
 
 
 <li className="" order="5" style={{display:'',}}>
- <AnchorLink to="/#support"  className="navbar-item" style={{}}>Features</AnchorLink>
+ <AnchorLink to="/#support"  className="navbar-item" style={{}}>{menu1}</AnchorLink>
  </li>
 
 
@@ -269,7 +269,7 @@ body::after{
 
 
  <li className="" order="5" style={{display:'',}}>
- <Link state={{modal: true}} to="/#getstarted"  className="navbar-item" style={{}}>Get Started</Link>
+ <Link to="/#getstarted"  className="navbar-item" style={{}}>Get Started</Link>
  </li>
 
  {/* <li className="" order="5" style={{display:'',}}>

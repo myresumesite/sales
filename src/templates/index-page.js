@@ -427,7 +427,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       />
 
 
-<div id="top" name="pagetop" className="container22" style={{
+<div name="pagetop" className="container22" style={{
  	// overflowY: 'scroll',
   //  overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
@@ -572,7 +572,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   ""
 )} */}
              
-             <div id="" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
+             <div id="top" className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
   padding:'2% 4% 0 4%',
   // textShadow:'0 2px 3px #000',
   //  background:'rgba(0,0,0,0.70)',
@@ -843,9 +843,13 @@ Web Apps = NO Apple or Google
 
 
 
-<div id="getstarted" style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize1">
-              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh', maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://secure3.myshopify.com/checkouts/co/027ae6bd95565ad11cdecf54f1b0c1f2/information" frameBorder="0" allowFullScreen></iframe>
+
+              
+    <div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
+
+          <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'px solid red',}}>View More </Link>
+
+
               
               <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
             </div>

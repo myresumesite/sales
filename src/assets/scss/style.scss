@@ -2940,22 +2940,7 @@ article img {
  ;
 }
 
-@media (hover: hover) {
-	.horizontal-scroll .featured::before {
-	content: ' ';
-	position: absolute;
-	z-index: 1;
-	display: block;
-	width: 100%;
-	height: 100%;
-	border:1px solid transparent;
-	/* background:rgba(0, 0, 0, .7); */
-	}
 
-	.horizontal-scroll .featured:hover::before {
-	animation: move 3s forwards;
-	}
-}
 
 .horizontal-scroll-wrapper:after {
 	bottom: 20vh;
@@ -3126,6 +3111,24 @@ article img {
 
 /* Safari Desktop NO SNAP */
 @supports(font:-apple-system-body) and (not(-webkit-touch-callout:default)){
+
+
+		.horizontal-scroll .featured::before {
+		content: ' ';
+		position: absolute;
+		z-index: 1;
+		display: block;
+		width: 100%;
+		height: 100%;
+		border:1px solid transparent;
+		/* background:rgba(0, 0, 0, .7); */
+		}
+	
+		.horizontal-scroll .featured:hover::before {
+		animation: move 3s forwards;
+		}
+
+
 	 .horizontal-scroll-wrapper, .horizontal-scroll, .horizontal-holder {
  	/* scroll-snap-type:none !important; */
 	 }
@@ -3281,17 +3284,17 @@ animation-delay: .5s;
   z-index: 1;
   display: inline-block;
   margin:auto;
-  padding:10px 10px;
+  padding:0 10px;
   background:rgba(0, 0, 0, .7);
   opacity:.7;
   display:flex;
   flex-direction:column;
   justify-content:center;
   border-radius:12px;
-  bottom:80px; right:12vh;
+  bottom:60px; right:0;
   color:#fff;
   transform: rotate(90deg);
-  font-size:clamp(2rem, 3.5vw, 3.8rem);
+  font-size:clamp(2rem, 3vw, 3.3rem);
   text-shadow:2px 2px 2px #333;
 
 }
