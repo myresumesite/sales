@@ -848,7 +848,7 @@ Web Apps = NO Apple or Google
 
 
 
-<div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'100vw', height:'80vh', color:'#ccc', padding:''}}>
+<div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
 <ReactPlayer
       className='react-player66'
       url="https://youtu.be/2_Noj7lS-tM"
@@ -874,7 +874,7 @@ Web Apps = NO Apple or Google
       </button>}
         // light="../assets/transparent.png"
     />
-    <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-85px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
+    <div className="sitelabel" style={{}}>Two Great Options: MyResume and MyResume+ </div>
 </div>
 
 
@@ -1074,7 +1074,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
             <div className="featured mobilesize1">
-              <iframe id="iframe1" style={{}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
