@@ -841,6 +841,7 @@ Deploy to Netlify
       }}
       playing
       playsinline
+      loop
       playIcon={
         <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
 
@@ -851,7 +852,7 @@ Deploy to Netlify
             </div>
       </div>
       </button>}
-        // light="../assets/transparent.png"
+        light="../assets/transparent.png"
     />
     <div className="sitelabel" style={{}}>Two Great Options: MyResume and MyResume+ </div>
 </div>
@@ -877,7 +878,7 @@ Deploy to Netlify
 
 
 
-<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'', color:'#ccc'}}>
+<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
 
 <div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           
