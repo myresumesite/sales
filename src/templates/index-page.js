@@ -202,7 +202,7 @@ const HomePage = ({ data }) => {
     const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
-    const { iconimage } = useSiteMetadata()
+
     // const { showDates } = useSiteMetadata()
     // const { showPopup } = useSiteMetadata()
 
@@ -548,7 +548,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showInfo ? (
 
-<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'0 0', border:'0px solid red'}}>
+<div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
@@ -676,7 +676,7 @@ Web Apps = NO Apple or Google
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'30vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
+              style={{ maxWidth:'', height:'', maxHeight:'25vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'10px'}}
             />
           ) : (
             ""
@@ -895,7 +895,7 @@ Web Apps = NO Apple or Google
 
 
 
-            <div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
+            <div className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'80vh', color:'#ccc'}}>
 
 <div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
           
@@ -1015,6 +1015,19 @@ Web Apps = NO Apple or Google
 {/* end show Skills */}
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <section id="support" className="outer section section--gradient" >
   <div className="container" style={{padding: '0 8%', maxWidth:'', justifyContent:'center', margin:'10vh 0', color:'#fff'}}>
     <Tips />
@@ -1037,8 +1050,8 @@ Web Apps = NO Apple or Google
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:'0 0', border:'0px solid red'}}>
 
-<div  style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .7)', color:'#fff', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
-  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', border:'1px solid #999 !important', borderLeft:'none !important', padding:'1rem',
+<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .4)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+  alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
 textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
 
 
@@ -1084,7 +1097,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{}}
               className="featured mobilesize1">
-              <iframe id="iframe3" style={{}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe3" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
@@ -1093,7 +1106,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{}}
               className="featured">
-              <iframe id="iframe2" style={{}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
@@ -1101,7 +1114,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{}}
               className="featured">
-              <iframe id="iframe4" style={{}} title="iFrame" className="iframe" width="980" height="550" src="https://silly-pothos-289a5c.netlify.app/#skills" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe4" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://silly-pothos-289a5c.netlify.app/#skills" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{}}>Full featured, yet fast and flexible </div>
             </div>
@@ -1141,11 +1154,30 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
+<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'100vh', color:'#ccc'}}>
+
+<div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'10vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'85vh', color:'#ccc'}}>
+          
+          
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          MyResume<br />
+          <span style={{fontSize:'120%',}}>$49</span>
+          </Link>
+
+          <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'120%', display:'flex', flexDirection:'column', gap:'30px', margin:'0', width:'30vw', maxHeight:'50vh'}}>
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'150px',  border:'none'}} /><br />
+          MyResume+<br />
+          <span style={{fontSize:'120%',}}>$99</span>
+          </Link>
+</div>
+              
+              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
+            </div>
 
 
 
-
-
+<br /><br />
 
 
  </div>{/* end scooch */}
