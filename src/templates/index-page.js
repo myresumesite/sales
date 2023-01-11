@@ -828,14 +828,14 @@ Deploy to Netlify
 
 <div id="getstarted">
 <div style={{position:'', border:'0px solid yellow', display:'grid', flexDirection:'column', placeContent:'center', alignItems:'center', width:'100%', height:'65vh', color:'#ccc'}}>
-<Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
+<Link state={{modal: true}} className="button" to="/getstarted" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>Buy Now!</Link>
 </div>
 </div>
 
 
 
 
-<div id="" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
+<div id="" className="featured mobilesize1" style={{display:'none', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
 <ReactPlayer
       className='react-player66'
       url="https://youtu.be/2_Noj7lS-tM"
@@ -1147,26 +1147,26 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'100vh', color:'#ccc'}}>
+<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
 
 <div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           
           
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
           <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
-          MyResume<br />
-          <span style={{fontSize:'120%',}}>$49</span>
+          Includes Profile, Resume, Skills and Cover Letter.<br />
+          <span style={{fontSize:'140%', fontWeight:'bold'}}>$49</span>
           </Link>
 
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
           <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
-          MyResume+<br />
-          <span style={{fontSize:'120%',}}>$99</span>
+          All the bells and whistles. Includes the kitchen sink.<br />
+          <span style={{fontSize:'140%', fontWeight:'bold'}}>$99</span>
           </Link>
 </div>
               
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div>
-            </div>
+              {/* <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Two Great Options: MyResume and MyResume+ </div> */}
+      </div>
 
 
 
