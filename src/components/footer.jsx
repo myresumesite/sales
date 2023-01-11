@@ -106,7 +106,7 @@ export function Footer() {
       <nav className="footerlinks" aria-label="footer">
         <br />
       <Consent />
-      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link to="/disclaimer">Disclaimer</Link>  |  <Link to="/privacy">Privacy Policy</Link>  |  <Link to="/terms">Terms of Use</Link></div>
+      <div style={{textAlign: 'center', margin: '2rem 10px 1rem 10px', justifyContent: 'center', fontSize: '.95rem', textDecoration:'none'}}><Link to="/">Home</Link> | <Link to="/disclaimer">Disclaimer</Link>  |  <Link  state={{modal: true}} to="/privacy">Privacy Policy</Link>  |  <Link to="/terms">Terms of Use</Link></div>
   
 
 <div style={{textAlign: 'center', margin: '0 0 2rem 0', justifyContent: 'center', fontSize: '.75rem'}}>Copyright&copy; {(new Date().getFullYear())} {companyname}

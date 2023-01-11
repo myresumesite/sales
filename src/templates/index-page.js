@@ -548,7 +548,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showInfo ? (
 
-<div id="top" order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
+<div order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
   
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 

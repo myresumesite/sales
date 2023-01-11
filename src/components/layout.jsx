@@ -140,30 +140,24 @@ body::after{
       <Seo />
 
 
+{/* 
+<ModalRoutingContext.Consumer closeTimeoutMS={300} >
+{({ modal, closeTo }) => (
+<div style={{overflow:''}}>
+  {modal ? (
+    <div style={{display:'', position:'fixed', top:'10%', right:'3%', padding:'0px', fontSize:'2rem', background:'#111 !important', opacity:'1 !important', zIndex:'55 !important', filter:' drop-shadow(0px 4px 3px #000)', color:'#fff'}}>
+    <Link state={{noScroll: true }} to={closeTo} style={{fontSize:'2rem',  textDecoration:'none', lineHeight:'', display:'flex', flexDirection:'column', color:'#fff', cursor:'pointer'}}>
+      <AiOutlineClose />
+    </Link>
+    </div>
+  ) : (
+''
+  )}
+</div>
+)}
+</ModalRoutingContext.Consumer> */}
 
-      <ModalRoutingContext.Consumer closeTimeoutMS={300}>
-    {({ modal, closeTo }) => (
- 
 
-      <div style={{overflow:'', display:'flex', justifyContent:'center', border:'0px solid yellow !important'}}>
-        {modal ? (
-          
-         
-          <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'2', color:'inherit !important', }}>
-          <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
-            <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
-            {/* <span style={{fontSize:'0px', textShadow:'4px 4px 4px #111', filter:'drop-shadow(2px 2px 4px #000) !important', fontWeight:'bold', border:'2px solid', width:'50px', borderRadius:'100%'}}>X</span> */}
-          </Link>
-          </div>
-
-  
-        ) : (
-""
-        )}
-
-      </div>
-    )}
-  </ModalRoutingContext.Consumer>
 
 
 
@@ -291,7 +285,7 @@ body::after{
   ""
 )}
 
-<header className="print" style={{}} >
+<header id="top" className="print" style={{}} >
 
 
 
@@ -504,7 +498,21 @@ body::after{
 
 
       
-
+        <ModalRoutingContext.Consumer closeTimeoutMS={300}>
+    {({ modal, closeTo }) => (
+      <div style={{overflow:'', display:'flex', justifyContent:'center', border:'0px solid yellow !important'}}>
+        {modal ? (
+          <div id="closeicon" style={{position:'fixed', top:'80px', right:'10vw', zIndex:'2', color:'inherit !important', }}>
+          <Link state={{noScroll: true }} to={closeTo} style={{color:'inherit !important',  }}>
+            <AiOutlineClose style={{fontSize:'', textShadow:'4px 4px 0px #111', filter:'drop-shadow(2px 2px 0px #000)', fontWeight:'bold', border:'2px solid', width:'30px', height:'30px', borderRadius:'100%'}}/>
+          </Link>
+          </div>
+        ) : (
+""
+        )}
+      </div>
+    )}
+  </ModalRoutingContext.Consumer>
         
  
   </CustomBox>
