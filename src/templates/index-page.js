@@ -549,18 +549,19 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {showInfo ? (
 
 <div id="top" order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
+  
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
  <div className="" style={{height:'50%', paddingTop:'50%'}}></div>
 
 
 
+
+
+
+
+
 <div>
-
-<div className="introspacer1" style={{display:'block', width:'50%', height:'50%', border:'0px solid',}} />
-
-
-             
     <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
   padding:'2% 4% 0 4%',
   // textShadow:'0 2px 3px #000',
@@ -814,6 +815,9 @@ Deploy to Netlify
 {/* </article>
 </section> */}
 
+
+
+
 </div>
 
 
@@ -822,12 +826,16 @@ Deploy to Netlify
 
 
 
-            
+<div id="getstarted">
+<div style={{position:'', border:'0px solid yellow', display:'grid', flexDirection:'column', placeContent:'center', alignItems:'center', width:'100%', height:'65vh', color:'#ccc'}}>
+<Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>View More </Link>
+</div>
+</div>
 
 
 
 
-<div id="getstarted" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
+<div id="" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
 <ReactPlayer
       className='react-player66'
       url="https://youtu.be/2_Noj7lS-tM"
@@ -854,7 +862,7 @@ Deploy to Netlify
       </button>}
         light="../assets/transparent.png"
     />
-    <div className="sitelabel" style={{}}>Two Great Options: MyResume and MyResume+ </div>
+
 </div>
 
 
@@ -885,14 +893,14 @@ Deploy to Netlify
           
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
           <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
-          MyResume<br />
-          <span style={{fontSize:'120%',}}>$49</span>
+          Includes Profile, Resume, Skills and Cover Letter.<br />
+          <span style={{fontSize:'140%', fontWeight:'bold'}}>$49</span>
           </Link>
 
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
           <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
-          MyResume+<br />
-          <span style={{fontSize:'120%',}}>$99</span>
+          All the bells and whistles. Includes the kitchen sink.<br />
+          <span style={{fontSize:'140%', fontWeight:'bold'}}>$99</span>
           </Link>
 </div>
               

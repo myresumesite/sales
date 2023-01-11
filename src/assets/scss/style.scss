@@ -3099,8 +3099,8 @@ article img {
 	.post-card img {padding:0 20vw;}
 
 	.horizontal-scroll{
-		width: calc(100% + 1px);
-		transform: rotate(-90deg) translateY(-100%);
+		width: calc(100vw + 1px);
+		transform: rotate(-90deg) translateY(-100vw);
 	}
 	.horizontal-holder{
 		/* height:300px !important; */
@@ -3265,7 +3265,7 @@ animation-delay: .5s;
 
 @media (pointer: coarse) {
 	.RArrow span::before {
-	content: "\276E\276E swipe " !important;
+	content: "\276E swipe " !important;
 	}
 }
 
@@ -3296,7 +3296,7 @@ animation-delay: .5s;
 
 
 .horizontal-scroll::before{
-  content:'\2329\2329  swipe ';
+  content:'\2329 swipe ';
   position:absolute;
   z-index: 1;
   display: inline-block;
