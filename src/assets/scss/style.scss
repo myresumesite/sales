@@ -1262,7 +1262,8 @@ body.carto .carta {
 
 .ReactModal__Overlay {
 	opacity: 0;
-	transition: opacity 2000ms ease-in-out;
+	transition: opacity 700ms ease-in-out;
+	overflow-x: hidden !important;
 }
 .ReactModal__Overlay--after-open{
 	opacity: 1;
