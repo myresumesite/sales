@@ -1,12 +1,16 @@
 import defaultColors from "../util/default-colors.json"
 import darkColors from "../util/dark-theme-colors.json"
 import { lightness } from "@theme-ui/color"
+// import { useSiteMetadata } from "../hooks/use-site-metadata"
+import font1 from "../util/site.json"
+
+ const Font1 = font1
 const theme = {
   colors: {
     ...defaultColors,
-    text: "#000",
-    background: lightness("bodyBg", 0.7),
-    fontFamily: 'fontFamily',
+    text: "#111",
+    background: lightness("bodyBg", 0.9),
+    fontFamily: Font1,
     primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",

@@ -39,7 +39,7 @@ const CustomBox = styled.div`
 
 `
 
-const navStyle = {bg: "bodyBg",}
+const navStyle = {bg: "siteColor",}
 
 
 export const pageQuery = graphql`
@@ -428,7 +428,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       />
 
 
-<div name="pagetop" className="container22" style={{
+<div id="top" name="pagetop" className="container22" style={{
  	// overflowY: 'scroll',
   //  overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
@@ -720,16 +720,18 @@ Deploy to Netlify
 
   
   <div className="nameblock infomenu" sx={navStyle}  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
-
+  backdropFilter: 'blur(4px)',
   border:'1px solid #222', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
+  
   // background:'rgba(0,0,0,0.60)',
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   // background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   backdropFilter:'blur(0)',
   borderRadius:'10px',
   // textShadow:'0 1px 1px #444',
+  background:'rgba(167, 190, 197, 0.6)'
   }} ><br />
 <span className="font" style={{color:'', fontSize:'160%'}}>
   {/* {companyname} */}
@@ -756,12 +758,12 @@ Deploy to Netlify
     margin:'0 auto',
     display:'flex',
     alignSelf:'center',
-    color:''
+    color:'#fff'
     }}>{frontmatter.cta.ctaText}
 </a>
           ) : (
             
-            <Link to="/#getstarted" className="button print font" style={{color:'#fff', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/#getstarted" className="button print font" style={{color:'', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)'}}>{frontmatter.cta.ctaText}</Link>
           )}
 
 

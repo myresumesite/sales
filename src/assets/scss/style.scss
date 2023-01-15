@@ -1,19 +1,25 @@
-@import "theme-variables";
-@import "defaults";
-@import "lib/css-grid-utility";
+
+// @import "defaults";
+// @import "lib/css-grid-utility";
 @import "user.scss";
+// @import "theme-variables";
 
 body {
-	font-family: var(--font-family);
-	// color: var(--text-color);
-  // background:var(--theme-ui-colors-background);
+	// font-family: var(--font-family);
+  background:var(--theme-ui-colors-bodyBg);
 	overflow-x: hidden !important;
 	width: 100vw;
-
+	font-family:var(--theme-ui-colors-fontFamily);
 }
 
+// h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header label, .font{font-family: var(--theme-ui-colors-fontFamily), -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+// 	sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+// 	/* color:#ff0000; */
+// 	font-size: 120%;
+//   }
 
 
+.test{color:rgba(49, 105, 105, 0.8) ;}
 
 
 ::-webkit-scrollbar {
@@ -947,7 +953,7 @@ p {
 
 #installedbar {
 
-	background: rgb(45, 47, 48);
+	background: rgb(56, 83, 96);
 }
 
 /* a[aria-current] {

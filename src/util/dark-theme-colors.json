@@ -1,4 +1,6 @@
 {
-  "siteColor": "rgba(22, 24, 24, 0.8)",
-  "bodyBg": "rgba(0, 0, 0, 0.4)"
+  "siteColor": "rgba(167, 190, 197, 0.6)",
+  "bodyBg": "rgba(0, 0, 0, 0.8)",
+  "fontFamily": "Racing+Sans+One",
+  "bodyColor": "#eee"
 }
