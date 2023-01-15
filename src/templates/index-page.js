@@ -828,7 +828,7 @@ Deploy to Netlify
 
 <div id="getstarted">
 <div style={{position:'', border:'0px solid yellow', display:'grid', flexDirection:'column', placeContent:'center', alignItems:'center', width:'100%', height:'65vh', color:'#ccc'}}>
-<Link state={{modal: true}} className="button" to="/getstarted" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>Buy Now!</Link>
+<Link state={{modal: true}} className="button" to="/checkout" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>Buy Now!</Link>
 </div>
 </div>
 
@@ -886,7 +886,7 @@ Deploy to Netlify
 
 
 
-<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
+<div id="checkout2" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
 
 <div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           
@@ -1080,7 +1080,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
             <div className="featured mobilesize1">
-              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://cms-demo.netlify.com/#/collections/posts" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
@@ -1147,7 +1147,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-<div id="checkout" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
+<div id="checkout1" className="featured mobilesize1" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', gap:'10vw', justifyContent:'space-around', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc', marginTop:'10vh'}}>
 
 <div className="flexbutt" style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'row', gap:'5vw', justifyContent:'center', alignItems:'center', width:'100vw', maxWidth:'1000px', padding:'0 10vw', height:'', color:'#ccc'}}>
           

@@ -5,7 +5,8 @@ const theme = {
   colors: {
     ...defaultColors,
     text: "#000",
-    background: lightness("bodyBg", 0.9),
+    background: lightness("bodyBg", 0.7),
+    fontFamily: 'fontFamily',
     primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
