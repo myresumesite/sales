@@ -13,7 +13,7 @@ import {Footer} from "../components/footer"
 // import SignUp from "../components/install-discount"
 // import Theme from "../components/theme"
 import Tips from "../components/tippanel"
-import { IoShareOutline } from 'react-icons/io5'
+// import { IoShareOutline } from 'react-icons/io5'
 import { GoArrowRight } from 'react-icons/go'
 
 import { Helmet } from "react-helmet"
@@ -168,7 +168,7 @@ export const pageQuery = graphql`
 const HomePage = ({ data }) => {
   // const { postcount } = useSiteMetadata()
   const { markdownRemark, posts } = data // data.markdownRemark holds your post data
-  const { frontmatter, html, excerpt } = markdownRemark
+  const { frontmatter, excerpt } = markdownRemark
   const Image = frontmatter.featuredImage
     ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
     : ""
@@ -193,15 +193,15 @@ const HomePage = ({ data }) => {
     const YouTubeControls = frontmatter.youtubecontrols
     const YouTubeAutostart = frontmatter.youtubeautostart
     // const SkillsTitle = frontmatter.skillsTitle
-    const SkillsText = frontmatter.skillsText
+    // const SkillsText = frontmatter.skillsText
     const coverText = frontmatter.coverletter.coverText
     const { showNav } = useSiteMetadata()
     const { showInfo } = useSiteMetadata()
     const { showFeature } = useSiteMetadata()
     const { showPosts } = useSiteMetadata()
-    const { showResume } = useSiteMetadata()
+    // const { showResume } = useSiteMetadata()
     const { showSocial } = useSiteMetadata()
-    const { showSkills } = useSiteMetadata()
+    // const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
 
@@ -895,13 +895,13 @@ Deploy to Netlify
           
           
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
-          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
+          <StaticImage src="../../static/assets/logo.webp" width="auto" height="auto" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           Includes Profile, Resume, Skills and Cover Letter.<br />
           <span style={{fontSize:'140%', fontWeight:'bold'}}>$49</span>
           </Link>
 
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" width="auto" height="auto" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           All the bells and whistles. Includes the kitchen sink.<br />
           <span style={{fontSize:'140%', fontWeight:'bold'}}>$99</span>
           </Link>
