@@ -177,7 +177,7 @@ body::after{
       <li className="" style={{position:'relative', maxHeight:'60px', width:'auto', minWidth:'70px', display:'flex', justifyContent:'center'}}>
             <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
-      <img className="" src={iconimage} alt={companyname} width="auto" height="60px" style={{maxHeight:'60px', border:'none'}} />
+      <img className="" src={iconimage} alt={companyname} width="100px" height="60px" style={{maxHeight:'60px', border:'0px solid blue'}} />
                 ) : (
                   companyname
                 )}
