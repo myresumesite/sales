@@ -1479,8 +1479,8 @@ body.homepage .mobilespace {
 	}
 
   .container21{display: flex; flex-direction: column;}
-  #feature{order:2 !important;}
-  #info{order:1 !important; }
+//   #feature{order:2 !important;}
+//   #info{order:1 !important; }
   /* .nameblock{margin-top:50px !important;} */
   .container21 section{min-height: inherit !important;}
 }
@@ -2345,20 +2345,20 @@ body.homepage footer {
 
 @media (max-width: 58rem) {
 
-	#greeting {
-	order: 2;
-	}
+// 	#greeting {
+// 	order: 2;
+// 	}
 
-	#intro {
-	order: 1;
-	}
+// 	#intro {
+// 	order: 1;
+// 	}
 
 
-#info{order:1 !important;}
-#feature{order:2;}
-#posts{order: 3;}
-#resume{order:4;}
-#skills{order:5;}
+// #info{order:1 !important;}
+// #feature{order:2;}
+// #posts{order: 3;}
+// #resume{order:4;}
+// #skills{order:5;}
 
 }
 
