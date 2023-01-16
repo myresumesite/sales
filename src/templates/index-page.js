@@ -1031,12 +1031,12 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             
 
 
-            <div style={{}}
+            {/* <div style={{}}
               className="featured mobilesize1">
               <iframe id="iframe3" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://fluffy-kringle-4442f5.netlify.app/#resume" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
-            </div>
+            </div> */}
 
 
 
@@ -1048,12 +1048,12 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             </div>
 
 
-            <div style={{}}
+            {/* <div style={{}}
               className="featured">
               <iframe id="iframe4" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://silly-pothos-289a5c.netlify.app/#skills" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{}}>Full featured, yet fast and flexible </div>
-            </div>
+            </div> */}
 
 
 
@@ -1113,7 +1113,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-<br /><br />
+<br /><br /><br /><br />
 
 
  </div>{/* end scooch */}
