@@ -2,9 +2,6 @@ import defaultColors from "../util/default-colors.json"
 import darkColors from "../util/dark-theme-colors.json"
 import { lightness } from "@theme-ui/color"
 // import { useSiteMetadata } from "../hooks/use-site-metadata"
-import font1 from "../util/site.json"
-
- const Font1 = font1
 const theme = {
   colors: {
     ...defaultColors,
