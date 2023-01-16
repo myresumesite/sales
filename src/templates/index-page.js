@@ -234,14 +234,14 @@ const HomePage = ({ data }) => {
   const resizeMobile = ()=>{
     document.getElementById("iframe1").style.width = '400px'
     document.getElementById("iframe2").style.width = '400px'
-    document.getElementById("iframe3").style.width = '400px'
-    document.getElementById("iframe4").style.width = '400px'
+    // document.getElementById("iframe3").style.width = '400px'
+    // document.getElementById("iframe4").style.width = '400px'
   }
   const resizeDesk = ()=>{
     document.getElementById("iframe1").style.width = 'initial'
     document.getElementById("iframe2").style.width = 'initial'
-    document.getElementById("iframe3").style.width = 'initial'
-    document.getElementById("iframe4").style.width = 'initial'
+    // document.getElementById("iframe3").style.width = 'initial'
+    // document.getElementById("iframe4").style.width = 'initial'
   }
 
     // getElementsByClassName
@@ -1006,7 +1006,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-        {openQuote ? (
+        {/* {openQuote ? (
               <div
             style={{display:'grid', placeContent:'center'}}
               className="featured"
@@ -1014,7 +1014,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
             />
           ) : (
             ""
-          )}
+          )} */}
 
 
 
