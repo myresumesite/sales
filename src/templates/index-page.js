@@ -449,7 +449,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* show feature */}
   {showFeature ? (   
 
-<section id="feature" order="2" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+<section id="feature" order="" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
 
 
   <article>
@@ -524,14 +524,14 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       )}
 
 
-<div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', bottom:'-10vh', zIndex:'-1',}}>
+<div className="" style={{maxHeight:'100vh', height:'100vh', overflow:'hidden',position:'fixed', top:'0', zIndex:'-1',}}>
 {UnderlayImage ? (
             <GatsbyImage
             image={UnderlayImage}
             alt={frontmatter.title + " - image"}
             className="mcboaty print"
             placeholder="blurred" loading="eager"
-              style={{height:'100vh', width:'100vw', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}}
+              style={{height:'100vh', width:'100vw', position:'', bottom:'-10vh', maxHeight:'',  objectFit:'cover', overflow:'', border:'0px solid red !important', filter:'drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.9))'}}
           />
        
           
