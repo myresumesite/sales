@@ -730,7 +730,6 @@ Deploy to Netlify
   // background:'rgba(0,0,0,0.60)',
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   // background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
-  backdropFilter:'blur(0)',
   borderRadius:'10px',
   // textShadow:'0 1px 1px #444',
   background:'rgba(167, 190, 197, 0.6)'
@@ -765,7 +764,7 @@ Deploy to Netlify
 </a>
           ) : (
             
-            <Link to="/#getstarted" className="button print font" style={{position:'relative', fontSize:'120%', fontWeight:'bold', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)', display:'flex', textShadow:'1px 1px 1px #222'}}>{frontmatter.cta.ctaText}<GoArrowRight style={{fontSize:'100px', position:'absolute', right:'-65px', animation:'nudgeMe 1s ease-in-out', animationDelay:'0s', animationIterationCount:'5'}} /></Link>
+            <Link to="/#getstarted" className="button print font" style={{position:'relative', fontSize:'120%', fontWeight:'bold', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)', display:'flex', textShadow:'1px 1px 1px #222'}}>{frontmatter.cta.ctaText}<GoArrowRight style={{fontSize:'100px', position:'absolute', right:'-65px', animation:'nudgeMe 1s ease-in-out', animationDelay:'0s', animationIterationCount:'5'}} /></Link>
           )}
 
 

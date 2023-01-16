@@ -10,7 +10,6 @@ const theme = {
     ...defaultColors,
     text: "#111",
     background: lightness("bodyBg", 0.9),
-    fontFamily: Font1,
     primary: "#5C2941",
     accent: "#fff",
     muted: "rgba(0, 0, 0, 0.7)",
