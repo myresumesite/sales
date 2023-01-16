@@ -2723,7 +2723,7 @@ footer {
  #000,
  rgb(99, 6, 107));
 	background-size: 300% 400%;
-	animation: logopulse 14s ease-in-out infinite;
+	animation: logopulse 1s ease-in-out infinite;
 }
 
 @keyframes logopulse {
@@ -2748,6 +2748,37 @@ footer {
 	opacity: 0.5;
 	}
 }
+
+
+@keyframes swipeLeft
+{
+from {left: 480px;} 
+to{left:20px;} 
+}
+
+
+@keyframes nudgeMe {
+
+		from {right: -65px;} 
+		 to{right:-100px;}
+
+		0% {
+	transform: scale(1);
+	opacity: 1;
+		}
+
+	50% {
+	// transform: scale(1.3);
+	opacity: 0.5;
+	}
+
+	100% {
+	transform: scale(1);
+	opacity: 1;
+	}
+}
+
+
 
 .container2 section:first-child:after {
 	content: " SCROLL DOWN FOR MORE ";

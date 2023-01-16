@@ -40,7 +40,7 @@ skillsText: <dl>
   </dl>
   <dl>
 cta:
-  ctaText: Start My Resume
+  ctaText: Two Minute Tour
   ctaLink: ""
 svgImage: /assets/transparent.png
 title: Customizable resume and portfolio website apps

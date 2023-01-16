@@ -14,6 +14,8 @@ import {Footer} from "../components/footer"
 // import Theme from "../components/theme"
 import Tips from "../components/tippanel"
 import { IoShareOutline } from 'react-icons/io5'
+import { GoArrowRight } from 'react-icons/go'
+
 import { Helmet } from "react-helmet"
 import { StaticImage } from "gatsby-plugin-image"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -763,7 +765,7 @@ Deploy to Netlify
 </a>
           ) : (
             
-            <Link to="/#getstarted" className="button print font" style={{color:'', fontSize:'120%', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)'}}>{frontmatter.cta.ctaText}</Link>
+            <Link to="/#getstarted" className="button print font" style={{position:'relative', fontSize:'120%', fontWeight:'bold', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'',  display:'grid', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)', display:'flex', textShadow:'1px 1px 1px #222'}}>{frontmatter.cta.ctaText}<GoArrowRight style={{fontSize:'100px', position:'absolute', right:'-65px', animation:'nudgeMe 1s ease-in-out', animationDelay:'0s', animationIterationCount:'5'}} /></Link>
           )}
 
 
