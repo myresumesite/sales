@@ -449,7 +449,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 {/* show feature */}
   {showFeature ? (   
 
-<section id="feature" order="1" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
+<section id="feature" order="2" name="feature" className="print no-app" style={{ display:'', margin:'0', padding:'0', position:'relative'}}>
 
 
   <article>
@@ -552,7 +552,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showInfo ? (
 
-<div id="info" order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
+<div id="info" order="1" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
   
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
@@ -766,7 +766,7 @@ Deploy to Netlify
 </a>
           ) : (
             
-            <Link to="/#getstarted" className="button print font" style={{position:'relative', fontSize:'120%', fontWeight:'bold', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)', display:'flex', textShadow:'1px 1px 1px #222'}}>{frontmatter.cta.ctaText}<GoArrowRight style={{fontSize:'100px', position:'absolute', right:'-65px', animation:'nudgeMe 1s ease-in-out', animationDelay:'0s', animationIterationCount:'5'}} /></Link>
+            <Link to="/#getstarted" className="button print font" style={{position:'relative', fontSize:'120%', fontWeight:'bold', margin:'0 auto', textAlign:'center', borderRadius:'8px', maxWidth:'', placeContent:'center', background:'linear-gradient(rgba(69, 99, 107, 0.703) 10%, rgba(167, 190, 197, 0.822) 80%)', display:'flex', textShadow:'1px 1px 1px #222'}}>{frontmatter.cta.ctaText}<GoArrowRight style={{fontSize:'60px', position:'absolute', right:'-65px', animation:'nudgeMe 1s ease-in-out', animationDelay:'0s', animationIterationCount:'3', animationDirection:'reverse'}} /></Link>
           )}
 
 
@@ -844,12 +844,12 @@ Deploy to Netlify
             </div>
 
 
-<div id="" className="featured mobilesize1" style={{display:'none', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
+{/* <div id="" className="featured mobilesize1" style={{display:'flex', border:'0px solid yellow', width:'', height:'80vh', color:'#ccc', padding:''}}>
 <ReactPlayer
       className='react-player66'
       url="https://youtu.be/2_Noj7lS-tM"
       width="100%"
-      height="90%"
+      height="80%"
   style={{zIndex:'1', display:'grid', placeSelf:'center'}}
       config={{
         youtube: {
@@ -860,19 +860,19 @@ Deploy to Netlify
       playsinline
       loop
       playIcon={
-        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'100%', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
+        <button aria-label="Click To Play" className="clickplay" style={{position:'absolute', zIndex:'1', top:'0', border:'0px solid red', width:'100vw', height:'', background:'', color:'#fff', fontSize:'18px', textAlign:'center', display:'flex', flexDirection:'column',  paddingTop:'100px'}}>
 
-    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'90vh', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
+    <div className="" style={{ textAlign:'center', animation:'fadeIn 3s', width:'80vw', height:'100%', margin:'5vh auto', border:'0px solid red', display:'flex', justifyContent:'center', alignContent:'center', alignItems:'center', flexDirection:'column'}}>
 
 <div style={{display:'flex', justifyContent:'center', height:'', margin:'0 auto 0 auto', width:'100%', border:'0px solid yellow'}}>
 <div style={{ fontWeight:'bold', padding:'0 1rem', margin:'0 auto', fontSize:'clamp(1.2rem, 2.8vw, 3.4rem)',  borderRadius:'12px', border:'0px solid #333', filter:'drop-shadow(2px 2px 2px #000)', opacity:'.7' }}><ImPlay style={{margin:'0 auto', width:'100px', fontSize:'60px'}} />Play</div>             
             </div>
       </div>
       </button>}
-        light="../assets/transparent.png"
+        light="../assets/default-background.webp"
     />
-
-</div>
+ <div className="sitelabel" style={{}}>Integrated open source CMS - Simple yet gives you control over your entire site</div>
+</div> */}
 
 
 
