@@ -175,7 +175,7 @@ body::after{
 <ul sx={navStyle} id="menu" className="menu print" style={{position:'fixed', width:'100vw', top:'0', zIndex:'10', display:'flex', justifyContent:'space-around', fontSize:'clamp(.8rem, 2.3vw, 2.5rem)', gap:'10px', textAlign:'center',  color:'#ccc', boxShadow:'0 0 10px rgba(0,0,0,.9)', padding:'0 .5rem', alignItems:'center', minHeight:'70px', textShadow:'1px 1px 0 #222'}}>
       
       <li className="" style={{position:'relative', maxHeight:'60px', width:'auto', minWidth:'70px', display:'flex', justifyContent:'center'}}>
-            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
+            <AnchorLink to="/#top" name="homereturn" style={{position:'', display:'block', maxWidth:'150px', height:'60px', fontWeight:'bold', border:'0px solid'}}  aria-label="Link to Top" title="Back to Top">
             {iconimage ? (
       <img className="" src={iconimage} alt={companyname} width="100px" height="60px" style={{maxHeight:'60px', border:'0px solid blue'}} />
                 ) : (

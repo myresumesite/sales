@@ -655,18 +655,18 @@ Deploy to Netlify
 
 
 
-           {SecondaryImage ? (
+
+
+{SecondaryImage ? (
             <GatsbyImage
               image={SecondaryImage}
               alt={frontmatter.title + " - Featured image"}
               className="drop-shadow avatar-frame"
-              style={{ maxWidth:'', height:'', maxHeight:'25vh', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', marginBottom:'10px'}}
+              style={{ maxWidth:'', height:'', maxHeight:'', position:'relative',  top:'', objectFit:'contain', backgroundSize:'contain', zIndex:''}}
             />
           ) : (
             ""
           )}
-
-
 
 
 
@@ -1042,7 +1042,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
             <div style={{}}
               className="featured">
-              <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.myresume.site" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.com" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
