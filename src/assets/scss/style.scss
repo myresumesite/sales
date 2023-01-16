@@ -5,8 +5,7 @@
 // @import "theme-variables";
 
 body {
-	// font-family: var(--font-family);
-  background:var(--theme-ui-colors-bodyBg);
+  	background:var(--theme-ui-colors-bodyBg);
 	overflow-x: hidden !important;
 	width: 100vw;
 	font-family:var(--theme-ui-colors-fontFamily-meta-font1);
@@ -230,6 +229,12 @@ footer a:not([href*='localhost:8000']):not([href^='#']):not([href^='/']):after, 
 
 
 /* .featured.mobilesize iframe, .featured.mobilesize::before, .featured.mobilesize .sitelabel {width:400px !important;} */
+
+@media (max-width: 48rem) {
+	.mobilesize{height:60vh !important;}
+}
+
+
 
 
 .react-player {

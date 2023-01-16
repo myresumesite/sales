@@ -430,7 +430,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
       />
 
 
-<div id="top" name="pagetop" className="container22" style={{
+<div id="top" name="pagetop" className="container22"
+//  style={{
  	// overflowY: 'scroll',
   //  overflowX: 'hidden',
   //  overscrollBehavior: 'contain',
@@ -439,7 +440,8 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
   //  scrollSnapType: 'y mandatory',
   //  height:'100vh',
 
-}}>
+// }}
+>
 {/* { sitecolor } */}
 
 
@@ -550,7 +552,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 {showInfo ? (
 
-<div order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
+<div id="info" order="2" className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', margin:' 0', border:'0px solid red'}}>
   
  <div className="horizontal-scroll panels sitegrad movingBG" style={{ scrollSnapType: '', maxHeight:'', margin:'0 0 0 0'}}>
 
@@ -721,18 +723,18 @@ Deploy to Netlify
 
 
   
-  <div className="nameblock infomenu" sx={navStyle}  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0',alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
+  <div className="nameblock infomenu" sx={navStyle}  style={{margin:'0 auto 0 auto', padding:'20px 0 0 0', alignContent:'center', display:'grid', textAlign:'center', justifyContent:'center', verticalAlign:'center',
   backdropFilter: 'blur(4px)',
   border:'1px solid #222', 
   maxWidth:'80%', paddingTop:'', 
   fontSize:'clamp(1rem, 1.4vw, 3.2rem)',
-  
+  color:'#fff',
   // background:'rgba(0,0,0,0.60)',
   // background:'linear-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   // background:'radial-gradient(rgba(47, 71, 74, 0.656) 10%, rgba(35, 63, 67, 0.745) 80%)',
   borderRadius:'10px',
   // textShadow:'0 1px 1px #444',
-  background:'rgba(167, 190, 197, 0.6)'
+  // background:'rgba(167, 190, 197, 0.6)'
   }} ><br />
 <span className="font" style={{color:'', fontSize:'160%'}}>
   {/* {companyname} */}
@@ -829,13 +831,17 @@ Deploy to Netlify
 
 
 
-<div id="getstarted">
+<div id="getstarted" className="featured mobilesize1">
 <div style={{position:'', border:'0px solid yellow', display:'grid', flexDirection:'column', placeContent:'center', alignItems:'center', width:'100%', height:'65vh', color:'#ccc'}}>
-<Link state={{modal: true}} className="button" to="/checkout" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'0px solid red',}}>Buy Now!</Link>
+<Link state={{modal: true}} className="button" to="/checkout" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'100%', width:'100%', display:'', placeContent:'', border:'0px solid red',}}>Buy Now!</Link>
 </div>
 </div>
 
-
+<div className="featured mobilesize">
+              <iframe style={{height:'80vh', width:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://cms-demo.netlify.com/#/collections/posts" frameBorder="0" allowFullScreen></iframe>
+              
+              <div className="sitelabel" style={{}}>Integrated open source CMS - Simple yet gives you control over your entire site</div>
+            </div>
 
 
 <div id="" className="featured mobilesize1" style={{display:'none', border:'0px solid yellow', width:'', height:'100vh', color:'#ccc', padding:''}}>
@@ -874,12 +880,7 @@ Deploy to Netlify
 
 
 
-{/* <div id="" style={{display:'grid', placeContent:'center'}}
-              className="featured mobilesize1">
-              <iframe id="iframe1" style={{resize:'both', overflow:'auto',  width:'80vw', height:'80vh', maxWidth:'80vw'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
-              
-              <div className="sitelabel" style={{display:'flex', placeSelf:'center', position:'absolute', zIndex:'1', bottom:'-40px', left:'20%', right:'20%', width:'58%', margin:'0 auto', padding:'.5rem 0', background:'rgba(0,0,0,.6)', color:'#fff', textShadow:'0 1px 1px #222',  borderRadius:'10px', justifyContent:'space-around'}}>Simple profile or business calling card </div>
-            </div> */}
+
 
             
 
@@ -895,13 +896,13 @@ Deploy to Netlify
           
           
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
-          <StaticImage src="../../static/assets/logo.webp" width="auto" height="auto" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
+          <StaticImage src="../../static/assets/logo.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           Includes Profile, Resume, Skills and Cover Letter.<br />
           <span style={{fontSize:'140%', fontWeight:'bold'}}>$49</span>
           </Link>
 
           <Link className="button flexcheek" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', lineHeight:'100%', display:'flex', flexDirection:'column', gap:'10px', margin:'0', width:'', maxHeight:''}}>
-          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" width="auto" height="auto" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
+          <StaticImage src="../../static/assets/logoplus.webp" alt="MyResume Logo Plus" style={{minWidth:'100px', maxHeight:'100px',  border:'none'}} />
           All the bells and whistles. Includes the kitchen sink.<br />
           <span style={{fontSize:'140%', fontWeight:'bold'}}>$99</span>
           </Link>
@@ -1022,7 +1023,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
             <div className="featured mobilesize1">
-              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://cms-demo.netlify.com/#/collections/posts" frameBorder="0" allowFullScreen></iframe>
+              <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
             </div>
@@ -1058,11 +1059,11 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
         <BlogListHome data={posts} />
 
-        <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
+        {/* <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 
           <Link className="button" to="/posts/2" style={{textDecoration:'none', color:'inherit', textAlign:'center', height:'', display:'', placeContent:'', border:'px solid red',}}>View More </Link>
 
-        </div>
+        </div> */}
 
 {closeQuote ? (
 
@@ -1121,7 +1122,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 <div id="bottom" className="usability" style={{position:'relative', zIndex:'', bottom:'0', display:'flex', placeSelf:'center', placeContent:'center', width:'100%', margin:'0 auto', alignContent:'center', alignItems:'center', justifyContent:'center', border:'0px solid blue', textAlign:'center'}}>
 {/* <Theme /> */}
-<div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'110%'}}><a href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
+<div id="branding" style={{position:'relative', left:'0', bottom:'5px', fontSize:'110%', padding:'.3rem 2rem'}}><a style={{padding:'10px'}} href="https://myresume.site" target="_blank" rel="noreferrer">MyResume®</a></div>
 </div>
 
 
