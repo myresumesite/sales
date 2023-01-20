@@ -1,7 +1,7 @@
 ---
 template: blog-post
-title: Transcendence
-slug: /transcendence
+title: Iframes are fun!
+slug: /test2
 date: 2022-01-01 01:43
 description: A groovy animation floating through the cosmos
 youtuber: "iHxmNzMfDj4"
@@ -26,7 +26,7 @@ showdate: false
 underlayImage: /assets/swd-foreground.png
 featuredImage: /assets/Experiences-Header-5.jpg
 svgImage: /assets/campfire.svg
-nftlink: "https://toddlambert.myresume.site/"
+nftlink: "https://deighleen.com/"
 nftdrop: ""
 nftredeem: ""
 ---

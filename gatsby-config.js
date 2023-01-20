@@ -27,6 +27,18 @@ module.exports = {
     //     salesChannel:"secure3",
     //   },
     // },
+    {
+      resolve: `gatsby-plugin-modal-routing-3`,
+      options: {
+        stores: {
+          anyKeyForYourStore: {
+            domain: `secure3.myshopify.com`,
+            accessToken: `xxxxx`,
+          },
+        }
+      }
+    },
+    
 
 {
     resolve: `gatsby-transformer-remark`,
@@ -41,6 +53,11 @@ module.exports = {
       ],
     },
   },
+
+
+
+
+
 
   {
     resolve: "gatsby-plugin-anchor-links",

@@ -92,6 +92,7 @@ export const pageQuery = graphql`
         youtubeautostart
         profTitle
         profText
+        nftlink
         addressText
         addressText2
         skillsTitle
@@ -149,6 +150,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD-HH-MM-SS")
             slug
             title
+            nftlink
             featuredImage {
               publicURL
               childImageSharp {
@@ -204,7 +206,7 @@ const HomePage = ({ data }) => {
     // const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
-
+    const NftLink = frontmatter.nftlink
     // const { showDates } = useSiteMetadata()
     // const { showPopup } = useSiteMetadata()
 
@@ -230,16 +232,36 @@ const HomePage = ({ data }) => {
   //     alert(x[0].innerHTML);
   // }
 
+  // function resizeMobile(){
+  //   for (const s of document.querySelectorAll(".boom")) {
+  //     s.style.width = "400px";
+  //   }
+  // }
 
-  const resizeMobile = ()=>{
-    document.getElementById("iframe1").style.width = '400px'
-    document.getElementById("iframe2").style.width = '400px'
+//   function resizeMobile(){
+//   const x = document.getElementsByClassName("boom");
+// for (var i=0; i<x.length; i++) {
+//     x[i].style.border = "1px solid blue";
+// }
+//   }
+
+  // function resizeMobile (){
+  //   const x = document.getElementsByClassName("boom");
+  //   for (var i=0; i<x.length; i++) {
+  //       x[i].style.width = "400px";
+  //   }
+  // }
+      const resizeMobile = ()=>{
+    document.getElementById("boom").style.width = 'initial'
+    // document.getElementById("iframe1").style.width = '400px'
+    // document.getElementById("iframe2").style.width = '400px'
     // document.getElementById("iframe3").style.width = '400px'
     // document.getElementById("iframe4").style.width = '400px'
   }
   const resizeDesk = ()=>{
-    document.getElementById("iframe1").style.width = 'initial'
-    document.getElementById("iframe2").style.width = 'initial'
+    document.getElementById("boom").style.width = 'initial'
+    // document.getElementById("iframe1").style.width = 'initial'
+    // document.getElementById("iframe2").style.width = 'initial'
     // document.getElementById("iframe3").style.width = 'initial'
     // document.getElementById("iframe4").style.width = 'initial'
   }
@@ -567,7 +589,7 @@ display:'flex', justifyContent:'center', maxHeight:'80px !important', height:'10
 
 <div>
     <div className="flexbutt" style={{display:'flex', gap:'30px', justifyContent:'center', alignItems:"center", margin:'0 auto',
-  padding:'2% 4% 0 4%',
+  padding:'0 4% 0 4%',
   // textShadow:'0 2px 3px #000',
   //  background:'rgba(0,0,0,0.70)',
   //  color:'#fff', 
@@ -984,9 +1006,9 @@ Deploy to Netlify
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', width:'', border:'0px solid red'}}>
 
-<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+{/* <div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
-textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div> */}
 
 
 
@@ -1022,11 +1044,11 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-            <div className="featured mobilesize1">
+            {/* <div className="featured mobilesize1">
               <iframe id="iframe1" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://deighleen.com" frameBorder="0" allowFullScreen></iframe>
               
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
-            </div>
+            </div> */}
 
             
 
@@ -1040,12 +1062,12 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-            <div style={{}}
+            {/* <div style={{}}
               className="featured">
               <iframe id="iframe2" style={{width:'initial'}} title="iFrame" className="iframe" width="980" height="550" src="https://toddlambert.com" frameBorder="0" allowFullScreen></iframe>
 
               <div className="sitelabel" style={{}}>Simple profile or business calling card </div>
-            </div>
+            </div> */}
 
 
             {/* <div style={{}}
@@ -1057,7 +1079,7 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
 
 
 
-        {/* <BlogListHome data={posts} /> */}
+        <BlogListHome data={posts} />
 
         {/* <div style={{position:'', border:'0px solid yellow', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center', width:'100vw', height:'50vh', color:'#ccc'}}>
 

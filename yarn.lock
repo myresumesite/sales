@@ -6736,6 +6736,13 @@ gatsby-plugin-sharp@^3.1.2:
     sharp "^0.29.0"
     uuid "3.4.0"
 
+gatsby-plugin-shopify-buy@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-shopify-buy/-/gatsby-plugin-shopify-buy-0.0.2.tgz#1b157b777661f3bbaa3b80caa18242b2e0fda808"
+  integrity sha512-0e6eUhBrSq71rYmQ3imT73BRB8uwrgY1gDIFEnkjJoMUj593ujapsSVUyT7oRdUCB7H/qYIHy3q6VwbjIW1Y+Q==
+  dependencies:
+    shopify-buy "^2.2.2"
+
 gatsby-plugin-sitemap@^3.1.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sitemap/-/gatsby-plugin-sitemap-3.3.0.tgz#c269e2f9032802b8984addde90488541a0a2e7b0"
@@ -13635,6 +13642,11 @@ shell-quote@1.7.2:
   version "1.7.2"
   resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
   integrity sha512-mRz/m/JVscCrkMyPqHc/bczi3OQHkLTqXHEFu0zDhK/qfv3UcOA4SVmRCLmos4bhjr9ekVQubj/R7waKapmiQg==
+
+shopify-buy@^2.2.2:
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/shopify-buy/-/shopify-buy-2.18.0.tgz#8f0fde1ea29662a7dff4bcd69d0ee9e07a26ba77"
+  integrity sha512-UaK/oegLRoeAHCfuYj+fVPfsdB8g6LoFdBg9YkSULDlzgWCHVBYWp+g4/1hYS1EZe0SRXFRkksf/3ESwFS8Nig==
 
 short-uuid@^4.2.0:
   version "4.2.2"

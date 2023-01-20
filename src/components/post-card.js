@@ -24,9 +24,15 @@ const PostCard = ({ data }) => {
   >
 
 
+{data.frontmatter.nftlink ? (
 
+              <iframe id="1" class="boom" style={{width:'80%', height:'80vh', margin:'0 auto'}} title="iFrame" className="iframe" width="980" height="550" src={data.frontmatter.nftlink} frameBorder="0" allowFullScreen></iframe>
 
+              ) : (
+  
+              
 
+<>
 
     {data.frontmatter.featuredImage ? (
 
@@ -81,6 +87,10 @@ const PostCard = ({ data }) => {
     ) : (
       <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-background.webp" alt="Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
+</>
+
+)}
+
 
 
 <div className="post-content" style={{textAlign:'center'}} >

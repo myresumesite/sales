@@ -27,7 +27,7 @@ const CustomBox = styled.div`
 
 const Checkout = () => (
 
-<>
+
 
 <Layout>
 
@@ -65,7 +65,7 @@ const Checkout = () => (
 </CustomBox>
 </Layout>
 
-</>
+
 
 )
 
