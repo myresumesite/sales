@@ -32,7 +32,7 @@ const PostCard = ({ data }) => {
   
               
 
-<>
+<div>
 
     {data.frontmatter.featuredImage ? (
 
@@ -87,7 +87,7 @@ const PostCard = ({ data }) => {
     ) : (
       <Link to={data.frontmatter.slug}><StaticImage className="featured-image" src="../../static/assets/default-background.webp" alt="Default Image" style={{position:'relative', zIndex:''}} /></Link>
     )}
-</>
+</div>
 
 )}
 
