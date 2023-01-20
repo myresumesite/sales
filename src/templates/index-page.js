@@ -222,51 +222,23 @@ const HomePage = ({ data }) => {
     const openQuote = frontmatter.portfolio.openText
     const closeQuote = frontmatter.portfolio.closeText
     
-    // const docRef = typeof document !== `undefined` ? document : undefined;
-    // if (!docRef) { return }
+
 
     
 
-  //   function resizeAll() {
-  //     var x = document.getElementsByClassName("iframe");
-  //     alert(x[0].innerHTML);
-  // }
+ 
+ 
 
-  // function resizeMobile(){
-  //   for (const s of document.querySelectorAll(".boom")) {
-  //     s.style.width = "400px";
-  //   }
-  // }
+  const resizeMobile = () => {
+      const elements = document.querySelectorAll('.boom');
+      elements.forEach(el => el.style.width = '400px');
+    }
 
-//   function resizeMobile(){
-//   const x = document.getElementsByClassName("boom");
-// for (var i=0; i<x.length; i++) {
-//     x[i].style.border = "1px solid blue";
-// }
-//   }
-
-  // function resizeMobile (){
-  //   const x = document.getElementsByClassName("boom");
-  //   for (var i=0; i<x.length; i++) {
-  //       x[i].style.width = "400px";
-  //   }
-  // }
-      const resizeMobile = ()=>{
-    document.getElementById("boom").style.width = 'initial'
-    // document.getElementById("iframe1").style.width = '400px'
-    // document.getElementById("iframe2").style.width = '400px'
-    // document.getElementById("iframe3").style.width = '400px'
-    // document.getElementById("iframe4").style.width = '400px'
-  }
-  const resizeDesk = ()=>{
-    document.getElementById("boom").style.width = 'initial'
-    // document.getElementById("iframe1").style.width = 'initial'
-    // document.getElementById("iframe2").style.width = 'initial'
-    // document.getElementById("iframe3").style.width = 'initial'
-    // document.getElementById("iframe4").style.width = 'initial'
+  const resizeDesk = () => {
+    const elements = document.querySelectorAll('.boom');
+    elements.forEach(el => el.style.width = '80%');
   }
 
-    // getElementsByClassName
     
     // const { siteColor } = useSiteMetadata()
 
@@ -1006,9 +978,9 @@ Deploy to Netlify
 
 <div className="horizontal-holder allin60panel" style={{position:'relative', maxHeight:'', width:'', border:'0px solid red'}}>
 
-{/* <div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
+<div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
-textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div> */}
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
 
 
 
