@@ -1,7 +1,7 @@
 ---
 slug: /
 tagline:  Never worry about your resume again.
-featuredImage: 
+featuredImage: /assets/underlay.webp
 youtuber: "https://youtu.be/ESGJ42zshL8"
 youtuber2: 
 audiostart: "1"

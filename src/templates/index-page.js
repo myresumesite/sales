@@ -45,123 +45,116 @@ const navStyle = {bg: "siteColor",}
 
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String! ) {
-    
-    site {
-      siteMetadata {
-        title
-        titleDefault
-        siteUrl
-        description
-        image
-        twitterUsername
-        companyname
-        showfooter
-        showInfo
-        showCover
-        showFeature
-        showPosts
-        showResume
-        showSocial
-        showSkills
-        showNav
-        showPopup
-        siteColor
-        showDates
-      }
-
+query HomeQuery($id: String!) {
+  site {
+    siteMetadata {
+      title
+      titleDefault
+      siteUrl
+      description
+      image
+      twitterUsername
+      companyname
+      showfooter
+      showInfo
+      showCover
+      showFeature
+      showPosts
+      showResume
+      showSocial
+      showSkills
+      showNav
+      showPopup
+      siteColor
+      showDates
     }
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      excerpt(pruneLength: 148)
-      frontmatter {
-        date(formatString: "YYYY-MM-DD-HH-MM-SS")
-        slug
-        title
-        description
-        youtuber
-        youtuber2
-        youtubestart
-        youtubeend
-        audiostart
-        audiotitle
-        audioend
-        youtubemute
-        youtubecontrols
-        youtubeautostart
-        profTitle
-        profText
-        nftlink
-        addressText
-        addressText2
-        skillsTitle
-        skillsText
-        svgzindex
-        tagline
-        featuredImage {
-          publicURL
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        secondaryImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        underlayImage {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-        cta {
-          ctaText
-          ctaLink
-        }
-        coverletter {
-          coverText
-          coverLink
-        }
-        portfolio{
-          openText
-          closeText
-        }
-        svgImage{
-          relativePath
+  }
+  markdownRemark(id: {eq: $id}) {
+    id
+    html
+    excerpt(pruneLength: 148)
+    frontmatter {
+      date(formatString: "YYYY-MM-DD-HH-MM-SS")
+      slug
+      title
+      description
+      youtuber
+      youtuber2
+      youtubestart
+      youtubeend
+      audiostart
+      audiotitle
+      audioend
+      youtubemute
+      youtubecontrols
+      youtubeautostart
+      profTitle
+      profText
+      nftlink
+      addressText
+      addressText2
+      skillsTitle
+      skillsText
+      svgzindex
+      tagline
+      featuredImage {
+        publicURL
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
+      secondaryImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      underlayImage {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
+        }
+      }
+      cta {
+        ctaText
+        ctaLink
+      }
+      coverletter {
+        coverText
+        coverLink
+      }
+      portfolio {
+        openText
+        closeText
+      }
+      svgImage {
+        relativePath
+      }
     }
-
-
- 
-    
-
-    posts: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { template: { eq: "blog-post" } } }
-      limit: 5
-    ) {
-      edges {
-        node {
-          id
-          excerpt(pruneLength: 250)
-          frontmatter {
-            date(formatString: "YYYY-MM-DD-HH-MM-SS")
-            slug
-            title
-            nftlink
-            featuredImage {
-              publicURL
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
+  }
+  posts: allMarkdownRemark(
+    sort: {frontmatter: {date: DESC}}
+    filter: {frontmatter: {template: {eq: "blog-post"}}}
+    limit: 5
+  ) {
+    edges {
+      node {
+        id
+        excerpt(pruneLength: 250)
+        frontmatter {
+          date(formatString: "YYYY-MM-DD-HH-MM-SS")
+          slug
+          title
+          nftlink
+          featuredImage {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }
       }
     }
   }
+}
 `
 
 
@@ -206,7 +199,7 @@ const HomePage = ({ data }) => {
     // const { showSkills } = useSiteMetadata()
     const { showCover } = useSiteMetadata()
     const { showfooter } = useSiteMetadata()
-    const NftLink = frontmatter.nftlink
+    // const NftLink = frontmatter.nftlink
     // const { showDates } = useSiteMetadata()
     // const { showPopup } = useSiteMetadata()
 
@@ -219,14 +212,21 @@ const HomePage = ({ data }) => {
     const ProfText = frontmatter.profText
  
 
-    const openQuote = frontmatter.portfolio.openText
-    const closeQuote = frontmatter.portfolio.closeText
+    // const openQuote = frontmatter.portfolio.openText
+    // const closeQuote = frontmatter.portfolio.closeText
     
 
 
     
 
- 
+    // const toggleIcon = () => {
+    //   const icon = document.querySelector('#my-icon');
+    //   icon.classList.toggle('icon-default');
+    //   icon.classList.toggle('icon-active');
+    // }
+
+    // const button = document.querySelector('#icon-button');
+    // button.onclick = toggleIcon;
  
 
   const resizeMobile = () => {
@@ -973,6 +973,8 @@ Deploy to Netlify
 
 {/* end show Posts */}
 {showPosts ? (
+
+  
 <section className="vertical" id="posts" order="" name="posts" style={{margin:'0 0 0 0', background:'inherit', minHeight:'', overflow:'', border:'0px solid yellow', display:'flex', verticalAlign:'center'}}>
 
 
@@ -980,7 +982,14 @@ Deploy to Netlify
 
 <div id="resizer" style={{position:'absolute', left:'0', top:'20vh', zIndex:'1', width:'', background:'rgba(0, 0, 0, .6)', color:'#ccc', height:'', display:'flex', flexDirection:'column', gap:'30px', justifyContent:'center', 
   alignItems:'center', alignContent:'center', textAlign:'center', borderRadius:'0 12px 12px 0', borderLeft:'none !important', padding:'1rem',
-textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button></div>
+textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeight:'bold',}}><button onClick={resizeMobile}><ImMobile2 style={{fontSize:'24px', margin:'0 auto'}} />Mobile </button><button onClick={resizeDesk}><ImDisplay style={{fontSize:'24px', margin:'0 auto'}} />Desktop</button>
+
+{/* <i id="my-icon" class="icon-default fas fa-heart">tood</i>
+<button id="icon-button" onClick={toggleIcon}>Toggle Icon</button> */}
+
+</div>
+
+
 
 
 
@@ -993,11 +1002,11 @@ textShadow: '1px 1px 0 rgba(121, 115, 115, 0.7)', whiteSpace:'nowrap', fontWeigh
  <div className="" style={{height:'50%', paddingTop:'50%', width:'100vw'}}></div>
 
 <div className="introspacer1" style={{display:'block', height:'1px', border:'0px solid', width:''}} />
+
+
  {/* <div style={{display:'grid', placeContent:'center'}}>
  <iframe title="iFrame" className="" width="980" height="550" src="https://www.youtube.com/embed/X7H_0AqV2ew?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;start=22&amp;end=80&amp;loop=1&amp;mute=1&amp;playlist=X7H_0AqV2ew" frameBorder="0" allowFullScreen></iframe>
  </div> */}
-
-
 
 
         {/* {openQuote ? (

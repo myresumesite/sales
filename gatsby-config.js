@@ -14,7 +14,7 @@ const netlifyCmsPaths = {
 const settings = require("./src/util/site.json")
 
 module.exports = {
-  flags: { PRESERVE_WEBPACK_CACHE: true },
+  flags: {},
   siteMetadata: settings.meta,
   plugins: [
     // {
@@ -27,17 +27,7 @@ module.exports = {
     //     salesChannel:"secure3",
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-modal-routing-3`,
-      options: {
-        stores: {
-          anyKeyForYourStore: {
-            domain: `secure3.myshopify.com`,
-            accessToken: `xxxxx`,
-          },
-        }
-      }
-    },
+
     
 
 {
@@ -80,18 +70,18 @@ module.exports = {
       }
     },
 
-    {
-      resolve: `gatsby-plugin-modal-routing-3`,
-      options: {
-        // A selector to set react-modal's app root to, default is `#___gatsby`
-        // See http://reactcommunity.org/react-modal/accessibility/#app-element
-        appElement: '#___gatsby',
+    // {
+    //   resolve: `gatsby-plugin-modal-routing-3`,
+    //   options: {
+    //     // A selector to set react-modal's app root to, default is `#___gatsby`
+    //     // See http://reactcommunity.org/react-modal/accessibility/#app-element
+    //     appElement: '#___gatsby',
 
-        // Object of props that will be passed to the react-modal container
-        // See http://reactcommunity.org/react-modal/#usage
-        modalProps: { },
-      }
-    },
+    //     // Object of props that will be passed to the react-modal container
+    //     // See http://reactcommunity.org/react-modal/#usage
+    //     modalProps: { },
+    //   }
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -159,17 +149,18 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-theme-ui",
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        modulePath: `${__dirname}/src/cms/cms.js`,
-        enableIdentityWidget: true,
-        publicPath: `admin`,
-        htmlTitle: `MyResume CMS`,
-        // htmlFavicon: `/src/img/logo.svg`,
-        includeRobots: false,
-      },
-    },
+    `gatsby-plugin-static-cms`,
+    // {
+    //   resolve: `gatsby-plugin-netlify-cms`,
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/cms.js`,
+    //     enableIdentityWidget: true,
+    //     publicPath: `admin`,
+    //     htmlTitle: `MyResume CMS`,
+    //     // htmlFavicon: `/src/img/logo.svg`,
+    //     includeRobots: false,
+    //   },
+    // },
 
     {
       resolve: `gatsby-source-filesystem`,

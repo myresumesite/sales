@@ -101,7 +101,7 @@ const PostCard = ({ data }) => {
   <Link 
     to={data.frontmatter.slug}
   >
-    {data.frontmatter.title}
+    {data.frontmatter.title} - <span style={{fontSize:'80%'}}>View Case Study</span>
     
   </Link>
 </h2>
