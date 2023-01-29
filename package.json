@@ -22,7 +22,7 @@
   "dependencies": {
     "@mdx-js/runtime": "^1.6.22",
     "@sindresorhus/slugify": "^2.1.1",
-    "@staticcms/core": "^1.1.0",
+    "@staticcms/app": "1.2.5",
     "@theme-ui/color": "^0.15.4",
     "gatsby": "^5.4.2",
     "gatsby-background-image": "^1.6.0",
@@ -39,7 +39,7 @@
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-plugin-shopify-buy": "^0.0.2",
     "gatsby-plugin-sitemap": "^6.4.0",
-    "gatsby-plugin-static-cms": "^1.1.0",
+    "gatsby-plugin-static-cms": "1.1.2",
     "gatsby-plugin-styled-components": "^6.4.0",
     "gatsby-plugin-theme-ui": "^0.6.0",
     "gatsby-remark-better-embed-video": "^2.4.0",

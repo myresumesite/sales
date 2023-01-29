@@ -2942,7 +2942,22 @@
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
 
-"@staticcms/core@^1.1.0":
+"@staticcms/app@1.2.5":
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/@staticcms/app/-/app-1.2.5.tgz#357c5cb432637efc5955269cb46b8b95e106e930"
+  integrity sha512-QGOW/MV03XBCYlMWhc2DgsX1DNyReAcYN8BiCcHje4wfNb55VKxvBPQ+Dp8oVl5byGdlS58hXWo/SF00WAyxfA==
+  dependencies:
+    "@babel/eslint-parser" "7.19.1"
+    "@babel/runtime" "7.20.13"
+    "@emotion/babel-preset-css-prop" "11.10.0"
+    "@staticcms/core" "^1.2.5"
+    buffer "6.0.3"
+    react "18.2.0"
+    react-dom "18.2.0"
+    stream-browserify "3.0.0"
+    ts-loader "9.4.2"
+
+"@staticcms/core@^1.2.5":
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@staticcms/core/-/core-1.2.5.tgz#eb904fe984ba868e4a1eba4d03355c4754be4596"
   integrity sha512-br2oF0kSGhTpc/Deu6kLXmdozk1WCjz+mI7lSDwQfVWmRo4/8p8ZjPq/Gt6DTmSNOAiaPPukxybaZyT1AsMizg==
@@ -6850,7 +6865,7 @@ engine.io@~6.2.1:
     engine.io-parser "~5.0.3"
     ws "~8.2.3"
 
-enhanced-resolve@^5.10.0, enhanced-resolve@^5.12.0:
+enhanced-resolve@^5.0.0, enhanced-resolve@^5.10.0, enhanced-resolve@^5.12.0:
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.12.0.tgz#300e1c90228f5b570c4d35babf263f6da7155634"
   integrity sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==
@@ -8179,7 +8194,7 @@ gatsby-plugin-sitemap@^6.4.0:
     minimatch "^3.1.2"
     sitemap "^7.1.1"
 
-gatsby-plugin-static-cms@^1.1.0:
+gatsby-plugin-static-cms@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-static-cms/-/gatsby-plugin-static-cms-1.1.2.tgz#c1e02ef411d8fed30e92ce5558e2ea672fe6379d"
   integrity sha512-Y9glHAh/sUFK//E3wIfs6RBVPPOGVfG6paf0su8B6hfetC0hDtZHNr/z2UXiWdEHuwvGZ1E1X4bh6VrOzN9Glw==
@@ -11504,7 +11519,7 @@ micromark@^3.0.0:
     micromark-util-types "^1.0.1"
     uvu "^0.5.0"
 
-micromatch@^4.0.4, micromatch@^4.0.5:
+micromatch@^4.0.0, micromatch@^4.0.4, micromatch@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/micromatch/-/micromatch-4.0.5.tgz#bc8999a7cbbf77cdc89f132f6e467051b49090c6"
   integrity sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==
@@ -15360,6 +15375,16 @@ ts-easing@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/ts-easing/-/ts-easing-0.2.0.tgz#c8a8a35025105566588d87dbda05dd7fbfa5a4ec"
   integrity sha512-Z86EW+fFFh/IFB1fqQ3/+7Zpf9t2ebOAxNI/V6Wo7r5gqiqtxmgTlQ1qbqQcjLKYeSHPTsEmvlJUDg/EuL0uHQ==
+
+ts-loader@9.4.2:
+  version "9.4.2"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-9.4.2.tgz#80a45eee92dd5170b900b3d00abcfa14949aeb78"
+  integrity sha512-OmlC4WVmFv5I0PpaxYb+qGeGOdm5giHU7HwDDUjw59emP2UYMHy9fFSDcYgSNoH8sXcj4hGCSEhlDZ9ULeDraA==
+  dependencies:
+    chalk "^4.1.0"
+    enhanced-resolve "^5.0.0"
+    micromatch "^4.0.0"
+    semver "^7.3.4"
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"
